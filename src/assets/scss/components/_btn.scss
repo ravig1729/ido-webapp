@@ -70,6 +70,12 @@
     }
 }
 
+.vl-hero-btn-container {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    justify-content: flex-start; /* Center the buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+}
 
 // Home Btn 1
 .vl-hero-btn{
