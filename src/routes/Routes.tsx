@@ -1,33 +1,7 @@
-import {lazy} from "react";
+import { lazy } from "react";
 
 const Home = lazy(() => import('@/pages/multi-page/home'))
-const MultiPageAnimalRescue = lazy(() => import('@/pages/multi-page/animal-rescue'))
-const MultiPageHumanRights = lazy(() => import('@/pages/multi-page/human-rights'))
-const MultiPageSeniorCitizen = lazy(() => import('@/pages/multi-page/senior-citizen'))
-const MultiPageWaterAid = lazy(() => import('@/pages/multi-page/water-aid'))
-
-const SinglePageHome = lazy(() => import('@/pages/single-page/home'))
-const SinglePageAnimalRescue = lazy(() => import('@/pages/single-page/animal-rescue'))
-const SinglePageHumanRights = lazy(() => import('@/pages/single-page/human-rights'))
-const SinglePageSeniorCitizen = lazy(() => import('@/pages/single-page/senior-citizen'))
-const SinglePageWaterAid = lazy(() => import('@/pages/single-page/water-aid'))
-
 const About = lazy(() => import('@/pages/about'))
-
-const Event = lazy(() => import('@/pages/event'))
-const EventLeft = lazy(() => import('@/pages/event-left'))
-const EventRight = lazy(() => import('@/pages/event-right'))
-const EventSingle = lazy(() => import('@/pages/event-single'))
-
-const Blog = lazy(() => import('@/pages/blog'))
-const BlogLeft = lazy(() => import('@/pages/blog-left'))
-const BlogRight = lazy(() => import('@/pages/blog-right'))
-const BlogSingle = lazy(() => import('@/pages/blog-single'))
-
-const Cause = lazy(() => import('@/pages/cause'))
-const CauseLeft = lazy(() => import('@/pages/cause-left'))
-const CauseRight = lazy(() => import('@/pages/cause-right'))
-const CauseSingle = lazy(() => import('@/pages/cause-single'))
 
 const Contact = lazy(() => import('@/pages/other-pages/contact'))
 const Error404 = lazy(() => import('@/pages/other-pages/error-404'))
@@ -36,9 +10,9 @@ const Service = lazy(() => import('@/pages/other-pages/service'))
 const Team = lazy(() => import('@/pages/other-pages/team'))
 
 const Health = lazy(() => import('@/pages/work/health'));
-const Nutrition = lazy(() => import('@/pages/work/Nutrition'));
-const Education = lazy(() => import('@/pages/work/Education'));
-const SustainableHealth = lazy(() => import('@/pages/work/SustainableHealth'));
+const Nutrition = lazy(() => import('@/pages/work/nutrition'));
+const Education = lazy(() => import('@/pages/work/education'));
+const SustainableHealth = lazy(() => import('@/pages/work/sustainable-health'));
 
 const multiPageRoutes = [
     {
@@ -213,4 +187,4 @@ const landingRoutes = [
     ...multiPageRoutes
 ]
 
-export {landingRoutes, otherRoutes};
+export { landingRoutes, otherRoutes };

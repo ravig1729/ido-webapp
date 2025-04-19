@@ -1,5 +1,4 @@
 import React from 'react';
-import eventBg from '@/assets/img/breadcrumb/vl-event-bg.png'
 import breadcrumb1 from '@/assets/img/breadcrumb/breadcrumb-shape-1.1.png'
 import breadcrumb2 from '@/assets/img/breadcrumb/breadcrumb-shape-1.2.png'
 import breadcrumb3 from '@/assets/img/breadcrumb/breadcrumb-shape-1.3.png'

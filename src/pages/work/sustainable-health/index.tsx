@@ -1,6 +1,6 @@
-import Hero from './components/Hero';
-import WorkTabs from './components/WorkTabs';
-import { heroContent } from './data';
+import Hero from '../components/Hero';
+import WorkTabs from '../components/WorkTabs';
+import { heroContent } from '../data';
 const WorkPage = () => {
     return (
         <>
