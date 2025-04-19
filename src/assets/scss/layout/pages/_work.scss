@@ -90,3 +90,51 @@
 }
 
 /*============= WORK CSS AREA ENDS===============*/
+
+
+
+.work-hero {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+
+    .work-hero-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .work-hero-subtitle {
+        font-size: 1.2rem;
+        color: #ffc107;
+        padding-bottom: 10px;
+    }
+}
+
+.work-tabs {
+    margin-top: 30px;
+
+    .nav-tabs {
+        justify-content: flex-start; /* Align tabs to the left */
+        border-bottom: 2px solid #ddd;
+
+        .nav-link {
+            color: #333;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+
+            &.active {
+                color: #fff;
+                background-color: #ffc107;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .tab-content {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #555;
+    }
+}
+

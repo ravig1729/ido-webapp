@@ -20,7 +20,7 @@ const TopBanner = () => {
                                     <span><img src={topImg1} alt='topImg1'/></span>
                                 </div>
                                 <div className="top-content">
-                                    <a href="mailto:info@disasterelief.com">info@disasterelief.com</a>
+                                    <a href="mailto:idoservice2@gmail.com">idoservice2@gmail.com</a>
                                 </div>
                             </div>
                             <div className="vl-header-top-icbox">
