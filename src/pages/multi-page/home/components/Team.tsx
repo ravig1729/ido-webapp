@@ -52,7 +52,7 @@ const Team = () => {
                                         <li><a href="#"><FaFacebookF/></a></li>
                                         <li><a href="#"><FaInstagram/></a></li>
                                         <li><a href="#"><FaTwitter/></a></li>
-                                        <li><a href="#"><FaGithub/></a></li>
+                                        {/* <li><a href="#"><FaGithub/></a></li> */}
                                     </ul>
                                 </div>
                                 <div className="vl-team-content text-center">

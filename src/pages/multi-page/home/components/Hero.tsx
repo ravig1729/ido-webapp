@@ -40,11 +40,11 @@ const HeroSocial = () => (
                         <FaTwitter />
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a className="d-flex align-items-center justify-content-center" href="#">
                         <FaGithub />
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     </div>

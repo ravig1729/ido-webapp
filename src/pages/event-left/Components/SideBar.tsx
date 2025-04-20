@@ -69,7 +69,7 @@ const SideBar = () => {
                                         <li><a href="#"><FaFacebookF className="fa-brands fa-facebook-f"/></a></li>
                                         <li><a href="#"><FaInstagram className="fa-brands fa-instagram"/></a></li>
                                         <li><a href="#"><FaTwitter className="fa-brands fa-twitter"/></a></li>
-                                        <li><a href="#"><FaGithub className="fa-brands fa-github"/></a></li>
+                                        {/* <li><a href="#"><FaGithub className="fa-brands fa-github"/></a></li> */}
                                     </ul>
                                 </div>
                             </div>
