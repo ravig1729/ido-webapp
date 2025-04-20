@@ -1,60 +1,62 @@
 import eventBg from '@/assets/img/breadcrumb/vl-event-bg.png';
+import missionThumbImg from '@/assets/img/about/vl-about-mission-thumb.png';
+import WorkSection from './components/WorkSection'
 
 export const tabsContent = {
-    education: [
-        {
-            tabName: "Overview",
-            component: () => <div>EducationContent</div>, // Component for the Overview tab
-        },
-        {
-            tabName: "Programs",
-            component: () => <div>Programs content for Education</div>, // Placeholder content
-        },
-        {
-            tabName: "Impact",
-            component: () => <div>Impact content for Education</div>, // Placeholder content
-        },
-    ],
     health: [
         {
             tabName: "Overview",
-            component:  () => <div>HealthContent</div>, // Component for the Overview tab
+            component: () => <WorkSection section={workSection.health[0]} />,
         },
         {
             tabName: "Initiatives",
-            component: () => <div>Initiatives content for Health</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.health[1]} />,
         },
         {
             tabName: "Statistics",
-            component: () => <div>Statistics content for Health</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.health[2]} />,
+        },
+    ],
+    education: [
+        {
+            tabName: "Overview",
+            component: () => <WorkSection section={workSection.education[0]} />,
+        },
+        {
+            tabName: "Programs",
+            component: () => <WorkSection section={workSection.education[1]} />,
+        },
+        {
+            tabName: "Impact",
+            component: () => <WorkSection section={workSection.education[2]} />,
         },
     ],
     nutrition: [
         {
             tabName: "Overview",
-            component: () => <div>NutritionContent</div>, // Component for the Overview tab
+            component: () => <WorkSection section={workSection.nutrition[0]} />,
         },
         {
             tabName: "Challenges",
-            component: () => <div>Challenges content for Nutrition</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.nutrition[1]} />,
         },
         {
             tabName: "Solutions",
-            component: () => <div>Solutions content for Nutrition</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.nutrition[2]} />,
         },
     ],
     sustainableHealth: [
         {
             tabName: "Overview",
-            component: () => <div>SustainableHealthContent</div>, // Component for the Overview tab
+            component: () => <WorkSection section={workSection.sustainableHealth[0]} />,
         },
         {
             tabName: "Projects",
-            component: () => <div>Projects content for Sustainable Health</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.sustainableHealth[1]} />,
         },
         {
             tabName: "Future Goals",
-            component: () => <div>Future Goals content for Sustainable Health</div>, // Placeholder content
+            component: () => <WorkSection section={workSection.sustainableHealth[2]} />,
         },
     ],
 };
@@ -86,3 +88,135 @@ export const heroContent = {
         pageName: "Sustainable Health",
     },
 };
+
+export const workSection = {
+    health: [
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '1. Free healthcare services in rural areas since Jan 2021.',
+                '2. Covers 2300 tribal people across 18 villages.',
+                '3. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '4. Free healthcare services in rural areas since Jan 2021.',
+                '5. Covers 2300 tribal people across 18 villages.',
+                '6. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '7. Free healthcare services in rural areas since Jan 2021.',
+                '8. Covers 2300 tribal people across 18 villages.',
+                '9. Built trust with communities for long-term impact.',
+            ],
+        }
+    ],
+    education: [
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '1. Free healthcare services in rural areas since Jan 2021.',
+                '2. Covers 2300 tribal people across 18 villages.',
+                '3. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '4. Free healthcare services in rural areas since Jan 2021.',
+                '5. Covers 2300 tribal people across 18 villages.',
+                '6. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '7. Free healthcare services in rural areas since Jan 2021.',
+                '8. Covers 2300 tribal people across 18 villages.',
+                '9. Built trust with communities for long-term impact.',
+            ],
+        }
+    ],
+    nutrition: [
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '1. Free healthcare services in rural areas since Jan 2021.',
+                '2. Covers 2300 tribal people across 18 villages.',
+                '3. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '4. Free healthcare services in rural areas since Jan 2021.',
+                '5. Covers 2300 tribal people across 18 villages.',
+                '6. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '7. Free healthcare services in rural areas since Jan 2021.',
+                '8. Covers 2300 tribal people across 18 villages.',
+                '9. Built trust with communities for long-term impact.',
+            ],
+        }
+    ],
+    sustainableHealth: [
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '1. Free healthcare services in rural areas since Jan 2021.',
+                '2. Covers 2300 tribal people across 18 villages.',
+                '3. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '4. Free healthcare services in rural areas since Jan 2021.',
+                '5. Covers 2300 tribal people across 18 villages.',
+                '6. Built trust with communities for long-term impact.',
+            ],
+        },
+        {
+            image: missionThumbImg,
+            title: 'Mobile medical unit (MMU)',
+            subtitle: 'Intervention',
+            points: [
+                '7. Free healthcare services in rural areas since Jan 2021.',
+                '8. Covers 2300 tribal people across 18 villages.',
+                '9. Built trust with communities for long-term impact.',
+            ],
+        }
+    ],
+};
+
