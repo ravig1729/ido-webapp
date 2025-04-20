@@ -1,5 +1,5 @@
-import {Route, RouteProps, Routes} from "react-router-dom";
-import {landingRoutes, otherRoutes} from "@/routes/Routes.tsx";
+import { Route, RouteProps, Routes } from "react-router-dom";
+import { landingRoutes, otherRoutes } from "@/routes/Routes.tsx";
 import MainLayout from "@/components/layouts/MainLayout.tsx";
 
 const AppRoutes = (props: RouteProps) => {
@@ -7,12 +7,12 @@ const AppRoutes = (props: RouteProps) => {
         <Routes>
             {landingRoutes.map((route) => (
                 <Route key={route.name} path={route.path}
-                       element={route.element}/>
+                    element={route.element} />
             ))}
 
             {otherRoutes.map((route) => (
                 <Route key={route.name} path={route.path}
-                       element={<MainLayout  {...props}>{route.element}</MainLayout>}/>
+                    element={<MainLayout  {...props}>{route.element}</MainLayout>} />
             ))}
         </Routes>
     )
