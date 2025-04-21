@@ -89,6 +89,23 @@
     }
 }
 
+/* Reduce space between subtitle and section items */
+.para.pb-16 {
+    margin-bottom: 8px;  /* Less space between subtitle and section */
+}
+
+/* Ensure consistent space between sections */
+.icon-list-box {
+    padding-top: 10px; /* Slight space before section points */
+    padding-bottom: 10px; /* Slight space after section points */
+}
+
+/* Optional: Adjust icon spacing if needed */
+.icon-list-item {
+    margin-bottom: 8px; /* Adjust space between list items */
+}
+
+
 /*============= WORK CSS AREA ENDS===============*/
 
 

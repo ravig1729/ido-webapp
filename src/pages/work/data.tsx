@@ -5,59 +5,32 @@ import WorkSection from './components/WorkSection'
 export const tabsContent = {
     health: [
         {
-            tabName: "Overview",
-            component: () => <WorkSection section={workSection.health[0]} />,
+            tabName: "Mobile medical unit (MMU)",
+            component: () => <WorkSection section={workSection.health.health_overview} />,
         },
         {
-            tabName: "Initiatives",
-            component: () => <WorkSection section={workSection.health[1]} />,
+            tabName: "Mother & Child Health Care",
+            component: () => <WorkSection section={workSection.health.health_initiatives} />,
         },
         {
-            tabName: "Statistics",
-            component: () => <WorkSection section={workSection.health[2]} />,
+            tabName: "Regalle Village Clinic",
+            component: () => <WorkSection section={workSection.health.health_statistics} />,
         },
     ],
     education: [
         {
-            tabName: "Overview",
-            component: () => <WorkSection section={workSection.education[0]} />,
-        },
-        {
-            tabName: "Programs",
-            component: () => <WorkSection section={workSection.education[1]} />,
-        },
-        {
-            tabName: "Impact",
-            component: () => <WorkSection section={workSection.education[2]} />,
-        },
+            component: () => <WorkSection section={workSection.education.education_overview} />,
+        }
     ],
     nutrition: [
         {
-            tabName: "Overview",
-            component: () => <WorkSection section={workSection.nutrition[0]} />,
-        },
-        {
-            tabName: "Challenges",
-            component: () => <WorkSection section={workSection.nutrition[1]} />,
-        },
-        {
-            tabName: "Solutions",
-            component: () => <WorkSection section={workSection.nutrition[2]} />,
-        },
+            component: () => <WorkSection section={workSection.nutrition.nutrition_overview} />,
+        }
     ],
     sustainableHealth: [
         {
-            tabName: "Overview",
-            component: () => <WorkSection section={workSection.sustainableHealth[0]} />,
-        },
-        {
-            tabName: "Projects",
-            component: () => <WorkSection section={workSection.sustainableHealth[1]} />,
-        },
-        {
-            tabName: "Future Goals",
-            component: () => <WorkSection section={workSection.sustainableHealth[2]} />,
-        },
+            component: () => <WorkSection section={workSection.sustainableHealth.sustainableHealth_overview} />,
+        }
     ],
 };
 
@@ -90,133 +63,99 @@ export const heroContent = {
 };
 
 export const workSection = {
-    health: [
-        {
+    health: {
+        'health_overview': {
             image: missionThumbImg,
             title: 'Mobile medical unit (MMU)',
             subtitle: 'Intervention',
-            points: [
-                '1. Free healthcare services in rural areas since Jan 2021.',
-                '2. Covers 2300 tribal people across 18 villages.',
-                '3. Built trust with communities for long-term impact.',
-            ],
+            section: [
+                'To increase the health awareness & to provide quality healthcare services free of cost to the last mile, Initiative of mobile medical unit taken up in January 2021.',
+                'MMU covers tribal population of 2300 members in 18 villages. Mobile medical unit visits habitations on scheduled basis and provides diagnostics & curative services for the communicable and non-communicable diseases.',
+                'Through regular visits to the habitations, there has been gradual development of trust & bond between the community members and our team which is crucial for sustainability.',
+            ]
         },
-        {
+        'health_initiatives': {
             image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '4. Free healthcare services in rural areas since Jan 2021.',
-                '5. Covers 2300 tribal people across 18 villages.',
-                '6. Built trust with communities for long-term impact.',
+            title: 'Mother & Child Health Care',
+            subtitle1: 'Challenge',
+            section1: [
+                'There is no ASHA or Community Health Workers in the locality. Poor health seeking behaviour, black magic and language barrier are the major issues.',
+                'As these tribal habitations are located remotely, hilly and insurgency areas majority of deliveries occur in the habitations only (The rate of institutional delivery is the lowest among tribal women) & there are no healthcare services for both mother & newborn.',
+                'In the year 2019, in 31 habitations we have recorded 24 infant deaths out of 88 live births. (Under-1 year age). IMR recorded was 27.2%.',
+                'In the year 2019, IMR recorded of India was 3%.'
             ],
+            subtitle2: 'Intervention',
+            section2: [
+                'To fill the gap we have trained one male & one female person from their own community in each habitation to provide basic healthcare. They are called community health workers (CHWs).',
+                'CHWs are trained for providing basic mother & child healthcare',
+                'Now doorstep Antenatal care of pregnant women include hemoglobin test, pregnancy confirmation test, urine for protein , HIV, HBsAg, VDRL, and GRBS are done. Vitals are also monitored. Much needed Iron-folic acid & calcium supplements are provided.',
+                'Intrapartum care: Conducting safe deliveries.',
+                'Postnatal care & HBNC (Home Based Newborn Care): CHW examines the newborn for cry, temperature, conjunctivitis, respiratory rate, baby weight, and umbilical cord care. Also checks for any signs of sepsis like vomiting, chest in-drawing, cough & diarrhoea.',
+                'CHW ensures warmth by providing warm-bags for the baby, assists in breast-feeding, and counsels about the nutrition & guides about the immunization schedule. Creates health & nutrition awareness within the habitations.',
+                'These CHWs are effective means to improve awareness & also remove the language barrier/misbelief and are locally available.',
+                'We have identified & trained 43 CHWs from 31 habitations.'
+            ]
         },
-        {
+        'health_statistics': {
             image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
+            title: 'Regalle Village Clinic',
             subtitle: 'Intervention',
-            points: [
-                '7. Free healthcare services in rural areas since Jan 2021.',
-                '8. Covers 2300 tribal people across 18 villages.',
-                '9. Built trust with communities for long-term impact.',
-            ],
+            section: [
+                'Outpatient clinic was started in Regalla village of Laxmidevipalli mandal to provide health services to rural & tribal villages.'
+            ]
         }
-    ],
-    education: [
-        {
+    },
+    education: {
+        'education_overview': {
             image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '1. Free healthcare services in rural areas since Jan 2021.',
-                '2. Covers 2300 tribal people across 18 villages.',
-                '3. Built trust with communities for long-term impact.',
+            title: '',
+            subtitle1: 'Challenge',
+            section1: [
+                'In the interior habitations there are no anganwadi centres or schools which made education inaccessible to the tribal habitation children.'
             ],
-        },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '4. Free healthcare services in rural areas since Jan 2021.',
-                '5. Covers 2300 tribal people across 18 villages.',
-                '6. Built trust with communities for long-term impact.',
-            ],
-        },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '7. Free healthcare services in rural areas since Jan 2021.',
-                '8. Covers 2300 tribal people across 18 villages.',
-                '9. Built trust with communities for long-term impact.',
-            ],
+            subtitle2: 'Intervention',
+            section2: [
+                'To fill this gap we have initiated BRIDGE SCHOOLS within the habitations itself, where they get access to basic education, mid-day meal & nutrition (Nutrition powder). After identifying potential students we motivate them to join into mainstream schools.'
+            ]
         }
-    ],
-    nutrition: [
-        {
+    },
+    nutrition: {
+        'nutrition_overview': {
             image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '1. Free healthcare services in rural areas since Jan 2021.',
-                '2. Covers 2300 tribal people across 18 villages.',
-                '3. Built trust with communities for long-term impact.',
+            title: '',
+            subtitle1: 'Challenge',
+            section1: [
+                'There is no anganwadi centre in interior tribal habitation.',
+                'We have observed majority of adolescents, pregnant women & under-5 age children had malnutrition, anaemia due to lack of balanced diet & no food security card which also contributes for low birth weight newborn & pre-term deliveries.',
+                'Tribal report 2018 says, 65% of tribal women in the 15-49 years age group suffer from anemia.',
+                'The prevalence of underweight is almost one and a half times in tribal children than in the others',
+                'Only about 25% pregnant and lactating women and 29-32% children had adequate intakes of both protein and calories.',
+                'Hence there was a need to provide them a supply of adequate protein, fats, carbohydrates & iron.'
             ],
-        },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '4. Free healthcare services in rural areas since Jan 2021.',
-                '5. Covers 2300 tribal people across 18 villages.',
-                '6. Built trust with communities for long-term impact.',
-            ],
-        },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '7. Free healthcare services in rural areas since Jan 2021.',
-                '8. Covers 2300 tribal people across 18 villages.',
-                '9. Built trust with communities for long-term impact.',
-            ],
+            subtitle2: 'Intervention',
+            section2: [
+                'To fill the gap we have trained one male & one female person from their own community in each habitation to provide basic healthcare. They are called community health workers (CHWs).',
+                'CHWs are trained for providing basic mother & child healthcare',
+                'Now doorstep Antenatal care of pregnant women include hemoglobin test, pregnancy confirmation test, urine for protein , HIV, HBsAg, VDRL, and GRBS are done. Vitals are also monitored. Much needed Iron-folic acid & calcium supplements are provided.',
+                'Intrapartum care: Conducting safe deliveries.',
+                'Postnatal care & HBNC (Home Based Newborn Care): CHW examines the newborn for cry, temperature, conjunctivitis, respiratory rate, baby weight, and umbilical cord care. Also checks for any signs of sepsis like vomiting, chest in-drawing, cough & diarrhoea.',
+                'CHW ensures warmth by providing warm-bags for the baby, assists in breast-feeding, and counsels about the nutrition & guides about the immunization schedule. Creates health & nutrition awareness within the habitations.',
+                'These CHWs are effective means to improve awareness & also remove the language barrier/misbelief and are locally available.',
+                'We have identified & trained 43 CHWs from 31 habitations.'
+            ]
         }
-    ],
-    sustainableHealth: [
-        {
+    },
+    sustainableHealth: {
+        'sustainableHealth_overview': {
             image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '1. Free healthcare services in rural areas since Jan 2021.',
-                '2. Covers 2300 tribal people across 18 villages.',
-                '3. Built trust with communities for long-term impact.',
-            ],
+            title: '',
+            subtitle: 'People often think of Charity As an Action. But We think of Charity as a State Of The Heart',
+            section: [
+                'Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for uncover many web sites still in their infancy.',
+                'Giving to those in need what they could be gaining from their own initiative may well be the kindest way to destroy people.',
+                'Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).'
+            ]
         },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '4. Free healthcare services in rural areas since Jan 2021.',
-                '5. Covers 2300 tribal people across 18 villages.',
-                '6. Built trust with communities for long-term impact.',
-            ],
-        },
-        {
-            image: missionThumbImg,
-            title: 'Mobile medical unit (MMU)',
-            subtitle: 'Intervention',
-            points: [
-                '7. Free healthcare services in rural areas since Jan 2021.',
-                '8. Covers 2300 tribal people across 18 villages.',
-                '9. Built trust with communities for long-term impact.',
-            ],
-        }
-    ],
+    }
 };
 

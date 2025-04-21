@@ -3,7 +3,8 @@ import { lazy } from "react";
 const Home = lazy(() => import('@/pages/multi-page/home'))
 const About = lazy(() => import('@/pages/about'))
 
-const Contact = lazy(() => import('@/pages/other-pages/contact'))
+const Reports = lazy(() => import('@/pages/reports'))
+const Contact = lazy(() => import('@/pages/contact'))
 const Error404 = lazy(() => import('@/pages/other-pages/error-404'))
 const Faq = lazy(() => import('@/pages/other-pages/faq'))
 const Service = lazy(() => import('@/pages/other-pages/service'))
@@ -96,11 +97,11 @@ const otherRoutes = [
     //     name: 'event-single',
     //     element: <EventSingle/>,
     // },
-    // {
-    //     path: '/blog',
-    //     name: 'blog',
-    //     element: <Blog/>,
-    // },
+    {
+        path: '/reports',
+        name: 'reports',
+        element: <Reports/>,
+    },
     // {
     //     path: '/blog-left',
     //     name: 'blog-left',
@@ -137,8 +138,8 @@ const otherRoutes = [
     //     element: <CauseSingle/>,
     // },
     {
-        path: '/pages/contact',
-        name: 'pages-contact',
+        path: '/contact',
+        name: 'contact',
         element: <Contact/>,
     },
     {
