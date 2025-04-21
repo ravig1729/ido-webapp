@@ -5,7 +5,7 @@ import {Link} from "react-router";
 import {FaAngleLeft, FaAngleRight, FaArrowRight} from "react-icons/fa6";
 import {Col, Container, Row} from 'react-bootstrap'
 
-const Blog = () => {
+const Reports = () => {
     return (
         <section className="vl-blog-inner sp2">
             <Container>
@@ -58,4 +58,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default Reports

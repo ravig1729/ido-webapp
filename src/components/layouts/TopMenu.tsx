@@ -5,8 +5,8 @@ const TopMenu = () => {
     return (
         <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><a href="#">Work <FaAngleDown className="fa-solid fa-angle-down align-bottom" /></a>
+            <li><Link to="/about">About Us</Link></li>
+            <li><a href="#">Our Work <FaAngleDown className="fa-solid fa-angle-down align-bottom" /></a>
                 <ul className="dropdown-padding">
                     <li><Link to="/pages/health">Health</Link></li>
                     <li><Link to="/pages/nutrition">Nutrition </Link></li>
@@ -14,7 +14,8 @@ const TopMenu = () => {
                     <li><Link to="/pages/sustainable-health">Sustainable Health</Link></li>
                 </ul>
             </li>
-            <li><Link to="/about">Partners</Link></li>
+            <li><Link to="/reports">Reports</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
         </ul>
     )
 }

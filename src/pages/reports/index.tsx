@@ -1,11 +1,11 @@
 import Hero from './components/Hero'
-import Blog from './components/Blog'
+import Reports from './components/Reports'
 
 const BlogPage = () => {
     return (
         <>
             <Hero/>
-            <Blog/>
+            <Reports/>
         </>
 
     )
