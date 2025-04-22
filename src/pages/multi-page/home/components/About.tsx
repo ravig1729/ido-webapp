@@ -61,7 +61,7 @@ const About = () => {
                                 affected by disaster organization.</p>
                             <div className="btn-area">
                                 <Link to="/pages/team"
-                                      className="header-btn1">Volunteer <span><FaArrowRight/></span></Link>
+                                      className="header-btn1">Our Volunteers<span><FaArrowRight/></span></Link>
                             </div>
                             <div className="vl-about-sm-thumb d-none d-md-block">
                                 <img className="w-100" src={about2} alt='about2'/>

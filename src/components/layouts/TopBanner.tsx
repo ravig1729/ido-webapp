@@ -1,6 +1,7 @@
 import topImg1 from '@/assets/img/icons/vl-top-ic-1.1.svg'
 import topImg2 from '@/assets/img/icons/vl-top-ic-1.2.svg'
 import {Col, Container, Row} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 const TopBanner = () => {
     return (
@@ -10,7 +11,7 @@ const TopBanner = () => {
                     <Col lg={6}>
                         <div className="vl-header-top-content">
                             <p>Are you ready to free case evaluation today? </p>
-                            <a href="#" className="top-contact">Contact Us</a>
+                            <Link to="/contact" className="top-contact">Contact Us</Link>
                         </div>
                     </Col>
                     <Col lg={6}>

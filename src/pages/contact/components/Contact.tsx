@@ -1,14 +1,14 @@
-import {Col, Container, Row} from 'react-bootstrap'
-import {FaArrowRight} from 'react-icons/fa6'
+import { Col, Container, Row } from 'react-bootstrap'
+import { FaArrowRight } from 'react-icons/fa6'
 import Select from 'react-select'
 
 const options = [
-    {value: '', label: 'Donation To'},
-    {value: 1, label: 'Health and Medical Support'},
-    {value: 2, label: 'Education and Training'},
-    {value: 3, label: 'Relief and Aid Services'},
-    {value: 4, label: 'Community Development'},
-    {value: 5, label: 'Environmental Conservation'}
+    { value: '', label: 'Donation To' },
+    { value: 1, label: 'Health and Medical Support' },
+    { value: 2, label: 'Education and Training' },
+    { value: 3, label: 'Relief and Aid Services' },
+    { value: 4, label: 'Community Development' },
+    { value: 5, label: 'Environmental Conservation' }
 ];
 
 const Contact = () => {
@@ -18,9 +18,7 @@ const Contact = () => {
                 <Row className=" flex-lg-row flex-column-reverse">
                     <Col lg={6} className="mb-30">
                         <div className="vl-maps">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.04421055503!2d-118.74139674995793!3d34.020608447020685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1734253501055!5m2!1sen!2sbd"
-                                allowFullScreen className="vl-contact-maps"/>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1320.1219873775833!2d84.09346563540738!3d18.35208505091066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c47e4452eee79%3A0x89cf4a2efc0e1cc0!2sDola%20Primary%20Health%20Sub%20Center!5e0!3m2!1sen!2sin!4v1745343298320!5m2!1sen!2sin" width="600" height="450" loading="lazy"></iframe>
                         </div>
                     </Col>
                     <Col lg={6} className="mb-30">
@@ -29,22 +27,22 @@ const Contact = () => {
                                 <h4 className="subtitle">Contact Us</h4>
                                 <h2 className="title">Reach Together, We Can Make a Difference</h2>
                                 <p className="para pb-32">We’re here to answer questions, provide information about
-                                    our <br/> work, and help you find ways to get involved whetherinterested.</p>
+                                    our <br /> work, and help you find ways to get involved whetherinterested.</p>
                             </div>
                             <div className="vl-form-inner">
                                 <form action="#">
                                     <Row>
                                         <Col lg={6}>
-                                            <input type="text" placeholder="First Name*"/>
+                                            <input type="text" placeholder="First Name*" />
                                         </Col>
                                         <Col lg={6}>
-                                            <input type="text" placeholder="Last Name*"/>
+                                            <input type="text" placeholder="Last Name*" />
                                         </Col>
                                         <Col lg={6}>
-                                            <input type="email" placeholder="Email Address*"/>
+                                            <input type="email" placeholder="Email Address*" />
                                         </Col>
                                         <Col lg={6}>
-                                            <input type="number" placeholder="Amount; $*"/>
+                                            <input type="number" placeholder="Amount; $*" />
                                         </Col>
                                         <Col lg={12} className="mb-3">
                                             <Select
@@ -56,11 +54,11 @@ const Contact = () => {
                                         </Col>
                                         <Col lg={12}>
                                             <textarea name="message" id="message" placeholder="How can we help you?*"
-                                                      defaultValue={""}/>
+                                                defaultValue={""} />
                                         </Col>
                                         <Col lg={12}>
                                             <div className="btn-area">
-                                                <button className="header-btn1">Send Now <span><FaArrowRight/></span>
+                                                <button className="header-btn1">Send Now <span><FaArrowRight /></span>
                                                 </button>
                                             </div>
                                         </Col>

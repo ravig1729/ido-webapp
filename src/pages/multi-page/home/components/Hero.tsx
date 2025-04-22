@@ -3,7 +3,6 @@ import hero1 from '@/assets/img/shape/vl-hero-shape-1.1.png';
 import hero2 from '@/assets/img/shape/vl-hero-shape-1.2.png';
 import titleIcon from '@/assets/img/icons/vl-sub-title-icon.svg';
 import { FaAngleLeft, FaAngleRight, FaArrowRight, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6';
-import { FaGithub } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from 'react-slick';
 
@@ -40,11 +39,6 @@ const HeroSocial = () => (
                         <FaTwitter />
                     </a>
                 </li>
-                {/* <li>
-                    <a className="d-flex align-items-center justify-content-center" href="#">
-                        <FaGithub />
-                    </a>
-                </li> */}
             </ul>
         </div>
     </div>
@@ -65,14 +59,14 @@ const HeroSectionTitle = () => (
         </p>
         <div className="vl-hero-btn-container" >
             <div className="vl-hero-btn">
-                <a href="/pages/contact" className="header-btn1">
+                <a href="/contact" className="header-btn1">
                     Become a Volunteer<span>
                         <FaArrowRight />
                     </span>
                 </a>
             </div>
             <div className="vl-hero-btn">
-                <a href="/pages/contact" className="header-btn1">
+                <a href="/contact" className="header-btn1">
                     Donate now <span>
                         <FaArrowRight />
                     </span>
