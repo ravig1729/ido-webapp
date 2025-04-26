@@ -8,7 +8,6 @@ import eventLocal from '@/assets/img/icons/vl-event-loca1.1.svg'
 import dollarImg from '@/assets/img/icons/dollar.svg'
 import customImg from '@/assets/img/icons/custom-amou.svg'
 import {FaArrowRight, FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa6";
-import {FaGithub} from "react-icons/fa";
 import {Link} from "react-router";
 import {Col, Container, Row} from 'react-bootstrap'
 

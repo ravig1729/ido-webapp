@@ -1,4 +1,3 @@
-import {FaGithub} from "react-icons/fa";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa6";
 import {teamData} from '../data';
 import {Swiper, SwiperSlide} from 'swiper/react';

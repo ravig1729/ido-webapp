@@ -3,7 +3,7 @@ import footer2 from '@/assets/img/icons/vl-footer-2.2.svg'
 import footer3 from '@/assets/img/icons/vl-footer-2.3.svg'
 import footer4 from '@/assets/img/icons/vl-footer-2.4.svg'
 import footerLogo1 from '@/assets/img/logo/vl-footer-logo-1.1.png'
-import {FaFacebookF, FaGithub, FaInstagram, FaTwitter} from 'react-icons/fa6'
+import {FaFacebookF, FaInstagram, FaTwitter} from 'react-icons/fa6'
 import {Col, Container, Row} from 'react-bootstrap'
 import {Link} from "react-router";
 
