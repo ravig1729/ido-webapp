@@ -26,7 +26,7 @@ const Counter = () => {
                                     each <br/> statistic represents lives changed and futures <br/> improved over the
                                     past year alone.</p>
                                 <div className="btn-area">
-                                    <Link to="/pages/contact" className="header-btn1">Donate Now <span><FaArrowRight/></span></Link>
+                                    <Link to="/donation" className="header-btn1">Donate Now <span><FaArrowRight/></span></Link>
                                 </div>
                             </div>
                         </div>
