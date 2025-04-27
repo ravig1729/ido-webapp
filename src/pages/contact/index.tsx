@@ -1,6 +1,6 @@
+import { Container, Row } from 'react-bootstrap'
 import Hero from './components/Hero'
 import IconArea from './components/IconArea'
-import { Col, Container, Row } from 'react-bootstrap'
 
 const ContactPage = () => {
   return (

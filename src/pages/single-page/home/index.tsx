@@ -1,16 +1,15 @@
-import TopBanner from '@/components/layouts/TopBanner'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Causes from './components/Causes'
-import About from './components/About'
-import EventArea from './components/EventArea'
-import Testimonial from './components/Testimonial'
-import Gallery from './components/Gallery'
-import Team from './components/Team'
-import Blog from './components/Blog'
+import BackToTop from "@/components/BackToTop.tsx"
 import CtaArea from '@/components/layouts/CtaArea'
 import Footer from '@/components/layouts/Footer'
-import BackToTop from "@/components/BackToTop.tsx";
+import TopBanner from '@/components/layouts/TopBanner'
+import About from './components/About'
+import Blog from './components/Blog'
+import EventArea from './components/EventArea'
+import Gallery from './components/Gallery'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Team from './components/Team'
+import Testimonial from './components/Testimonial'
 
 const HomeSinglePage = () => {
     return (
