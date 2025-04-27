@@ -27,7 +27,7 @@ const TopBar = () => {
                                         <TopMenu/>
                                     </div>
                                     <div className="btn-area">
-                                        <Link to="/contact" className="header-btn1">Donate <span><FaArrowRight
+                                        <Link to="/donation" className="header-btn1">Donate <span><FaArrowRight
                                             className="fa-solid fa-arrow-right"/></span></Link>
                                     </div>
                                 </div>

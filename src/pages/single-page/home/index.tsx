@@ -19,7 +19,6 @@ const HomeSinglePage = () => {
             <Header/>
             <Hero/>
             <About/>
-            <Causes/>
             <EventArea/>
             <Testimonial/>
             <Gallery/>
