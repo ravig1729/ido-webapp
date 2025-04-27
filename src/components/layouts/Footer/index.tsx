@@ -16,7 +16,7 @@ const Footer = () => {
           <Col lg={3} md={6}>
             <div className="vl-footer-widget-1 mb-30">
               <div className="vl-footer-logo">
-                <Link to="/"><img src={footerLogo} alt='footerLogo' /></Link>
+                <h1><a href='/'>I-DO</a></h1>
               </div>
               <div className="vl-footer-content">
                 <p>Now the time act because every second counts, and contribution brings one step closer a brighter future Join us today &amp; difference.</p>
@@ -37,9 +37,9 @@ const Footer = () => {
                 <ul>
                   <li><Link to="/">Home Page</Link></li>
                   <li><Link to="/about">About Us</Link></li>
-                  <li><Link to="/pages/contact">Appointment</Link></li>
-                  <li><a href="blog">News &amp; Blog</a></li>
-                  <li><a href="#">Testimonials</a></li>
+                  <li><Link to="/reports">Reports</Link></li>
+                  <li><Link to="/partners">Our Partners</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </div>
             </div>
@@ -49,11 +49,9 @@ const Footer = () => {
               <h3 className="title">Our services</h3>
               <div className="vl-footer-menu">
                 <ul>
-                  <li><a href="#">Donation Online</a></li>
-                  <li><a href="#">Donor Centres</a></li>
+                  <li><a href="/donation">Donation Online</a></li>
+                  <li><a href="/contact">Donor Centres</a></li>
                   <li><Link to="/pages/team">Volunteering</Link></li>
-                  <li><a href="#">Your Philanthropy</a></li>
-                  <li><a href="#">Senior Care</a></li>
                 </ul>
               </div>
             </div>
@@ -91,7 +89,7 @@ const Footer = () => {
         <div className="vl-copyright copyright-border-1">
           <Row>
             <Col md={6}>
-              <p className="vl-copyright-text">© 2025 Helpy ,Inc. All Rights Reserved.</p>
+              <p className="vl-copyright-text">© 2025 I-DO ,Inc. All Rights Reserved.</p>
             </Col>
             <Col md={6}>
               <div className="vl-copyright-menu">
