@@ -1,10 +1,9 @@
-import logo1 from '@/assets/img/logo/vl-logo-1.1.png'
-import useScrollEvent from '@/hooks/useScrollEvent'
-import {Link} from "react-router";
-import {FaArrowRight} from "react-icons/fa6"
-import TopMenu from '../TopMenu'
-import MobileMenu from './MobileMenu'
-import {Col, Container, Row} from 'react-bootstrap'
+import useScrollEvent from '@/hooks/useScrollEvent';
+import { Col, Container, Row } from 'react-bootstrap';
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router";
+import TopMenu from '../TopMenu';
+import MobileMenu from './MobileMenu';
 
 
 const TopBar = () => {
