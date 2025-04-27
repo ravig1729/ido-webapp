@@ -1,9 +1,6 @@
-import { Fragment, useState } from 'react'
-import { iconsBoxData } from '../data'
-import { Link } from "react-router";
-import { Col, Container, Row } from 'react-bootstrap'
-import upiIcon from "@/assets/img/icons/upi-icon.svg"
-import bank from "@/assets/img/icons/bank.svg"
+import bank from "@/assets/img/icons/bank.svg";
+import upiIcon from "@/assets/img/icons/upi-icon.svg";
+import { Col, Container, Row } from 'react-bootstrap';
 const IconArea = () => {
     return (
         <section className="vl-icon-box-inner pb-70">
