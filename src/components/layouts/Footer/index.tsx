@@ -1,12 +1,9 @@
-import footerLogo from '@/assets/img/logo/vl-footer-logo-1.1.png'
-import footerIc1 from '@/assets/img/icons/vl-footer-ic-1.1.svg'
-import footerIc2 from '@/assets/img/icons/vl-footer-ic-1.2.svg'
-import footerIc3 from '@/assets/img/icons/vl-footer-2.1.svg'
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
+import footerIc3 from '@/assets/img/icons/vl-footer-2.1.svg';
+import footerIc1 from '@/assets/img/icons/vl-footer-ic-1.1.svg';
+import footerIc2 from '@/assets/img/icons/vl-footer-ic-1.2.svg';
+import { Col, Container, Row } from 'react-bootstrap';
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
-import { Col, Container, Row } from 'react-bootstrap'
 
 const Footer = () => {
   return (

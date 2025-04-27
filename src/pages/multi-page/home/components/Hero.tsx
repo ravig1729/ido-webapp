@@ -1,9 +1,9 @@
-import { useRef } from 'react';
+import titleIcon from '@/assets/img/icons/vl-sub-title-icon.svg';
 import hero1 from '@/assets/img/shape/vl-hero-shape-1.1.png';
 import hero2 from '@/assets/img/shape/vl-hero-shape-1.2.png';
-import titleIcon from '@/assets/img/icons/vl-sub-title-icon.svg';
-import { FaAngleLeft, FaAngleRight, FaArrowRight, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6';
+import { useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { FaAngleLeft, FaAngleRight, FaArrowRight } from 'react-icons/fa6';
 import Slider from 'react-slick';
 
 // Reusable component for Hero Shapes
