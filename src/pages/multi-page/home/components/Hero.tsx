@@ -18,31 +18,31 @@ const HeroShapes = () => (
     </>
 );
 
-// Reusable component for Hero Social Links
-const HeroSocial = () => (
-    <div className="vl-hero-social d-none d-lg-block">
-        <h4 className="title">Follow Us:</h4>
-        <div className="vl-hero-social-icon">
-            <ul>
-                <li>
-                    <a className="d-flex align-items-center justify-content-center" href="#">
-                        <FaFacebookF />
-                    </a>
-                </li>
-                <li>
-                    <a className="d-flex align-items-center justify-content-center" href="#">
-                        <FaInstagram />
-                    </a>
-                </li>
-                <li>
-                    <a className="d-flex align-items-center justify-content-center" href="#">
-                        <FaTwitter />
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-);
+// // Reusable component for Hero Social Links
+// const HeroSocial = () => (
+//     <div className="vl-hero-social d-none d-lg-block">
+//         <h4 className="title">Follow Us:</h4>
+//         <div className="vl-hero-social-icon">
+//             <ul>
+//                 <li>
+//                     <a className="d-flex align-items-center justify-content-center" href="#">
+//                         <FaFacebookF />
+//                     </a>
+//                 </li>
+//                 <li>
+//                     <a className="d-flex align-items-center justify-content-center" href="#">
+//                         <FaInstagram />
+//                     </a>
+//                 </li>
+//                 <li>
+//                     <a className="d-flex align-items-center justify-content-center" href="#">
+//                         <FaTwitter />
+//                     </a>
+//                 </li>
+//             </ul>
+//         </div>
+//     </div>
+// );
 
 // Reusable component for Hero Section Title
 const HeroSectionTitle = () => (
@@ -59,14 +59,14 @@ const HeroSectionTitle = () => (
         </p>
         <div className="vl-hero-btn-container" >
             <div className="vl-hero-btn">
-                <a href="/contact" className="header-btn1">
+                <a href="/pages/team" className="header-btn1">
                     Become a Volunteer<span>
                         <FaArrowRight />
                     </span>
                 </a>
             </div>
             <div className="vl-hero-btn">
-                <a href="/contact" className="header-btn1">
+                <a href="/donation" className="header-btn1">
                     Donate now <span>
                         <FaArrowRight />
                     </span>
@@ -98,7 +98,7 @@ const Hero = () => {
             <Slider ref={sliderRef} {...settings} className="slider-active-1">
                 <div className="vl-hero-slider vl-hero-bg slick-slide slick-current slick-active">
                     <HeroShapes />
-                    <HeroSocial />
+                    {/* <HeroSocial /> */}
                     <Container>
                         <Row>
                             <Col lg={7}>
@@ -111,7 +111,7 @@ const Hero = () => {
 
                 <div className="vl-hero-slider vl-hero-bg slick-slide slick-current slick-active">
                     <HeroShapes />
-                    <HeroSocial />
+                    {/* <HeroSocial /> */}
                     <Container>
                         <Row>
                             <Col lg={7}>

@@ -4608,6 +4608,9 @@ span.tooltipp-2 {
   font-weight: var(--ztc-weight-semibold);
   padding-top: 16px;
   padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .vl-header-top-content p {
   margin-right: 8px;

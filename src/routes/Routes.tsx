@@ -4,6 +4,7 @@ const Home = lazy(() => import('@/pages/multi-page/home'))
 const About = lazy(() => import('@/pages/about'))
 
 const Reports = lazy(() => import('@/pages/reports'))
+const Partners = lazy(() => import('@/pages/partners'))
 const Contact = lazy(() => import('@/pages/contact'))
 const Donation = lazy(() => import('@/pages/donation'))
 const Error404 = lazy(() => import('@/pages/other-pages/error-404'))
@@ -138,6 +139,11 @@ const otherRoutes = [
     //     name: 'cause-single',
     //     element: <CauseSingle/>,
     // },
+    {
+        path: '/partners',
+        name: 'partners',
+        element: <Partners/>,
+    },
     {
         path: '/contact',
         name: 'contact',

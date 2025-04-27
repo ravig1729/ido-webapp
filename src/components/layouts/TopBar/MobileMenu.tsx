@@ -1,5 +1,5 @@
-import {useEffect} from 'react'
-import {Link} from "react-router";
+import { useEffect } from 'react'
+import { Link } from "react-router-dom";
 import {
     FaArrowRight,
     FaBars,
@@ -16,7 +16,7 @@ import footerLogo from '@/assets/img/logo/vl-footer-logo-1.1.png'
 import logo1 from '@/assets/img/logo/vl-logo-1.1.png'
 import useToggle from '@/hooks/useToggle'
 import MobileMenuItem from '../MobileMenuItem'
-import {Col, Container} from 'react-bootstrap'
+import { Col, Container } from 'react-bootstrap'
 
 const MobileMenu = () => {
     const {isOpen, toggle} = useToggle()

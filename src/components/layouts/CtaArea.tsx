@@ -25,7 +25,7 @@ const CtaArea = () => {
                                     of those affected by disaster. Whether it’s a donation.</p>
                                 <div className="vl-cta-form text-center mx-auto">
                                     <div className="btn-area">
-                                        <Link to="/contact" className="header-btn1 pr-10">Donate <span><FaArrowRight
+                                        <Link to="/donation" className="header-btn1 pr-10">Donate <span><FaArrowRight
                                             className="fa-solid fa-arrow-right" /></span></Link>
                                     </div>
                                 </div>

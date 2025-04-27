@@ -5,7 +5,6 @@ import footerIc3 from '@/assets/img/icons/vl-footer-2.1.svg'
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router";
 import { Col, Container, Row } from 'react-bootstrap'
 
@@ -27,7 +26,6 @@ const Footer = () => {
                   <li><a className='d-flex align-items-center justify-content-center' href="#"><FaFacebookF className="fa-brands fa-facebook-f" /></a></li>
                   <li><a className='d-flex align-items-center justify-content-center' href="#"><FaInstagram className="fa-brands fa-instagram" /></a></li>
                   <li><a className='d-flex align-items-center justify-content-center' href="#"><FaTwitter className="fa-brands fa-twitter" /></a></li>
-                  <li><a className='d-flex align-items-center justify-content-center' href="#"><FaGithub className="fa-brands fa-github" /></a></li>
                 </ul>
               </div>
             </div>

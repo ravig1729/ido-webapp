@@ -33,7 +33,7 @@ const Header = () => {
                                         </ul>
                                     </div>
                                     <div className="btn-area">
-                                        <Link to="/pages/contact" className="header-btn1">Donate <span><FaArrowRight/></span></Link>
+                                        <Link to="/donation" className="header-btn1">Donate <span><FaArrowRight/></span></Link>
                                     </div>
                                 </div>
                             </Col>

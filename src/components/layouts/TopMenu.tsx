@@ -15,6 +15,7 @@ const TopMenu = () => {
                 </ul>
             </li>
             <li><Link to="/reports">Reports</Link></li>
+            <li><Link to="/partners">Our Partners</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>
     )

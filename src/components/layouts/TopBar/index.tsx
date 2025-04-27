@@ -21,7 +21,7 @@ const TopBar = () => {
                             <Col lg={12}>
                                 <div className="header-elements header-elements-1">
                                     <div className="site-logo">
-                                        <Link to="/"><img src={logo1} alt='logo1'/></Link>
+                                        <h1><a href="/">I-DO</a></h1>
                                     </div>
                                     <div className="main-menu">
                                         <TopMenu/>
