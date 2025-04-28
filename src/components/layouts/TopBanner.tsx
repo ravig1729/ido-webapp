@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6'
 
 const TopBanner = () => {
   return (
-    <div className="vl-header-top d-none d-lg-block" style={{ background: '#fff', borderBottom: '1px solid #eee', position: 'sticky', top: 0, zIndex: 1020 }}>
+    <div className="vl-header-top d-none d-lg-block" style={{ background: '#fff', borderBottom: '1px solid #eee', position: 'fixed', top: 0, zIndex: 1020, width: "100%" }}>
       <Container>
         <div className="d-flex align-items-center justify-content-between py-2">
           {/* Left side - About us + Icons */}

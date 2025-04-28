@@ -4376,6 +4376,7 @@ span.tooltipp-2 {
   width: 100%;
   z-index: 9999;
   transition: all 0.4s;
+  margin-top: 50px;
 }
 .homepage1-body .header-area.homepage1 .header-elements {
   display: flex;
@@ -4598,6 +4599,7 @@ span.tooltipp-2 {
 
 .vl-header-top {
   background: var(--ztc-bg-bg-2);
+  position: fixed;
 }
 .vl-header-top-content {
   display: flex;

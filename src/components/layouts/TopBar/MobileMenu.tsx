@@ -28,14 +28,10 @@ const MobileMenu = () => {
             }
         }
 
-        if (isOpen) {
-            document.addEventListener('click', handleClickOutside)
-        } else {
-            document.removeEventListener('click', handleClickOutside)
-        }
+        document.addEventListener('click', handleClickOutside)
 
         return () => document.removeEventListener('click', handleClickOutside)
-    }, [isOpen, toggle])
+    }, [])
 
     return (
         <>

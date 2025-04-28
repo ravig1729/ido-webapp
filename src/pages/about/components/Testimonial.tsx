@@ -27,7 +27,9 @@ const Testimonial = () => {
     };
 
     return (
-        <section className="vl-testimonial4 vl-testimonial-inner sp2">
+        <section className="vl-testimonial4 vl-testimonial-inner" style={{
+            padding: "50px 0 70px"
+        }}>
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6}>

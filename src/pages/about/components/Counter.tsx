@@ -14,7 +14,7 @@ const Counter = () => {
     ]
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
-        <section className="vl-counter5 counter-iner sp2">
+        <section className="vl-counter5 counter-iner sp2" style={{marginBottom: "50px"}}>
             <Container>
                 <Row>
                     <Col lg={6}>
