@@ -24,7 +24,7 @@ const TopBar = () => {
                                         <h1>
                                             <a href="/">
                                                 <img alt="logo1" 
-                                                src={siteLogo}></img>
+                                                src={siteLogo} style={{ height: "100px", width: "200px"}}></img>
                                             </a></h1>
                                     </div>
                                     <div className="main-menu">
