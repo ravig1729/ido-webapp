@@ -53,8 +53,3 @@ export default tseslint.config({
 })
 ```
 
-
-
-
-
-
