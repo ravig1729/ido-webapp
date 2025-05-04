@@ -1,50 +1,28 @@
-import {useState} from 'react'
-import {Link} from "react-router";
-import {FaMinus, FaPlus} from 'react-icons/fa6'
+import { useState } from 'react'
+import { Link } from "react-router";
+import { FaMinus, FaPlus } from 'react-icons/fa6'
 
 const menuItems = [
     {
-        title: 'Home', links: [
-            {path: '/home', label: 'Home One'},
-            {path: '/multi-page/animal-rescue', label: 'Home Two'},
-            {path: '/multi-page/water-aid', label: 'Home Three'},
-            {path: '/multi-page/senior-citizen', label: 'Home Four'},
-            {path: '/multi-page/human-rights', label: 'Home Five'},
-        ]
+        title: 'Home', path: "/"
     },
-    {title: 'About', path: '/about'},
+    { title: 'About Us', path: '/about' },
     {
-        title: 'Events', links: [
-            {path: '/event', label: 'Events'},
-            {path: '/event-left', label: 'Events Left'},
-            {path: '/event-right', label: 'Events Right'},
-            {path: '/event-single', label: 'Events Single'},
+        title: 'Our Work', links: [
+            { path: '/pages/health', label: 'Health' },
+            { path: '/pages/nutrition', label: 'Nutrition' },
+            { path: '/pages/education', label: 'Education' },
+            { path: '/pages/sustainable-health', label: 'Sustainable Health' },
         ]
     },
     {
-        title: 'Blogs', links: [
-            {path: '/blog', label: 'Blog'},
-            {path: '/blog-left', label: 'Blog Left'},
-            {path: '/blog-right', label: 'Blog Right'},
-            {path: '/blog-single', label: 'Blog Single'},
-        ]
+        title: 'Reports', path: '/reports'
     },
     {
-        title: 'Pages', links: [
-            {path: '/pages/service', label: 'Our Services'},
-            {path: '/pages/team', label: 'Our Volunteers'},
-            {path: '/pages/faq', label: 'FAQ'},
-            {path: '/pages/contact', label: 'Contact'},
-            {path: '/pages/error-404', label: '404'},
-        ]
+        title: 'Our Partners', path: '/partners'
     },
     {
-        title: 'Causes', links: [
-            {path: '/cause', label: 'Causes'},
-            {path: '/cause/cause-left', label: 'Cause Left'},
-            {path: '/cause/cause-right', label: 'Cause Right'},
-            {path: '/cause/cause-single', label: 'Cause Single'},
-        ]
+        title: 'Contact', path: '/contact'
     },
 ];
 
@@ -62,9 +40,9 @@ const MobileMenuItem = () => {
                     {item.links ? (
                         <>
                             <div className="d-flex align-items-center justify-content-between"
-                                 onClick={() => toggleMenu(index)}>
+                                onClick={() => toggleMenu(index)}>
                                 <a href="#">{item.title}</a>
-                                <span>{openIndex === index ? <FaMinus/> : <FaPlus/>}</span>
+                                <span>{openIndex === index ? <FaMinus /> : <FaPlus />}</span>
                             </div>
                             <ul className={`sub-menu ${openIndex === index ? 'open-sub sub-menu-active d-block' : ''}`}>
                                 {item.links.map((link, linkIndex) => (
