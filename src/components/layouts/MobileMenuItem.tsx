@@ -6,7 +6,12 @@ const menuItems = [
     {
         title: 'Home', path: "/"
     },
-    { title: 'About Us', path: '/about' },
+    {
+        title: 'About Us', path: '/about', links: [
+            { path: '/pages/team', label: 'Our Team' },
+            { path: '/partners', label: 'Our Partners' }
+        ]
+    },
     {
         title: 'Our Work', links: [
             { path: '/pages/health', label: 'Health' },
@@ -17,9 +22,6 @@ const menuItems = [
     },
     {
         title: 'Reports', path: '/reports'
-    },
-    {
-        title: 'Our Partners', path: '/partners'
     },
     {
         title: 'Contact', path: '/contact'

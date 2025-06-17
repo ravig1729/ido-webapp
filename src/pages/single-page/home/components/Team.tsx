@@ -16,7 +16,7 @@ const Team = () => {
                 <div className="vl-team-section-title mb-60 text-center">
                     <div className="vl-section-title-1">
                         <h5 className="subtitle" data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>Meet
-                            our Volunteer</h5>
+                            our Team</h5>
                         <h2 className="title text-anime-style-3">We Have a Volunteer Team</h2>
                         <p data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>Provide tips, articles, or
                             expert advice on maintaining a healthy work- <br/>life balance, managing, Workshops or
