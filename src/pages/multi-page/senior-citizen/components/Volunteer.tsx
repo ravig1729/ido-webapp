@@ -13,7 +13,7 @@ const Volunteer = () => {
                     <Col lg={7} className="mx-auto">
                         <div className="vl-section-title4 text-center mb-60">
                             <h5 className="subtitle" data-aos="fade-up" data-aos-duration={800}
-                                data-aos-delay={300}>Meet Our Volunteer</h5>
+                                data-aos-delay={300}>Meet Our Team</h5>
                             <h2 className="title text-anime-style-2">We Have a Volunteer Team</h2>
                             <p className="para" data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>Provide
                                 tips, articles, or expert advice on maintaining a healthy work- <br/> life balance,

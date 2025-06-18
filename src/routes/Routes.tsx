@@ -3,7 +3,7 @@ import { lazy } from "react";
 const Home = lazy(() => import('@/pages/multi-page/home'))
 const About = lazy(() => import('@/pages/about'))
 
-const Reports = lazy(() => import('@/pages/reports'))
+const Reports = lazy(() => import('@/pages/reports-left'))
 const Partners = lazy(() => import('@/pages/partners'))
 const Contact = lazy(() => import('@/pages/contact'))
 const Donation = lazy(() => import('@/pages/donation'))

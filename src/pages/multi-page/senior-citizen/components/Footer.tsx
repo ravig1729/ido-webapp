@@ -7,11 +7,11 @@ import brandLogo2 from '@/assets/img/brand/brand-logo-4.2.png'
 import brandLogo3 from '@/assets/img/brand/brand-logo-4.3.png'
 import brandLogo4 from '@/assets/img/brand/brand-logo-4.4.png'
 import brandLogo5 from '@/assets/img/brand/brand-logo-4.5.png'
-import {FaFacebookF, FaGithub, FaInstagram, FaTwitter} from 'react-icons/fa6'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Autoplay} from 'swiper/modules'
-import {Col, Container, Row} from 'react-bootstrap'
-import {Link} from "react-router";
+import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa6'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from "react-router";
 
 const Footer = () => {
     return (
@@ -28,29 +28,29 @@ const Footer = () => {
                             slidesPerView={5}
                             loop
                             breakpoints={{
-                                320: {slidesPerView: 2, spaceBetween: 10}, // For small screens
-                                768: {slidesPerView: 4, spaceBetween: 20}, // For tablets
-                                1024: {slidesPerView: 5, spaceBetween: 30}, // For desktops
+                                320: { slidesPerView: 2, spaceBetween: 10 }, // For small screens
+                                768: { slidesPerView: 4, spaceBetween: 20 }, // For tablets
+                                1024: { slidesPerView: 5, spaceBetween: 30 }, // For desktops
                             }}
                             spaceBetween={30}
                         >
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo1} alt='brandLogo1'/>
+                                <img src={brandLogo1} alt='brandLogo1' />
                             </SwiperSlide>
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo2} alt='brandLogo2'/>
+                                <img src={brandLogo2} alt='brandLogo2' />
                             </SwiperSlide>
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo3} alt='brandLogo3'/>
+                                <img src={brandLogo3} alt='brandLogo3' />
                             </SwiperSlide>
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo4} alt='brandLogo4'/>
+                                <img src={brandLogo4} alt='brandLogo4' />
                             </SwiperSlide>
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo5} alt='brandLogo5'/>
+                                <img src={brandLogo5} alt='brandLogo5' />
                             </SwiperSlide>
                             <SwiperSlide className="single-brand-logo">
-                                <img src={brandLogo1} alt='brandLogo1'/>
+                                <img src={brandLogo1} alt='brandLogo1' />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                     <Col lg={3} md={6}>
                         <div className="vl-footer-widget-1 mb-30">
                             <div className="vl-footer-logo">
-                                <Link to="/multi-page/senior-citizen"><img src={logo4} alt='logo4'/></Link>
+                                <Link to="/multi-page/senior-citizen"><img src={logo4} alt='logo4' /></Link>
                             </div>
                             <div className="vl-footer-content">
                                 <p className="para">Now the time act because every second counts, and contribution
@@ -69,10 +69,10 @@ const Footer = () => {
                             </div>
                             <div className="vl-footer-social-1">
                                 <ul>
-                                    <li><Link to="#"><FaFacebookF className="fa-brands fa-facebook-f"/></Link></li>
-                                    <li><Link to="#"><FaInstagram className="fa-brands fa-instagram"/></Link></li>
-                                    <li><Link to="#"><FaTwitter className="fa-brands fa-twitter"/></Link></li>
-                                    <li><Link to="#"><FaGithub className="fa-brands fa-github"/></Link></li>
+                                    <li><Link to="#"><FaFacebookF className="fa-brands fa-facebook-f" /></Link></li>
+                                    <li><Link to="#"><FaInstagram className="fa-brands fa-instagram" /></Link></li>
+                                    <li><Link to="#"><FaTwitter className="fa-brands fa-twitter" /></Link></li>
+                                    <li><Link to="#"><FaGithub className="fa-brands fa-github" /></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,24 +110,24 @@ const Footer = () => {
                             <h3 className="title">Contact Us</h3>
                             <div className="vl-footer-icon-list">
                                 <div className="vl-footer-icon">
-                                    <span><img src={footerIcon1} alt='footerIcon1'/></span>
+                                    <span><img src={footerIcon1} alt='footerIcon1' /></span>
                                 </div>
                                 <div className="vl-footer-text">
-                                    <Link to="mailto:support@charity.com">support@charity.com</Link>
+                                    <Link to="mailto:idoservice2@gmail.com">idoservice2@gmail.com</Link>
                                 </div>
                             </div>
                             <div className="vl-footer-icon-list">
                                 <div className="vl-footer-icon">
-                                    <span><img src={footerIcon2} alt='footerIcon2'/></span>
+                                    <span><img src={footerIcon2} alt='footerIcon2' /></span>
                                 </div>
                                 <div className="vl-footer-text">
-                                    <Link to="#">8708 Technology Forest <br/> Pl Suite 125 -G, The Woodlands, TX
+                                    <Link to="#">8708 Technology Forest <br /> Pl Suite 125 -G, The Woodlands, TX
                                         773</Link>
                                 </div>
                             </div>
                             <div className="vl-footer-icon-list">
                                 <div className="vl-footer-icon">
-                                    <span><img src={footerIcons} alt='footerIcons'/></span>
+                                    <span><img src={footerIcons} alt='footerIcons' /></span>
                                 </div>
                                 <div className="vl-footer-text">
                                     <Link to="tel:1234567890">123-456-7890</Link>

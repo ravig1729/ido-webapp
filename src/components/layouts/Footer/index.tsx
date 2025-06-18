@@ -34,7 +34,7 @@ const Footer = () => {
                 <ul>
                   <li><Link to="/">Home Page</Link></li>
                   <li><Link to="/about">About Us</Link></li>
-                  <li><Link to="/reports">Reports</Link></li>
+                  <li><Link to="/pages/team">Our Team</Link></li>
                   <li><Link to="/partners">Our Partners</Link></li>
                   <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
                   <span><img src={footerIc1} alt='footerIc1' /></span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="mailto:support@charity.com">support@charity.com</a>
+                  <a href="mailto:idoservice2@gmail.com">idoservice2@gmail.com</a>
                 </div>
               </div>
               <div className="vl-footer-icon-list">

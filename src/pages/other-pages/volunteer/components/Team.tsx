@@ -7,7 +7,7 @@ const Team = () => {
         <section className="vl-team-inner sp2">
             <Container>
             <div className="vl-section-content">
-                <h2 className="title pb-20">Our Volunteers</h2>
+                <h2 className="title pb-20">Our Team</h2>
               </div>
                 <Row>
                     {

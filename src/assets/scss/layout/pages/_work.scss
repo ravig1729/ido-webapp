@@ -1,47 +1,58 @@
-@use '../../utils/' as * ;
+@use '../../utils/' as *;
+
 /*============= WORK CSS AREA ===============*/
-.vl-work5{
+.vl-work5 {
     background: var(--ztc-text-text-3);
-    & .vl-work-content{
-        & .vl-section-title5{
-            & .subtitle{
+
+    & .vl-work-content {
+        & .vl-section-title5 {
+            & .subtitle {
                 color: var(--ztc-text-text-1);
                 background: rgba(255, 255, 255, 0.10);
             }
-            & .title{
+
+            & .title {
                 color: var(--ztc-text-text-1);
             }
-            & .para{
-                color: rgba(255,255,255,.8);
+
+            & .para {
+                color: rgba(255, 255, 255, .8);
             }
         }
-        & .vl-work-thumb{
-            margin-top:48px;
-            & img{
+
+        & .vl-work-thumb {
+            margin-top: 48px;
+
+            & img {
                 border-radius: 8px;
                 height: 350px;
                 object-fit: cover;
             }
         }
     }
-    & .vl-single-work-box{
+
+    & .vl-single-work-box {
         border-radius: 8px;
         border: 1px solid rgba(255, 255, 255, 0.10);
         background: rgba(255, 255, 255, 0.10);
         padding: 27px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         transition: .3s;
-        &.active{
-            background:var(--ztc-text-text-6);
+
+        &.active {
+            background: var(--ztc-text-text-6);
             transition: .3s;
         }
-        & .work-box-flx{
+
+        & .work-box-flx {
             display: flex;
-            @media #{$xs}{
-                display:block;
+
+            @media #{$xs} {
+                display: block;
             }
-            & .num{
-                & span{
+
+            & .num {
+                & span {
                     color: rgba(255, 255, 255, 0.10);
                     font-size: var(--ztc-font-size-font-s60);
                     line-height: var(--ztc-specing-height60);
@@ -49,14 +60,16 @@
                     font-weight: var(--ztc-weight-bold);
                     margin-right: 22px;
                     transition: .3s;
-                    @media #{$xs}{
-                        display:block;
+
+                    @media #{$xs} {
+                        display: block;
                         margin-bottom: 20px;
                     }
                 }
             }
-            & .content{
-                & .title{
+
+            & .content {
+                & .title {
                     color: var(--ztc-text-text-1);
                     font-size: var(--ztc-font-size-font-s20);
                     line-height: var(--ztc-specing-height20);
@@ -64,11 +77,13 @@
                     font-weight: var(--ztc-weight-bold);
                     transition: 0.3s;
                     padding-bottom: 16px;
-                    @media #{$xs}{
+
+                    @media #{$xs} {
                         line-height: var(--ztc-specing-height30);
                     }
                 }
-                & .para{
+
+                & .para {
                     color: rgba(255, 255, 255, 0.80);
                     font-size: var(--ztc-font-size-font-s18);
                     line-height: var(--ztc-specing-height28);
@@ -79,11 +94,13 @@
             }
         }
     }
-    & .ttsingle-box{
+
+    & .ttsingle-box {
         background: red;
         padding: 28px;
         text-align: center;
-        &.active{
+
+        &.active {
             background: green;
         }
     }
@@ -91,18 +108,22 @@
 
 /* Reduce space between subtitle and section items */
 .para.pb-16 {
-    margin-bottom: 8px;  /* Less space between subtitle and section */
+    margin-bottom: 8px;
+    /* Less space between subtitle and section */
 }
 
 /* Ensure consistent space between sections */
 .icon-list-box {
-    padding-top: 10px; /* Slight space before section points */
-    padding-bottom: 10px; /* Slight space after section points */
+    padding-top: 10px;
+    /* Slight space before section points */
+    padding-bottom: 10px;
+    /* Slight space after section points */
 }
 
 /* Optional: Adjust icon spacing if needed */
 .icon-list-item {
-    margin-bottom: 8px; /* Adjust space between list items */
+    margin-bottom: 8px;
+    /* Adjust space between list items */
 }
 
 
@@ -122,16 +143,19 @@
 
     .work-hero-subtitle {
         font-size: 1.2rem;
-        color: #ffc107;
+        color: #C1272D;
         padding-bottom: 10px;
     }
 }
 
 .work-tabs {
     margin-top: 30px;
-    margin-bottom: 100px;;
+    margin-bottom: 100px;
+    ;
+
     .nav-tabs {
-        justify-content: flex-start; /* Align tabs to the left */
+        justify-content: flex-start;
+        /* Align tabs to the left */
         border-bottom: 2px solid #ddd;
 
         .nav-link {
@@ -142,7 +166,7 @@
 
             &.active {
                 color: #fff;
-                background-color: #ffc107;
+                background-color: #C1272D;
                 border-radius: 5px;
             }
         }
@@ -154,4 +178,3 @@
         color: #555;
     }
 }
-

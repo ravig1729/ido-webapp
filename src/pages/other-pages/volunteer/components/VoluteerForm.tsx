@@ -4,7 +4,7 @@ const VolunteerForm = () => {
             <div className="vl-section-content">
               <div className="section-title">
                 <h2 className="title">Join Us as a Volunteer</h2>
-                <p className="para pb-32">Fill out the form below to become a part of our volunteer community.</p>
+                <p className="para pb-32">Fill out the form below to become a part of our team community.</p>
               </div>
             </div>
             <iframe
