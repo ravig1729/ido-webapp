@@ -17,11 +17,11 @@ const Hero = () => {
                 <Row>
                     <Col lg={12}>
                         <div className="vl-breadcrumb-title">
-                            <h2 className="heading">Contact Us</h2>
+                            <h2 className="heading">Donate</h2>
                             <div className="vl-breadcrumb-list">
                                 <span><Link to="/">Home</Link></span>
                                 <span className="dvir"><FaAngleRight className="fa-solid fa-angle-right"/></span>
-                                <span><a className="active" href="#">Contact Us</a></span>
+                                <span><a className="active" href="#">Donate</a></span>
                             </div>
                         </div>
                     </Col>

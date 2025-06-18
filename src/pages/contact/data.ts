@@ -23,8 +23,8 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Mail Information",
         description: "Drop Line",
         contacts: [
-            "info@charity.com",
-            "Infocharity@gmail.com"
+            "idoservice2@gmail.com",
+            "idoservice@gmail.com"
         ]
     },
     {
