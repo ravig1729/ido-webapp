@@ -173,13 +173,18 @@ export const workSection = {
         'education_overview': {
             image: missionThumbImg,
             title: '',
-            subtitle1: 'Challenge',
+            subtitle1: 'Helping Tribal Children access Education through Bridge Schools',
             section1: [
-                'In the interior habitations there are no anganwadi centres or schools which made education inaccessible to the tribal habitation children.'
+                'The remote and difficult terrain of the Gutti Koya tribe’s living areas, with rough roads and overflowing streams, makes it nearly impossible for children to attend government schools, even on foot.',
+                'The financial burden on parents, who rely on daily wages from agriculture, further complicates the situation, as escorting children to school means losing a day’s income, leading to higher child labor.',
+                'As a result, the literacy rate among tribal children is very low. Additionally, the lack of early childhood education hinders their development, especially since 85% of brain growth occurs in the first six years. Mainstream schools often face high dropout rates due to lack of initial support and engagement.'
             ],
-            subtitle2: 'Intervention',
+            subtitle2: 'Why Bridge Schools for the Tribal Community?',
             section2: [
-                'To fill this gap we have initiated BRIDGE SCHOOLS within the habitations itself, where they get access to basic education, mid-day meal & nutrition (Nutrition powder). After identifying potential students we motivate them to join into mainstream schools.'
+                'Bridge schools in the remote tribal areas of Bhadradri and Kothagudem in Telangana serve as temporary, makeshift study centers for children. They help bridge the educational gap by offering basic education, enabling children to eventually transition to mainstream schools. Built with limited resources, they play a vital role in providing essential education to children.',
+                'Local community volunteers, often school dropouts, are recruited from within the habitations and trained to teach the children in their native languages. This approach minimizes language barriers, reduces the fear of schooling, and fosters a positive attitude toward education encouraging regular attendance.',
+                'The volunteers also prepare mid-day meals for the children. Their service is aimed at benefiting their community and ensuring children receive essential nourishment while gaining basic education.',
+                'In cases of irregular attendance or high child labor, team members from IDO visit the habitation, motivating parents to recognize the importance of education for their children’s future.'
             ]
         }
     },
@@ -187,25 +192,36 @@ export const workSection = {
         'nutrition_overview': {
             image: missionThumbImg,
             title: '',
-            subtitle1: 'Challenge',
+            subtitle1: 'Nutrition Intervention for Tribal Women and Children',
             section1: [
-                'There is no anganwadi centre in interior tribal habitation.',
-                'We have observed majority of adolescents, pregnant women & under-5 age children had malnutrition, anaemia due to lack of balanced diet & no food security card which also contributes for low birth weight newborn & pre-term deliveries.',
-                'Tribal report 2018 says, 65% of tribal women in the 15-49 years age group suffer from anemia.',
-                'The prevalence of underweight is almost one and a half times in tribal children than in the others',
-                'Only about 25% pregnant and lactating women and 29-32% children had adequate intakes of both protein and calories.',
-                'Hence there was a need to provide them a supply of adequate protein, fats, carbohydrates & iron.'
+                'In Bhadradri Kothagudem, approximately 65% of tribal women aged 15-49 suffer from anemia due to inadequate nutrition, leading to complications such as low birth weight and pre-term deliveries as per a study. The lack of access to anganwadi centers exacerbates the situation, highlighting the urgent need for nutritional support for women and children.'
             ],
-            subtitle2: 'Intervention',
+            subtitle2: 'Nutrition Powder Mix Initiative',
             section2: [
-                'To fill the gap we have trained one male & one female person from their own community in each habitation to provide basic healthcare. They are called community health workers (CHWs).',
-                'CHWs are trained for providing basic mother & child healthcare',
-                'Now doorstep Antenatal care of pregnant women include hemoglobin test, pregnancy confirmation test, urine for protein , HIV, HBsAg, VDRL, and GRBS are done. Vitals are also monitored. Much needed Iron-folic acid & calcium supplements are provided.',
-                'Intrapartum care: Conducting safe deliveries.',
-                'Postnatal care & HBNC (Home Based Newborn Care): CHW examines the newborn for cry, temperature, conjunctivitis, respiratory rate, baby weight, and umbilical cord care. Also checks for any signs of sepsis like vomiting, chest in-drawing, cough & diarrhoea.',
-                'CHW ensures warmth by providing warm-bags for the baby, assists in breast-feeding, and counsels about the nutrition & guides about the immunization schedule. Creates health & nutrition awareness within the habitations.',
-                'These CHWs are effective means to improve awareness & also remove the language barrier/misbelief and are locally available.',
-                'We have identified & trained 43 CHWs from 31 habitations.'
+                'To address this, the IDO developed a Nutrition Powder Mix composed of:',
+                ' Bengal gram',
+                ' Wheat',
+                ' Jowar',
+                ' Ground nuts',
+                ' Jaggery powder',
+                'This mix is designed to provide essential proteins, fats, carbohydrates, and iron, targeting under-5 children, pregnant women, and lactating mothers in 31 habitations.'
+            ],
+            subtitle3: 'Implementation',
+            section3: [
+                ' Daily Distribution: Each beneficiary receives 60 grams of the Nutrition Powder as Ready-to-Use Food (RTUF) daily.',
+                ' Spot Feeding: Community Health Workers (CHWs) conduct daily spot feeding to encourage consistent consumption within the habitations.',
+                ' Production Unit: A production unit has been established in Regalla village, where two local tribal community members have been trained to prepare the powder, providing them with sustainable livelihoods.'
+            ],
+            subtitle4: 'Impact',
+            section4: [
+                'The initiative aims to provide 70 grams of nutrition powder daily to over 1800 beneficiaries in 40+ interior habitations, resulting in significant health improvements:',
+                ' Reduction of Anemia: 39.5%',
+                ' Reduction of Wasting: 38%',
+                ' Reduction of Underweight: 24%',
+            ],
+            subtitle5: 'Conclusion',
+            section5: [
+                'This program not only addresses the immediate nutritional needs of women and children but also empowers local community members by providing them with skills and livelihood opportunities. The sustainability of the nutrition unit ensures continued support for the community&#39;s health and well-being.'
             ]
         }
     },
