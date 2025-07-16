@@ -61,7 +61,7 @@ const MobileMenu = () => {
                 <div className="mobile-nav mobile-nav1">
                     <MobileMenuItem/>
                     <div className="allmobilesection">
-                        <Link to="/pages/contact" className="header-mobile-btn1">Get
+                        <Link to="/contact" className="header-mobile-btn1">Get
                             Started <span><FaArrowRight/></span></Link>
                         <div className="vl-mobile-contact1">
                             <h3 className="title">Contact Info</h3>
