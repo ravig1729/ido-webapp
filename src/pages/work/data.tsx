@@ -1,5 +1,12 @@
 import eventBg from '@/assets/img/breadcrumb/vl-event-bg.png';
-import missionThumbImg from '@/assets/img/about/vl-about-mission-thumb.png';
+import missionThumbImg1 from '@/assets/img/work/health_1.jpg';
+import missionThumbImg2 from '@/assets/img/work/health_comm.jpg';
+import missionThumbImg3 from '@/assets/img/work/health_mmu.jpeg';
+import missionThumbImg4 from '@/assets/img/work/health_mc.jpeg';
+import missionThumbImg5 from '@/assets/img/work/health_sph.jpeg';
+import missionThumbImg6 from '@/assets/img/work/edu_1.jpg';
+import missionThumbImg7 from '@/assets/img/work/nutrition.jpg';
+import missionThumbImg8 from '@/assets/img/work/sus_heal.jpg';
 import WorkSection from './components/WorkSection'
 
 export const tabsContent = {
@@ -73,7 +80,7 @@ export const heroContent = {
 export const workSection = {
     health: {
         'health_regalla': {
-            image: missionThumbImg,
+            image: missionThumbImg1,
             title: '',
             subtitle: '',
             section: [
@@ -84,7 +91,7 @@ export const workSection = {
             ]
         },
         'health_community': {
-            image: missionThumbImg,
+            image: missionThumbImg2,
             title: '',
             subtitle1: 'Community Health Workers: The Health Warriors of Tribals',
             section1: [
@@ -114,7 +121,7 @@ export const workSection = {
             ]
         },
         'health_mmu': {
-            image: missionThumbImg,
+            image: missionThumbImg3,
             title: '',
             subtitle1: 'Mobile Medical Units (MMUs):',
             section1: [
@@ -139,7 +146,7 @@ export const workSection = {
             ],
         },
         'health_mandchealth': {
-            image: missionThumbImg,
+            image: missionThumbImg4,
             title: '',
             subtitle1: 'Maternal and Child Health (MCH) Kit is a tool kit comprising of 27 items designed to:',
             section1: [
@@ -161,7 +168,7 @@ export const workSection = {
             ]
         },
         'health_sphpar': {
-            image: missionThumbImg,
+            image: missionThumbImg5,
             title: '',
             subtitle: '',
             section: [
@@ -171,7 +178,7 @@ export const workSection = {
     },
     education: {
         'education_overview': {
-            image: missionThumbImg,
+            image: missionThumbImg6,
             title: '',
             subtitle1: 'Helping Tribal Children access Education through Bridge Schools',
             section1: [
@@ -190,7 +197,7 @@ export const workSection = {
     },
     nutrition: {
         'nutrition_overview': {
-            image: missionThumbImg,
+            image: missionThumbImg7,
             title: '',
             subtitle1: 'Nutrition Intervention for Tribal Women and Children',
             section1: [
@@ -227,7 +234,7 @@ export const workSection = {
     },
     sustainableHealth: {
         'sustainableHealth_overview': {
-            image: missionThumbImg,
+            image: missionThumbImg8,
             title: '',
             subtitle: 'People often think of Charity As an Action. But We think of Charity as a State Of The Heart',
             section: [

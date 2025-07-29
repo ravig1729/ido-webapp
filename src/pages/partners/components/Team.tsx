@@ -31,7 +31,6 @@ const Team = () => {
                                             </div>
                                             <div className="text">
                                                 <a href="#" className="title">{item.name}</a>
-                                                <h5 className="deseg">{item.designation}</h5>
                                             </div>
                                         </div>
                                     </div>

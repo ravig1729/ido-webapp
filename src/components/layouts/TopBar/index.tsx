@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router";
 import TopMenu from '../TopMenu';
 import MobileMenu from './MobileMenu';
-import siteLogo from '@/assets/img/logo/ido-charity-logo-final.svg';
+import siteLogo from '@/assets/img/logo/ido-charity-logo-final.png';
 
 
 const TopBar = () => {
