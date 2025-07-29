@@ -1,6 +1,7 @@
 import aboutThum1 from '@/assets/img/about/vl-about-thum-inner-sm-1.1.png'
 import aboutThum2 from '@/assets/img/about/vl-about-thum-inner-sm-1.2.png'
-import aboutThum3 from '@/assets/img/about/vl-about-thum-inner-large-1.3.png'
+import aboutThum3 from '@/assets/img/about/vl-about-1.2.png'
+import aboutThum4 from '@/assets/img/about/vl-about-thum-inner-large-1.3.png'
 import { FaCheck } from "react-icons/fa6";
 import { Col, Container, Row } from 'react-bootstrap'
 
@@ -15,7 +16,7 @@ const AboutUs = () => {
                                 <h5 className="subtitle">About Us</h5>
                                 <br></br>
                                 <p>I-DO is the Brainchild of Dr R Narendar who always had the passion to serve the needy &amp;
-                                    the neglected population.</p>
+                                    the neglected population.</p>
                                 <br></br>
                                 <p>I-DO has been actively working with tribal communities in the remote habitations and rural
                                     villages of Bhadradri, Kothagudem district, Telangana, since 2017, with the core motto of
@@ -34,7 +35,7 @@ const AboutUs = () => {
                                 </Col>
                                 <Col lg={12} md={6}>
                                     <div className="vl-sm-thumb2 mb-30">
-                                        <img className="w-100" src={aboutThum2} alt='aboutThum2' />
+                                        <img className="w-100" src={aboutThum3} alt='aboutThum3' />
                                     </div>
                                 </Col>
                             </Row>
@@ -43,11 +44,11 @@ const AboutUs = () => {
                     <Col lg={6}>
                         <div className="vl-about-content2 ml-20">
                             <div className="large-thumb mb-30">
-                                <img className="w-100" src={aboutThum3} alt='aboutThum3' />
+                                <img className="w-100" src={aboutThum4} alt='aboutThum4' />
                             </div>
                             <div className="content mb-30">
                                 <p>At I-DO, we work with an objective of providing universal, affordable &amp; comprehensive
-                                    Primary Health Care (PHC) to the most underserved and marginalized population in remote
+                                    Primary Health Care (PHC) to the most underserved and marginalized population in remote
                                     tribal/ hilly and /or insurgency areas.</p>
                                 <div className="icon-list-box box2">
                                     <ul>

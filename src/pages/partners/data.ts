@@ -1,63 +1,103 @@
-import team1 from '@/assets/img/team/vl-team-inner-1.1.png'
-import team2 from '@/assets/img/team/vl-team-inner-1.2.png'
-import team3 from '@/assets/img/team/vl-team-inner-1.3.png'
-import team4 from '@/assets/img/team/vl-team-inner-1.4.png'
-import team5 from '@/assets/img/team/vl-team-inner-1.5.png'
-import team6 from '@/assets/img/team/vl-team-inner-1.6.png'
-import team7 from '@/assets/img/team/vl-team-inner-1.7.png'
-import team8 from '@/assets/img/team/vl-team-inner-1.8.png'
-import team9 from '@/assets/img/team/vl-team-inner-1.9.png'
+import team1 from '@/assets/img/Partners/Association-for-India’s-Development-(AID---USA).png'
+import team2 from '@/assets/img/Partners/Bring_A_Smile.png'
+import team3 from '@/assets/img/Partners/F6_Architects.png'
+import team4 from '@/assets/img/Partners/IMA.png'
+import team5 from '@/assets/img/Partners/Issar-Pharmaceuticals-Pvt-Ltd.png'
+import team6 from '@/assets/img/Partners/Karuna-Trust.png'
+import team7 from '@/assets/img/Partners/Netcracker-Technology-Solutions-Pvt-Ltd.png'
+import team8 from '@/assets/img/Partners/Nisvartha.png'
+import team10 from '@/assets/img/Partners/Pragathi.png'
+import team11 from '@/assets/img/Partners/Qvantel.png'
+import team12 from '@/assets/img/Partners/Robinhood_Army.png'
+import team13 from '@/assets/img/Partners/Rural-Hope-Foundation(USA).png'
+import team14 from '@/assets/img/Partners/Samaritan_ForTheNation.png'
+import team15 from '@/assets/img/Partners/Save-the-child-foundation.png'
+import team16 from '@/assets/img/Partners/Tata-Trusts.png'
+import team17 from '@/assets/img/Partners/TechieRide.png'
+import team18 from '@/assets/img/Partners/TNR_Trust.png'
+import team19 from '@/assets/img/Partners/UnitedCareDevelopmentService.png'
+import team20 from '@/assets/img/Partners/VCF.png'
 
 type TeamMember = {
     name: string;
-    designation: string;
     image: string;
 };
 
 export const teamData: TeamMember[] = [
     {
-        name: "Anita Gusikowski",
-        designation: "General Manager",
+        name: "Association for India’s Development(AID - USA)",
         image: team1,
     },
     {
-        name: "Anita Gusikowski",
-        designation: "General Manager",
+        name: "Bring A Smile",
         image: team2,
     },
     {
-        name: "Larry Bartoletti",
-        designation: "Manager Head",
+        name: "F6 Architects",
         image: team3,
     },
     {
-        name: "Raymond Koelpin",
-        designation: "Senior Manager",
+        name: "IMA",
         image: team4,
     },
     {
-        name: "Alfred Thiel V",
-        designation: "Senior Manager",
+        name: "Issar Pharmaceuticals Pvt Ltd",
         image: team5,
     },
     {
-        name: "Edith Torphy",
-        designation: "Senior Manager",
+        name: "Karuna Trust",
         image: team6,
     },
     {
-        name: "Alison Kohler",
-        designation: "Senior Manager",
+        name: "Netcracker Technology Solutions Pvt Ltd",
         image: team7,
     },
     {
-        name: "Jerald Douglas IV",
-        designation: "Senior Manager",
+        name: "Nisvartha",
         image: team8,
     },
     {
-        name: "Edwin Baumbach II",
-        designation: "Senior Manager",
-        image: team9,
+        name: "Pragathi",
+        image: team10,
     },
+    {
+        name: "Qvantel",
+        image: team11,
+    },
+    {
+        name: "Robinhood Army",
+        image: team12,
+    },
+    {
+        name: "Rural Hope Foundation(USA)",
+        image: team13,
+    },
+    {
+        name: "Samaritan For The Nation",
+        image: team14,
+    },
+    {
+        name: "Save The Child Foundation",
+        image: team15,
+    },
+    {
+        name: "Tata Trusts",
+        image: team16,
+    },
+    {
+        name: "TechieRide",
+        image: team17,
+    },
+    {
+        name: "TNR Trust",
+        image: team18,
+    },
+    {
+        name: "United Care Development Service",
+        image: team19,
+    },
+    {
+        name: "Vijayavahini Charitable Trust",
+        image: team20,
+    }
 ];
