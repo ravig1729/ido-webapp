@@ -80,7 +80,7 @@ const Hero = () => {
     const settings = {
         draggable: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -96,7 +96,7 @@ const Hero = () => {
     return (
         <div className="vl-banner p-relative fix">
             <Slider ref={sliderRef} {...settings} className="slider-active-1">
-                <div className="vl-hero-slider vl-hero-bg slick-slide slick-current slick-active">
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-1 slick-slide slick-current slick-active">
                     <HeroShapes />
                     {/* <HeroSocial /> */}
                     <Container>
@@ -109,7 +109,7 @@ const Hero = () => {
                     </Container>
                 </div>
 
-                <div className="vl-hero-slider vl-hero-bg slick-slide slick-current slick-active">
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-2 slick-slide slick-current slick-active">
                     <HeroShapes />
                     {/* <HeroSocial /> */}
                     <Container>
