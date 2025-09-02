@@ -28,11 +28,11 @@ const TopBanner = () => {
           <div className="d-flex align-items-center">
             <div className="d-flex align-items-center me-4">
               <img src={topImg1} alt="topImg1" className="me-2" />
-              <a href="mailto:idoservice2@gmail.com" className="text-dark">idoservice2@gmail.com</a>
+              <a href="mailto:indigenousdevelopment20192gmail.com" className="text-dark">indigenousdevelopment20192gmail.com</a>
             </div>
             <div className="d-flex align-items-center">
               <img src={topImg2} alt="topImg2" className="me-2"/>
-              <a href="tel:5551234567" className="text-dark">(555) 123-4567</a>
+              <a href="tel:9848956344" className="text-dark">9848956344</a>
             </div>
           </div>
         </div>

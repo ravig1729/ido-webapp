@@ -121,6 +121,58 @@ const Hero = () => {
                         </Row>
                     </Container>
                 </div>
+
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-3 slick-slide slick-current slick-active">
+                    <HeroShapes />
+                    {/* <HeroSocial /> */}
+                    <Container>
+                        <Row>
+                            <Col lg={7}>
+                                <HeroSectionTitle />
+                            </Col>
+                            <Col lg={5} />
+                        </Row>
+                    </Container>
+                </div>
+
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-4 slick-slide slick-current slick-active">
+                    <HeroShapes />
+                    {/* <HeroSocial /> */}
+                    <Container>
+                        <Row>
+                            <Col lg={7}>
+                                <HeroSectionTitle />
+                            </Col>
+                            <Col lg={5} />
+                        </Row>
+                    </Container>
+                </div>
+
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-5 slick-slide slick-current slick-active">
+                    <HeroShapes />
+                    {/* <HeroSocial /> */}
+                    <Container>
+                        <Row>
+                            <Col lg={7}>
+                                <HeroSectionTitle />
+                            </Col>
+                            <Col lg={5} />
+                        </Row>
+                    </Container>
+                </div>
+
+                <div className="vl-hero-slider vl-hero-bg vl-hero-bg-6 slick-slide slick-current slick-active">
+                    <HeroShapes />
+                    {/* <HeroSocial /> */}
+                    <Container>
+                        <Row>
+                            <Col lg={7}>
+                                <HeroSectionTitle />
+                            </Col>
+                            <Col lg={5} />
+                        </Row>
+                    </Container>
+                </div>
             </Slider>
 
             <div className="vl-arrow">

@@ -1,4 +1,4 @@
-import ctaImg1 from '@/assets/img/cta/vl-cta-1.1.png'
+import ctaImg1 from '@/assets/img/banner/banner4.jpg'
 import arrowImg from '@/assets/img/shape/vl-arow-shap-1.1.png'
 import shapeImg1 from '@/assets/img/shape/vl-cta-1.1.png'
 import shapeImg2 from '@/assets/img/shape/vl-cta-1.2.png'
