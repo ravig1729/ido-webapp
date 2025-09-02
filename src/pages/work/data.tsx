@@ -1,4 +1,4 @@
-import eventBg from '@/assets/img/breadcrumb/vl-event-bg.png';
+import eventBg from '@/assets/img/banner/banner2.jpg';
 import missionThumbImg1 from '@/assets/img/work/health_1.jpg';
 import missionThumbImg2 from '@/assets/img/work/health_comm.jpg';
 import missionThumbImg3 from '@/assets/img/work/health_mmu.jpeg';

@@ -1,4 +1,4 @@
-import volunteersImg from '@/assets/img/breadcrumb/vl-volunteers-bg.png'
+import volunteersImg from '@/assets/img/banner/vl-banner-3.png'
 import shapeImg1 from '@/assets/img/breadcrumb/breadcrumb-shape-1.1.png'
 import shapeImg2 from '@/assets/img/breadcrumb/breadcrumb-shape-1.2.png'
 import shapeImg3 from '@/assets/img/breadcrumb/breadcrumb-shape-1.3.png'

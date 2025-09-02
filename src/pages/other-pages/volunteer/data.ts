@@ -1,12 +1,11 @@
-import team1 from '@/assets/img/team/vl-team-inner-1.1.png'
-import team2 from '@/assets/img/team/vl-team-inner-1.2.png'
-import team3 from '@/assets/img/team/vl-team-inner-1.3.png'
-import team4 from '@/assets/img/team/vl-team-inner-1.4.png'
-import team5 from '@/assets/img/team/vl-team-inner-1.5.png'
-import team6 from '@/assets/img/team/vl-team-inner-1.6.png'
-import team7 from '@/assets/img/team/vl-team-inner-1.7.png'
-import team8 from '@/assets/img/team/vl-team-inner-1.8.png'
-import team9 from '@/assets/img/team/vl-team-inner-1.9.png'
+import team1 from '@/assets/img/team/Dr R Narender, Secretary & Founder.jpeg'
+import team2 from '@/assets/img/team/K Mallikarjuna Rao, Joint Secretary.jpeg'
+import team3 from '@/assets/img/team/Dr N Ravinder Rao, President.jpeg'
+import team4 from '@/assets/img/team/B V Radhakrishna, Executive Member.jpeg'
+import team5 from '@/assets/img/team/Dr Archana K.jpeg'
+import team6 from '@/assets/img/team/Dr Kapil Sharma.jpeg'
+import team7 from '@/assets/img/team/Dr Swathi.jpeg'
+import team8 from '@/assets/img/team/Vijender Mogili, Social Entrepreneur.jpeg'
 
 type TeamMember = {
     name: string;
@@ -16,48 +15,43 @@ type TeamMember = {
 
 export const teamData: TeamMember[] = [
     {
-        name: "Anita Gusikowski",
-        designation: "General Manager",
+        name: "Dr R Narender",
+        designation: "Secretary & Founder",
         image: team1,
     },
     {
-        name: "Anita Gusikowski",
-        designation: "General Manager",
+        name: "Mr K Mallikarjuna Rao",
+        designation: "Joint Secretary",
         image: team2,
     },
     {
-        name: "Larry Bartoletti",
-        designation: "Manager Head",
+        name: "Dr N Ravinder Rao",
+        designation: "President",
         image: team3,
     },
     {
-        name: "Raymond Koelpin",
-        designation: "Senior Manager",
+        name: "Mr B V Radhakrishna",
+        designation: "Executive Member",
         image: team4,
     },
     {
-        name: "Alfred Thiel V",
-        designation: "Senior Manager",
+        name: "Dr Archana K",
+        designation: "Doctor",
         image: team5,
     },
     {
-        name: "Edith Torphy",
-        designation: "Senior Manager",
+        name: "Dr Kapil Sharma",
+        designation: "Doctor",
         image: team6,
     },
     {
-        name: "Alison Kohler",
-        designation: "Senior Manager",
+        name: "Dr Swathi",
+        designation: "Doctor",
         image: team7,
     },
     {
-        name: "Jerald Douglas IV",
-        designation: "Senior Manager",
+        name: "Mr Vijender Mogili",
+        designation: "Social Entrepreneur",
         image: team8,
-    },
-    {
-        name: "Edwin Baumbach II",
-        designation: "Senior Manager",
-        image: team9,
-    },
+    }
 ];

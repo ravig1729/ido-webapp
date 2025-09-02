@@ -61,7 +61,7 @@ const Footer = () => {
                   <span><img src={footerIc1} alt='footerIc1' /></span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="mailto:idoservice2@gmail.com">idoservice2@gmail.com</a>
+                  <a href="mailto:indigenousdevelopment20192gmail.com">indigenousdevelopment20192gmail.com</a>
                 </div>
               </div>
               <div className="vl-footer-icon-list">
@@ -69,7 +69,8 @@ const Footer = () => {
                   <span><img src={footerIc2} alt='footerIc2' /></span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="#">8708 Technology Forest <br /> Pl Suite 125 -G, The Woodlands, TX 773</a>
+                  <a href="#">6-194, Gattumalla Village, Laxmidevipally Mandal, <br /> Bhadradri
+                    Kothagudem District, Telangana 507101</a>
                 </div>
               </div>
               <div className="vl-footer-icon-list">
@@ -77,7 +78,7 @@ const Footer = () => {
                   <span><img src={footerIc3} alt='footerIc3' /></span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="tel:1234567890">123-456-7890</a>
+                  <a href="tel:9848956344">9848956344</a>
                 </div>
               </div>
             </div>

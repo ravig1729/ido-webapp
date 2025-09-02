@@ -15,7 +15,7 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Call Us Today",
         description: "24/7 Service",
         contacts: [
-            "+00 123 456 789", "+00 987 654 321"
+            "9848956344", "9963147549"
         ]
     },
     {
@@ -23,8 +23,8 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Mail Information",
         description: "Drop Line",
         contacts: [
-            "idoservice2@gmail.com",
-            "idoservice@gmail.com"
+            "indigenousdevelopment20192gmail.com",
+            "indigenousdevelopment20192gmail.com"
         ]
     },
     {
@@ -32,7 +32,8 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Our Location",
         description: "Address",
         contacts: [
-            "8708 Technology Forest Pl Suite 125-G, The Woodlands, TX 77381"
+            "6-194, Gattumalla Village, Laxmidevipally Mandal, Bhadradri Kothagudem District, Telangana 507101",
+            "4-6-131, Kammari Basthi, Hayathnagar, Rangareddy District, Telangana 501505"
         ]
     }
 ]

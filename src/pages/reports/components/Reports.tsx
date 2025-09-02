@@ -1,61 +1,55 @@
-import { blogData } from '../data'
-import calenderImg from '@/assets/img/icons/vl-calender-1.1.svg'
-import userImg from '@/assets/img/icons/vl-user-1.1.svg'
-import { Link } from "react-router";
-import { FaAngleLeft, FaAngleRight, FaArrowRight } from "react-icons/fa6";
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container, Row, Col } from "react-bootstrap";
+
+import Report1 from "../../../assets/pdfs/2023-2024.pdf";
+import Report2 from "../../../assets/pdfs/2022-23.pdf";
+import Report3 from "../../../assets/pdfs/2021-22.pdf";
+import Report4 from "../../../assets/pdfs/2020-21.pdf";
+import Report5 from "../../../assets/pdfs/2019-20.pdf";
+
+const pdfData = [
+    { title: "ANNUAL REPORT 2023 - 2024", file: Report1 },
+    { title: "ANNUAL REPORT 2022 - 2023", file: Report2 },
+    { title: "ANNUAL REPORT 2021 - 2022", file: Report3 },
+    { title: "ANNUAL REPORT 2020 - 2021", file: Report4 },
+    { title: "ANNUAL REPORT 2019 - 2020", file: Report5 },
+];
 
 const Reports = () => {
     return (
-        <section className="vl-blog-inner sp2">
+        <section className="vl-pdf-section sp2">
             <Container>
                 <Row>
-                    {
-                        blogData?.map((item, idx) => (
-                            <Col lg={4} md={6} key={idx}>
-                                <div className="vl-single-blg-item mb-30">
-                                    <div className="vl-blg-thumb">
-                                        <Link to="/blog-single"><img className="w-100" src={item.image}
-                                            alt='img' /></Link>
-                                    </div>
-                                    <div className="vl-meta">
-                                        <ul>
-                                            <li><a href="#"><span className="top-minus"> <img src={calenderImg}
-                                                alt='calenderImg' /></span> 16
-                                                October 2025</a></li>
-                                            <li><a href="#"><span className="top-minus"> <img src={userImg}
-                                                alt='userImg' /></span>Kyle
-                                                Miller</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="vl-blg-content">
-                                        <h3 className="title"><Link to="/blog-single">{item.title}</Link></h3>
-                                        <p>{item.excerpt}</p>
-                                        <Link to="/blog-single" className="read-more">Read
-                                            More <span><FaArrowRight /></span></Link>
-                                    </div>
+                    {pdfData.map((item, idx) => (
+                        <Col lg={4} md={6} sm={12} key={idx} className="mb-4">
+                            <div
+                                className="pdf-card text-center p-3 shadow-sm rounded"
+                                style={{
+                                    border: "1px solid #ddd",
+                                    cursor: "pointer",
+                                    transition: "0.3s",
+                                }}
+                                onClick={() => window.open(item.file, "_blank")}
+                            >
+                                <div
+                                    className="pdf-thumb d-flex align-items-center justify-content-center mb-3"
+                                    style={{
+                                        height: "150px",
+                                        background: "#f9f9f9",
+                                        borderRadius: "8px",
+                                    }}
+                                >
+                                    <span role="img" aria-label="pdf" style={{ fontSize: "50px" }}>
+                                        📄
+                                    </span>
                                 </div>
-                            </Col>
-                        ))
-                    }
-                </Row>
-                <Row>
-                    <Col xs={12} className="m-auto">
-                        <div className="theme-pagination thme-pagination-mt text-center mt-18">
-                            <ul>
-                                <li><a href="#"><FaAngleLeft className="fa-solid fa-angle-left" /></a></li>
-                                <li><a className="active" href="#">01</a></li>
-                                <li><a href="#">02</a></li>
-                                <li>...</li>
-                                <li><a href="#">12</a></li>
-                                <li><a href="#"><FaAngleRight className="fa-solid fa-angle-right" /></a></li>
-                            </ul>
-                        </div>
-                    </Col>
+                                <h5 className="mb-0">{item.title}</h5>
+                            </div>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
         </section>
-    )
-}
+    );
+};
 
-export default Reports
+export default Reports;
