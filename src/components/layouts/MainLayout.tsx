@@ -4,6 +4,7 @@ import CtaArea from "@/components/layouts/CtaArea.tsx";
 import Footer from "@/components/layouts/Footer";
 import {ChildrenType} from "@/types/component-props.ts";
 import BackToTop from "@/components/BackToTop.tsx";
+import FloatingVolunteerButton from "@/components/FloatingVolunteerButton.tsx";
 import {Suspense} from "react";
 import Loader from "@/components/Loader.tsx";
 
@@ -17,6 +18,7 @@ const MainLayout = ({children}: ChildrenType) => {
                 <CtaArea/>
                 <Footer/>
                 <BackToTop/>
+                <FloatingVolunteerButton/>
             </Suspense>
         </>
     )

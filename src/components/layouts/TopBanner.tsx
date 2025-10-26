@@ -1,7 +1,7 @@
 import topImg1 from '@/assets/img/icons/vl-top-ic-1.1.svg'
 import topImg2 from '@/assets/img/icons/vl-top-ic-1.2.svg'
 import { Container } from 'react-bootstrap'
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
 
 const TopBanner = () => {
   return (
@@ -12,14 +12,14 @@ const TopBanner = () => {
           <div className="d-flex align-items-center">
             <span className="me-2">Connect Us:</span>
             <div className="d-flex">
-              <a href="#" className="d-flex align-items-center justify-content-center mx-1 text-dark">
+              <a href="https://www.facebook.com/indigenousdevelopmentorg" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center justify-content-center mx-1 text-dark">
                 <FaFacebookF />
               </a>
-              <a href="#" className="d-flex align-items-center justify-content-center mx-1 text-dark">
+              <a href="https://www.instagram.com/indigenousdevelopment/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center justify-content-center mx-1 text-dark">
                 <FaInstagram />
               </a>
-              <a href="#" className="d-flex align-items-center justify-content-center mx-1 text-dark">
-                <FaTwitter />
+              <a href="https://www.linkedin.com/company/indigenous-development-organisation-i-do/" target="_blank" rel="noopener noreferrer" className="d-flex align-items-center justify-content-center mx-1 text-dark">
+                <FaLinkedinIn />
               </a>
             </div>
           </div>

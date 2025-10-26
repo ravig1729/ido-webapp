@@ -1,9 +1,8 @@
 import titleIcon from '@/assets/img/icons/vl-sub-title-icon.svg';
 import hero1 from '@/assets/img/shape/vl-hero-shape-1.1.png';
 import hero2 from '@/assets/img/shape/vl-hero-shape-1.2.png';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { FaAngleLeft, FaAngleRight, FaArrowRight } from 'react-icons/fa6';
 import Slider from 'react-slick';
 
 // Reusable component for Hero Shapes
@@ -60,16 +59,12 @@ const HeroSectionTitle = () => (
         <div className="vl-hero-btn-container" >
             <div className="vl-hero-btn">
                 <a href="/pages/team" className="header-btn1">
-                    Become a Volunteer<span>
-                        <FaArrowRight />
-                    </span>
+                    Become a Volunteer
                 </a>
             </div>
             <div className="vl-hero-btn">
                 <a href="/donation" className="header-btn1">
-                    Donate now <span>
-                        <FaArrowRight />
-                    </span>
+                    Donate now
                 </a>
             </div>
         </div>
@@ -77,6 +72,24 @@ const HeroSectionTitle = () => (
 );
 
 const Hero = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [isSwipping, setIsSwipping] = useState(false);
+    const totalSlides = 6; // Number of hero slides
+
+    // Custom swipe handlers for enhanced mobile experience
+    const handleSwipeStart = () => {
+        setIsSwipping(true);
+    };
+
+    const handleBeforeChange = (_current: number, next: number) => {
+        setCurrentSlide(next);
+    };
+
+    const handleAfterChange = (current: number) => {
+        setCurrentSlide(current);
+        setIsSwipping(false);
+    };
+
     const settings = {
         draggable: true,
         autoplay: true,
@@ -89,13 +102,45 @@ const Hero = () => {
         touchThreshold: 100,
         arrows: false,
         dots: false,
+        beforeChange: handleBeforeChange,
+        afterChange: handleAfterChange,
+        // Enhanced mobile touch/swipe settings
+        swipe: true,
+        swipeToSlide: true,
+        touchMove: true,
+        accessibility: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    touchThreshold: 50, // Lower threshold for easier swiping on mobile
+                    swipeToSlide: true,
+                    swipe: true,
+                    touchMove: true,
+                    pauseOnHover: false,
+                    speed: 300, // Faster transition on mobile
+                }
+            }
+        ]
     };
 
     const sliderRef = useRef<Slider | null>(null);
 
+    const goToSlide = (slideIndex: number) => {
+        sliderRef.current?.slickGoTo(slideIndex);
+    };
+
     return (
         <div className="vl-banner p-relative fix">
-            <Slider ref={sliderRef} {...settings} className="slider-active-1">
+            <Slider 
+                ref={sliderRef} 
+                {...settings} 
+                className={`slider-active-1 ${isSwipping ? 'swiping' : ''}`}
+                onSwipe={handleSwipeStart}
+                onInit={() => setIsSwipping(false)}
+            >
                 <div className="vl-hero-slider vl-hero-bg vl-hero-bg-1 slick-slide slick-current slick-active">
                     <HeroShapes />
                     {/* <HeroSocial /> */}
@@ -175,13 +220,15 @@ const Hero = () => {
                 </div>
             </Slider>
 
-            <div className="vl-arrow">
-                <span className="prev-arow slick-arrow" onClick={() => sliderRef.current?.slickPrev()}>
-                    <FaAngleRight />
-                </span>
-                <span className="next-arow slick-arrow" onClick={() => sliderRef.current?.slickNext()}>
-                    <FaAngleLeft />
-                </span>
+            <div className="vl-dots-navigation d-none d-md-block">
+                {Array.from({ length: totalSlides }, (_, index) => (
+                    <button
+                        key={index}
+                        className={`dot ${currentSlide === index ? 'active' : ''}`}
+                        onClick={() => goToSlide(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
             </div>
         </div>
     );
