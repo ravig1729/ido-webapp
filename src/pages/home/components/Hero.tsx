@@ -58,7 +58,7 @@ const HeroSectionTitle = () => (
         </p>
         <div className="vl-hero-btn-container" >
             <div className="vl-hero-btn">
-                <a href="/pages/team" className="header-btn1">
+                <a href="/pages/volunteer-form" className="header-btn1">
                     Become a Volunteer
                 </a>
             </div>

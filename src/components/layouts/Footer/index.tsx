@@ -55,7 +55,7 @@ const Footer = () => {
                 <ul>
                   <li><a href="/donation">Donation Online</a></li>
                   <li><a href="/contact">Donor Centres</a></li>
-                  <li><Link to="/pages/team">Volunteering</Link></li>
+                  <li><Link to="/pages/volunteer-form">Volunteering</Link></li>
                 </ul>
               </div>
             </div>
