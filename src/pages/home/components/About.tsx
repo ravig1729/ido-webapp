@@ -16,17 +16,14 @@ const About = () => {
                             <div className="vl-section-title-1">
                                 <h5 className="subtitle" data-aos="fade-right" data-aos-duration={800}
                                     data-aos-delay={300}>About Us</h5>
-                                <h2 className="title text-anime-style-3">Focusing on Interior Tribal Habitations of
-                                    Bhadrachalam</h2>
+                                <h2 className="title text-anime-style-3">Focusing on Interior Tribal Habitations of Bhadrachalam</h2>
                                 <p
                                     style={{ paddingBottom: '1rem' }}
                                     data-aos="fade-right"
                                     data-aos-duration={800}
                                     data-aos-delay={300}
                                 >
-                                    I-DO has been actively working with tribal communities in the remote habitations and rural
-                                    villages of Bhadradri, Kothagudem district, Telangana, since 2017, with the core motto of
-                                    'Reaching the Unreachable'.{" "}
+                                    Since 2017, I-DO has been dedicated to delivering primary healthcare to tribal communities in the remote habitations and rural villages of Bhadradri-Kothagudem district, Telangana. It has recently expanded its services to Sukma district, Chhattisgarh, guided by its core motto: ‘Reaching the Unreachable’.{" "}
                                     <a
                                         href="/about"
                                         style={{
@@ -73,8 +70,7 @@ const About = () => {
                     <Col lg={2} md={6} className="mb-30">
                         <div className="vl-about-sm-content" data-aos="zoom-in-up" data-aos-duration={1000}
                             data-aos-delay={300}>
-                            <p>At the heart of our lies a simple yet powerful mission: to provide and immediate relief
-                                affected by disaster organization.</p>
+                            <p>At the heart of our motto, lies a simple yet powerful mission to deliver health care to the remotest areas in the country.</p>
                             <div className="btn-area">
                                 <Link to="/pages/team"
                                     className="header-btn1">Our Team<span><FaArrowRight /></span></Link>

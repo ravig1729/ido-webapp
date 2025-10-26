@@ -183,9 +183,9 @@ export const teamData: TeamType[] = [
         image: team1,
     },
     {
-        name: "Mr K Mallikarjuna Rao",
+        name: "Dr Kapil Sharma",
         role: "Joint Secretary",
-        image: team2,
+        image: team6,
     },
     {
         name: "Dr N Ravinder Rao",
@@ -203,9 +203,9 @@ export const teamData: TeamType[] = [
         image: team5,
     },
     {
-        name: "Dr Kapil Sharma",
-        role: "Doctor",
-        image: team6,
+        name: "Mr K Mallikarjuna Rao",
+        role: "Executive Member",
+        image: team2,
     },
     {
         name: "Dr Swathi",

@@ -12,7 +12,7 @@ import WorkSection from './components/WorkSection'
 export const tabsContent = {
     health: [
         {
-            tabName: "Regalla Clinic:",
+            tabName: "IDO Health Centre",
             component: () => <WorkSection section={workSection.health.health_regalla} />,
         },
         {
@@ -82,67 +82,129 @@ export const workSection = {
         'health_regalla': {
             image: missionThumbImg1,
             title: '',
-            subtitle: '',
-            section: [
-                'In a sprawling campus of X acres, I-DO Health Centre is a facility established with funding from noble donors, to cater to the needs of Indigenous Population with a focus on out-patient services.',
-                'A unique health facility owned by tribal community where more than 6231+ volunteers from habitations came forward to construct the facility by doing manual works in their physical capacities.',
-                'The centre is also equipped with lab facilities to provide diagnostic services and it is also acting as first point of referral for higher health services.',
-                'Doctor consultations, out-patient, in-patient services, operation theatre, ultrasound scan, lab investigations &amp; pharmacy services are available for patients for free-of-cost'
+            subtitle1: 'IDO Health Centre – A Lifeline for Tribal Communities',
+            section1: [
+                'In 2022, after five years of dedicated frontline health work, Indigenous Development Organisation (IDO) established the IDO Health Centre in Gattumalla, Bhadradri Kothagudem district, Telangana.',
+                'This is Telangana’s only NGO-operated specialty hospital in an Agency area, offering specialized Gynaecology & Obstetrics services to underserved tribal populations.',
+                'Fondly called “Adivasi Aspatal” by the community, the hospital was built through the collective labour of 9,570 tribal community members, a powerful symbol of ownership, trust, and solidarity.',
+                'Spanning a one-acre campus, the centre is a charitable facility funded by generous donors, serving over 42,000 people across 133 tribal and rural villages. It stands as a trusted platform where healthcare providers and indigenous communities come together in an environment of mutual respect, acceptance, and trust to improve health outcomes and reduce healthcare dependency.'
+            ],
+            subtitle2: 'Who We Serve',
+            section2: [
+                '•	People trust and visit IDO HC from Andhra, Telangana, Chhattisgarh and odisha',
+                '•	Serving more than 42,000 people across 133 villages',
+                '•	Tribal and rural communities who otherwise travel long distances for basic care',
+            ],
+            subtitle3: 'Our Facilities & Services (All Free of Cost)',
+            section3: [
+                '•	Doctor consultations (OPD & IPD)',
+                '•	Specialized Gynaecology & Obstetrics care',
+                '•	Operation theatre services',
+                '•	Diagnostic services (Ultrasound, Lab Investigations)',
+                '•	Free pharmacy services',
+                '•	Community kitchen for patients and attendants',
+                '•	Referral linkages to higher centres for advanced care'
+            ],
+            subtitle4: 'Why It Matters',
+            section4: [
+                '•	First NGO-run specialty health centre in a tribal Agency area of Telangana',
+                '•	Trusted as a safe, respectful space where doctors and Adivasi communities work together',
+                '•	Reduces dependency on distant facilities by providing accessible, quality care locally',
+                '•	A sustainable model of community-driven rural healthcare'
+            ],
+            subtitle5: 'Our Impact',
+            section5: [
+                '•	A health lifeline for remote, hard-to-reach villages',
+                '•	Built with community participation and donor support',
+                '•	Restoring dignity, saving lives, and improving health outcomes in tribal Telangana',
             ]
         },
         'health_community': {
             image: missionThumbImg2,
             title: '',
-            subtitle1: 'Community Health Workers: The Health Warriors of Tribals',
+            subtitle1: 'Community Health Workers: The Front Line Health Workers',
             section1: [
-                'In the remote tribal regions of Bhadradri Kothagudem, access to healthcare is severely limited. With no ASHA workers, Primary Health Centres (PHCs), or emergency services in these insurgency-affected areas, the lives of indigenous communities, especially women and children are constantly at risk.',
-                'Institutional deliveries are rare, and without medical support, maternal and infant mortality rates remain alarmingly high.',
-                'To bridge this critical gap, IDO trained one male and one female from each habitation as ‘Community Health Workers (CHWs)’ - trusted individuals from the same communities. Currently, 103 CHWs are serving across 134 habitations, delivering essential health services right at people’s doorsteps.',
+                'Community Health Workers (CHW) Program aims to enhance healthcare access in remote tribal areas across Telangana and Chattisgarh.',
+                'In the remote tribal regions of Bhadradri Kothagudem and Sukma, access to healthcare is severely limited. With lack of  ASHA workers in the interior hamlets , Primary Health Centres (PHCs), or emergency services in these Interior – Left Wing Extremism affected areas are limited due to poor connectivity. Distant PHCs and unavailability of medical staff especially doctors pose threat to the lives of indigenous communities, especially women and children.',
+                '•	Why it matters: Tribal communities face high maternal & child mortality, have poor access to Primary health care services and a triple burden of communicable, non-communicable diseases and mental health.',
+                '•	Our solution: Training and mentoring local CHWs/ASHAs to provide community-based maternal, child, and primary health services.',
             ],
-            subtitle2: 'Maternal and Child Health Care at Doorstep',
+            subtitle2: 'Objectives',
             section2: [
-                'CHWs provide comprehensive antenatal care including haemoglobin tests, pregnancy confirmation, urine protein, HIV, HBsAg, VDRL, GRBS, and monitor vitals. Iron-folic acid and calcium supplements are also provided to ensure healthier pregnancies.',
-                'During childbirth, CHWs assist with safe home deliveries using a Maternal and Child Health Care Kit. Postnatal care includes Home-Based Newborn Care (HBNC), where newborns are monitored for vital signs such as temperature, respiratory rate, and signs of sepsis. CHWs promote breastfeeding, maintain warmth with baby warm-bags, and guide families on immunization schedules and nutrition.'
+                '•	Strengthen CHW/ASHA skills in MCH, infectious & non-communicable diseases and health promotion.',
+                '•	Promote safe motherhood: ANC, PNC, HBNC, institutional deliveries.',
+                '•	Improve immunization coverage and disease prevention.',
+                '•	Ensure early identification and referral of high-risk mothers, newborns, and children.',
+                '•	Build community trust and strengthen referral linkages with health facilities.',
             ],
-            subtitle3: 'Promoting Institutional Deliveries and Reproductive Health',
+            subtitle3: 'Activities / Approach',
             section3: [
-                'Cultural beliefs and fear of hospitals often lead pregnant women to choose unsafe traditional home deliveries. To counter this, CHWs engage directly with families, building trust and encouraging institutional deliveries, vital for reducing both maternal and infant deaths.',
-                'Through home visits, they break language barriers, dispel myths, and promote hospital- based care. Their presence within the community makes healthcare guidance more acceptable and accessible.'
+                '•	Training Workshops: Induction (5 days) & refresher (every 6 months) on MCH, HBNC, nutrition, and disease management.',
+                '•	Hands- O n Practical Sessions: Home visits, monitoring, and care demonstrations.',
+                '•	Job Aids & Toolkits: ANC/PNC/HBNC registers, flipbooks, and monthly checklists.',
+                '•	Mentorship & Supervision: Supervisors monitor 10–12 CHWs each, verify home visits, and provide support.',
+                '•	Exposure Visits / Field-Based Training: Strengthen problem-solving and real-world application.',
+                '•	Digital Data System: CHWs record data manually → verified digitally for reporting and planning.'
             ],
-            subtitle4: 'Cultural Programs for Awareness',
+            subtitle4: 'Impact / Outcomes',
             section4: [
-                'Our ‘Seemantham Program’, a culturally rooted baby shower celebration helps promote safer pregnancies. Using tribal songs, dances, and flipcharts, we educate women about the importance of antenatal check-ups and supplements.',
-                'After childbirth, CHWs maintain regular follow-ups to guide mothers on vaccinations, nutrition, and overall newborn care.'
+                '•	CHWs Trained: 79',
+                '•	Households Covered:  2370',
+                '•	Habitations covered: 79',
+                '•	Health Outcomes: Increased institutional deliveries from 23% to 46% from 2021 -2023, reduced IMR from 158 to 116',
+                '•	Skills Gained: Example – 90% of CHWs can correctly identify danger signs in pregnancy.',
+                '•	Case Stories & Testimonials: Highlight successful interventions in communities.',
             ],
-            subtitle5: 'Street Theatre for Health Education',
-            section5: [
-                'To further spread awareness, we use ‘Nukkad Natak’, a traditional street theatre to educate entire communities about the risks of unsupervised home deliveries and the importance of newborn care. Performed in local dialects, these engaging plays blend cultural art with powerful messaging, creating a lively and participatory environment for learning.',
-                'With this grassroots model, we aim to improve maternal and infant health outcomes in one of the most underserved regions of India—by empowering the very people who live there.'
-            ]
         },
         'health_mmu': {
             image: missionThumbImg3,
             title: '',
             subtitle1: 'Mobile Medical Units (MMUs):',
             section1: [
-                'Delivering Healthcare to Remote Tribal Habitations',
-                'In the rugged terrains of Bhadradri Kothagudem district, access to quality healthcare remains a major challenge for tribal and marginalized communities. Poor road connectivity, scattered habitations, and lack of transport have left thousands without essential health services.',
-                'To bridge this critical gap, the Indigenous Development Organization (IDO) has launched Mobile Medical Units (MMUs), a lifeline for those in hard-to-reach areas.',
+                'What are MMUs? → “Clinics on wheels bringing healthcare to the doorstep of remote tribal communities.',
+                'Mobile Medical Units (MMUs) play a vital role in delivering essential healthcare services to remote, tribal, and underserved communities in the unreachable / hard to reach areas, of Bhadradri Kothagudem District. Over the district 4 MMUs are operational . These units are instrumental in providing accessible primary care, with a strong emphasis on maternal and child health. ',
+                'They also address the growing burden of non-communicable diseases (NCDs) such as diabetes and hypertension, alongside the prevention and management of communicable diseases (CDs) through timely screening, diagnosis, and treatment.',
+                'In addition, MMUs are equipped to offer emergency stabilization for acute medical conditions, reducing delays in critical care, and facilitate referrals to higher healthcare centers when advanced or specialized treatment is needed. By bridging the gap between remote populations and the formal healthcare system, MMUs significantly enhance health equity and outcomes in these marginalized regions.',
+                'Why needed? → “In many villages there are no doctors, no transport, and health centres are 10–50 km away. Our MMUs bridge this gap.”',
             ],
-            subtitle2: 'Reaching the Unreachable',
+            subtitle2: 'Where We Work?',
             section2: [
-                'Deployed across Cherla, Pinapaka, Aswaraopeta, Karakagudem, Manguru, Dummugudem, and Mulkulapalli, MMUs are expected to benefit over 130 villages and hamlets spanning a vast 7,500 sq. km area.',
-                'These mobile clinics are staffed by a multidisciplinary team comprising Medical Officer, Staff Nurse, Pharmacist, Driver and operate from vehicles equipped for outpatient care, bringing medical services to people who otherwise walk for hours, even days for treatment.'
+                'We operate in 19 mandals of Bhadradri Kothagudem District',
+                'We operate in 82 villages of Bhadradri kothagudem district , (Listing will be attached separately)',
             ],
-            subtitle3: 'MMU Services',
+            subtitle3: 'Services Provided',
             section3: [
-                'Services include treatment for common illnesses, maternal and child healthcare, newborn care, reproductive health, and malnutrition management. MMUs also offer screenings for non-communicable diseases, basic mental health support, dental and eye care, and first aid for emergencies like snake bites and injuries.',
-                'Patients needing advanced care are referred to PHCs or hospitals, with follow-up support.'
+                '•	General OPD care',
+                '•	Maternal & Child Health (ANC, PNC, immunization support, growth monitoring)',
+                '•	Communicable disease detection (malaria, TB, leprosy, cataract screening, snakebite first aid)',
+                '•	Non-communicable disease care (BP, diabetes, mental health counselling)',
+                '•	Basic diagnostics (RDTs, Hb, urine tests, BP, sugar check)',
+                '•	Free essential medicines distribution',
+                '•	Health education & awareness (nutrition, hygiene, safe motherhood, immunization importance)',
             ],
-            subtitle4: 'Community Mobilization',
+            subtitle4: 'Innovations in MMUs',
             section4: [
-                'Before deployment, IDO teams work closely with village heads and Community Health Workers (CHWs) to understand local health needs. Each village hosts a monthly Arogya Sabha a community health meeting where issues like anemia, malnutrition, chronic diseases, and maternal health are addressed collaboratively.',
-                'This grassroots approach builds trust, ensures cultural sensitivity, and strengthens local ownership key factors for the long-term success and sustainability of the MMU program.'
+                'Our Mobile Medical Units go beyond basic consultations. By equipping them with portable diagnostic devices, we ensure early detection and timely treatment right at the doorstep of remote tribal communities.',
+                '•	Digital stethoscopes for screening congenital heart disease in children',
+                '•	Portable otoscopes for identifying ear infections and perforations (ASOM/CSOM)',
+                '•	Fetal Dopplers for monitoring pregnancies and reducing maternal risks',
+                '•	Rapid diagnostic kits for malaria, diabetes, and other common conditions',
+                'This innovative approach enables faster diagnosis, reduced referrals, and better outcomes, especially in areas where access to hospitals is limited.',
+            ],
+            subtitle5: 'Our Approach',
+            section5: [
+                '•	Fixed-day monthly visit schedule for each remote village.',
+                '•	Appointment system for pregnancy scans & elective procedures.',
+                '•	Referral linkage to higher centres/hospitals.',
+                '•	Community involvement: CHWs/ASHAs help mobilize patients.',
+            ],
+            subtitle6: 'Impact / Outcomes',
+            section6: [
+                '•	Villages covered : 79',
+                '•	Households reached : XXXX',
+                '•	Patients treated : 18545',
+                '•	Pregnant women registered/monitored : XXXX',
+                '•	Emergency referrals supported : XXXX',
             ],
         },
         'health_mandchealth': {
@@ -172,14 +234,14 @@ export const workSection = {
             title: '',
             subtitle: '',
             section: [
-                'SPH PAR - Strengthening of Primary Health Care through Participatory Action Research.', 
+                'SPH PAR - Strengthening of Primary Health Care through Participatory Action Research.',
             ],
         }
     },
     education: {
         'education_overview': {
             image: missionThumbImg6,
-            title: '',
+            title: 'Education',
             subtitle1: 'Helping Tribal Children access Education through Bridge Schools',
             section1: [
                 'The remote and difficult terrain of the Gutti Koya tribe’s living areas, with rough roads and overflowing streams, makes it nearly impossible for children to attend government schools, even on foot.',
@@ -192,7 +254,23 @@ export const workSection = {
                 'Local community volunteers, often school dropouts, are recruited from within the habitations and trained to teach the children in their native languages. This approach minimizes language barriers, reduces the fear of schooling, and fosters a positive attitude toward education encouraging regular attendance.',
                 'The volunteers also prepare mid-day meals for the children. Their service is aimed at benefiting their community and ensuring children receive essential nourishment while gaining basic education.',
                 'In cases of irregular attendance or high child labor, team members from IDO visit the habitation, motivating parents to recognize the importance of education for their children’s future.'
-            ]
+            ],
+            subtitle3: 'Activities of Bridge School',
+            section3: [
+                '•	Daily Classes on literacy, numeracy, and life skills using interactive and culturally relevant materials, including solar TV in off-grid areas.',
+                '•	Vidhya Sabhas to engage parents, promote education, and reduce child labor.',
+                '•	Local Youth as Teachers to ensure cultural fit and address mobility challenges.',
+                '•	Teacher Training through monthly capacity-building sessions.',
+                '•	Community Events like sports and cultural programs to boost participation.',
+                '•	Life Skills & Culture through tribal songs and vegetable gardening.',
+                '•	School Integration by enrolling eligible children into formal schools annually.'
+            ],
+            subtitle4: 'Impact:',
+            section4: [
+                '•	400+ children now have access to basic education & midday meals in 13 habitations.',
+                '•	600+ children joined mainstream school.',
+                '•	50+ children are participating in district level sports like hockey, archery, volleyball, etc.',
+            ],
         }
     },
     nutrition: {
@@ -206,25 +284,25 @@ export const workSection = {
             subtitle2: 'Nutrition Powder Mix Initiative',
             section2: [
                 'To address this, the IDO developed a Nutrition Powder Mix composed of:',
-                ' Bengal gram',
-                ' Wheat',
-                ' Jowar',
-                ' Ground nuts',
-                ' Jaggery powder',
+                '•	Bengal gram',
+                '•	Wheat',
+                '•	Jowar',
+                '•	Ground nuts',
+                '•	Jaggery powder',
                 'This mix is designed to provide essential proteins, fats, carbohydrates, and iron, targeting under-5 children, pregnant women, and lactating mothers in 31 habitations.'
             ],
             subtitle3: 'Implementation',
             section3: [
-                ' Daily Distribution: Each beneficiary receives 60 grams of the Nutrition Powder as Ready-to-Use Food (RTUF) daily.',
-                ' Spot Feeding: Community Health Workers (CHWs) conduct daily spot feeding to encourage consistent consumption within the habitations.',
-                ' Production Unit: A production unit has been established in Regalla village, where two local tribal community members have been trained to prepare the powder, providing them with sustainable livelihoods.'
+                '•	Daily Distribution: Each beneficiary receives 60 grams of the Nutrition Powder as Ready-to-Use Food (RTUF) daily.',
+                '•	Spot Feeding: Community Health Workers (CHWs) conduct daily spot feeding to encourage consistent consumption within the habitations.',
+                '•	Production Unit: A production unit has been established in Regalla village, where two local tribal community members have been trained to prepare the powder, providing them with sustainable livelihoods.'
             ],
             subtitle4: 'Impact',
             section4: [
                 'The initiative aims to provide 70 grams of nutrition powder daily to over 1800 beneficiaries in 40+ interior habitations, resulting in significant health improvements:',
-                ' Reduction of Anemia: 39.5%',
-                ' Reduction of Wasting: 38%',
-                ' Reduction of Underweight: 24%',
+                '•	Reduction of Anemia: 39.5%',
+                '•	Reduction of Wasting: 38%',
+                '•	Reduction of Underweight: 24%',
             ],
             subtitle5: 'Conclusion',
             section5: [

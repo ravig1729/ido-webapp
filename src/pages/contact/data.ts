@@ -15,7 +15,7 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Call Us Today",
         description: "24/7 Service",
         contacts: [
-            "9848956344", "9963147549"
+            "8096851841"
         ]
     },
     {
@@ -23,8 +23,7 @@ export const iconsBoxData: IconBoxType[] = [
         title: "Mail Information",
         description: "Drop Line",
         contacts: [
-            "indigenousdevelopment20192gmail.com",
-            "indigenousdevelopment20192gmail.com"
+            "indigenousdevelopment2019@gmail.com"
         ]
     },
     {
