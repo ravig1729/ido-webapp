@@ -51,13 +51,14 @@ ul, li{
     left: 0;
     width: 100%;
     padding: 17px 0;
-    z-index: 9;
-    &.mobile-haeder1 {
+    z-index: 9;    &.mobile-haeder1 {
         position: fixed;
-        background: var(--ztc-text-text-6);
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
         & .mobile-nav-icon{
-            color: #fff;
+            color: #161616;
         }
+        opacity: 0.8;
     }
     &.mobile-haeder2{
         position: fixed;

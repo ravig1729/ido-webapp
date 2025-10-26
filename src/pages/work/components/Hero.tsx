@@ -2,7 +2,7 @@ import React from 'react';
 import breadcrumb1 from '@/assets/img/breadcrumb/breadcrumb-shape-1.1.png'
 import breadcrumb2 from '@/assets/img/breadcrumb/breadcrumb-shape-1.2.png'
 import breadcrumb3 from '@/assets/img/breadcrumb/breadcrumb-shape-1.3.png'
-import {FaAngleRight} from 'react-icons/fa6'
+import {BsThreeDots} from 'react-icons/bs'
 import {Col, Row} from 'react-bootstrap'
 import {Link} from "react-router";
 
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage, pageName 
                             <p className=" work-hero-subtitle hero-subtitle">{subtitle}</p>
                             <div className="vl-breadcrumb-list">
                                 <span><Link to="/">Home</Link></span>
-                                <span className="dvir"><FaAngleRight className="fa-solid fa-angle-right"/></span>
+                                <span className="dvir"><BsThreeDots className="fa-solid fa-angle-right"/></span>
                                 <span><a className="active" href="#">{pageName}</a></span>
                             </div>
                         </div>
