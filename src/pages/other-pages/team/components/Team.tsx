@@ -1,5 +1,5 @@
 import { teamData } from '../data'
-import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6'
 import { Col, Container, Row } from 'react-bootstrap';
 
 const Team = () => {
