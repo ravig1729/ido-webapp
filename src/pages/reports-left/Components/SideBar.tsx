@@ -5,7 +5,7 @@ import { categories, categoryContent } from '../data';
 
 const SideBar = () => {
     const [selectedCategory, setSelectedCategory] = useState('Case Studies');
-    const [isMuted, setIsMuted] = useState(true); // Video starts muted
+    const [isMuted] = useState(true); // Video starts muted
     const videoRef = useRef<HTMLVideoElement>(null);
     const [selectedMedia, setSelectedMedia] = useState<string | null>(null);
 
