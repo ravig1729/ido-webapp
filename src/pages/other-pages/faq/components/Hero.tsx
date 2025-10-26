@@ -2,7 +2,7 @@ import faqBg from '@/assets/img/breadcrumb/vl-faq-bg.png'
 import shapeImg1 from '@/assets/img/breadcrumb/breadcrumb-shape-1.1.png'
 import shapeImg2 from '@/assets/img/breadcrumb/breadcrumb-shape-1.2.png'
 import shapeImg3 from '@/assets/img/breadcrumb/breadcrumb-shape-1.3.png'
-import {FaAngleRight} from 'react-icons/fa6'
+import {BsThreeDots} from 'react-icons/bs'
 import {Col, Row} from 'react-bootstrap'
 import {Link} from "react-router";
 
@@ -16,11 +16,11 @@ const Hero = () => {
                 <Row>
                     <Col lg={12}>
                         <div className="vl-breadcrumb-title">
-                            <h2 className="heading">FAQ’s</h2>
+                            <h2 className="heading">FAQ's</h2>
                             <div className="vl-breadcrumb-list">
                                 <span><Link to="/">Home</Link></span>
-                                <span className="dvir"><FaAngleRight className="fa-solid fa-angle-right"/></span>
-                                <span><a className="active" href="#">FAQ’s</a></span>
+                                <span className="dvir"><BsThreeDots className="fa-solid fa-angle-right"/></span>
+                                <span><a className="active" href="#">FAQ's</a></span>
                             </div>
                         </div>
                     </Col>
@@ -30,4 +30,6 @@ const Hero = () => {
     )
 }
 
+
+export default Hero
 export default Hero

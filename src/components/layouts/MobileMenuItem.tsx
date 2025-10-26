@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { Link } from "react-router";
 import { FaMinus, FaPlus } from 'react-icons/fa6'
 
+interface MobileMenuItemProps {
+    onLinkClick?: () => void;
+}
+
 const menuItems = [
     {
         title: 'Home', path: "/"
@@ -17,7 +21,7 @@ const menuItems = [
             { path: '/pages/health', label: 'Health' },
             { path: '/pages/nutrition', label: 'Nutrition' },
             { path: '/pages/education', label: 'Education' },
-            { path: '/pages/sustainable-health', label: 'Sustainable Health' },
+            // { path: '/pages/sustainable-health', label: 'Sustainable Health' },
         ]
     },
     {
@@ -28,7 +32,7 @@ const menuItems = [
     },
 ];
 
-const MobileMenuItem = () => {
+const MobileMenuItem = ({ onLinkClick }: MobileMenuItemProps) => {
     const [openIndex, setOpenIndex] = useState(null)
 
     const toggleMenu = (index: any) => {
@@ -48,12 +52,14 @@ const MobileMenuItem = () => {
                             </div>
                             <ul className={`sub-menu ${openIndex === index ? 'open-sub sub-menu-active d-block' : ''}`}>
                                 {item.links.map((link, linkIndex) => (
-                                    <li key={linkIndex}><Link to={link.path}>{link.label}</Link></li>
+                                    <li key={linkIndex}>
+                                        <Link to={link.path} onClick={onLinkClick}>{link.label}</Link>
+                                    </li>
                                 ))}
                             </ul>
                         </>
                     ) : (
-                        <Link to={item.path}>{item.title}</Link>
+                        <Link to={item.path} onClick={onLinkClick}>{item.title}</Link>
                     )}
                 </li>
             ))}

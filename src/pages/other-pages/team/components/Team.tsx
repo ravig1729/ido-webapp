@@ -27,7 +27,6 @@ const Team = () => {
                                                         className="fa-brands fa-instagram" /></a></li>
                                                     <li><a href="#"><FaTwitter className="fa-brands fa-twitter" /></a>
                                                     </li>
-                                                    <li><a href="#"><FaGithub className="fa-brands fa-github" /></a></li>
                                                 </ul>
                                             </div>
                                             <div className="text">

@@ -34,7 +34,7 @@ const SideBar = () => {
                                 </div>
                             </div>
                             <div className="vl-search-widget mb-30">
-                                <h3 className="title">Our Services</h3>
+                                <h3 className="title">Support Us</h3>
                                 <div className="vl-single-service">
                                     <a href="#">Supply Chain Management</a>
                                     <span><img src={arrowDown} alt='arrowDown'/></span>

@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router";
 import TopMenu from '../TopMenu';
 import MobileMenu from './MobileMenu';
-import siteLogo from '@/assets/img/logo/ido-charity-logo-final.png';
+import siteLogo from '@/assets/img/logo/site-logo.png';
 
 
 const TopBar = () => {
@@ -21,11 +21,13 @@ const TopBar = () => {
                             <Col lg={12}>
                                 <div className="header-elements header-elements-1">
                                     <div className="site-logo">
-                                        <h1>
-                                            <a href="/">
-                                                <img alt="logo1" 
-                                                src={siteLogo} style={{ height: "100px", width: "200px"}}></img>
-                                            </a></h1>
+                                        <Link to="/">
+                                            <img 
+                                                alt="IDO Charity Logo" 
+                                                src={siteLogo} 
+                                                style={{ height: "80px", width: "auto", maxWidth: "180px" }}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="main-menu">
                                         <TopMenu />

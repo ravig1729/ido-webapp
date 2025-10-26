@@ -8,7 +8,8 @@ const Contact = lazy(() => import('@/pages/contact'))
 const Donation = lazy(() => import('@/pages/donation'))
 const Error404 = lazy(() => import('@/pages/other-pages/error-404'))
 const Faq = lazy(() => import('@/pages/other-pages/faq'))
-const Team = lazy(() => import('@/pages/other-pages/volunteer'))
+const Team = lazy(() => import('@/pages/other-pages/team'))
+const VolunteerForm = lazy(() => import('@/pages/volunteer-form'))
 const Health = lazy(() => import('@/pages/work/health'));
 const Nutrition = lazy(() => import('@/pages/work/nutrition'));
 const Education = lazy(() => import('@/pages/work/education'));
@@ -62,6 +63,11 @@ const otherRoutes = [
         path: '/pages/team',
         name: 'pages-team',
         element: <Team/>,
+    },
+    {
+        path: '/pages/volunteer-form',
+        name: 'volunteer-form',
+        element: <VolunteerForm/>,
     },
     {
         path: '/pages/health',

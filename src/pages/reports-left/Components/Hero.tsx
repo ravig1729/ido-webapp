@@ -2,7 +2,7 @@ import shapeImg1 from '@/assets/img/breadcrumb/breadcrumb-shape-1.1.png'
 import shapeImg2 from '@/assets/img/breadcrumb/breadcrumb-shape-1.2.png'
 import shapeImg3 from '@/assets/img/breadcrumb/breadcrumb-shape-1.3.png'
 import eventDetails from '@/assets/img/breadcrumb/vl-event-details.png'
-import { FaAngleRight } from 'react-icons/fa6'
+import { BsThreeDots } from 'react-icons/bs'
 import { Link } from "react-router";
 import { Col, Row } from 'react-bootstrap'
 
@@ -19,7 +19,7 @@ const Hero = () => {
                             <h2 className="heading">Our Reports</h2>
                             <div className="vl-breadcrumb-list">
                                 <span><Link to="/">Home</Link></span>
-                                <span className="dvir"><FaAngleRight className="fa-solid fa-angle-right" /></span>
+                                <span className="dvir"><BsThreeDots className="fa-solid fa-angle-right" /></span>
                                 <span><a className="active" href="#">Our Reports</a></span>
                             </div>
                         </div>

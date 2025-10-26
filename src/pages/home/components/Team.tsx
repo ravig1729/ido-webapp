@@ -15,10 +15,8 @@ const Team = () => {
                     <div className="vl-section-title-1">
                         <h5 className="subtitle" data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>Meet
                             our Team</h5>
-                        <h2 className="title text-anime-style-3">We Have a Team</h2>
-                        <p data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>Provide tips, articles, or
-                            expert advice on maintaining a healthy work- <br/>life balance, managing, Workshops or
-                            seminars organizational.</p>
+                     <h2 className="title text-anime-style-3">Trailblazers of IDO</h2>
+                        <p data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>We are proud to stand alongside our dedicated team, who work hand-in-hand <br/> with communities to bring our shared vision and mission to life</p>
                     </div>
                 </div>
                 <Row id='team1'>
@@ -61,7 +59,7 @@ const Team = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className='owl-nav'>
+                    <div className='owl-nav d-none d-md-block'>
                         <button className="owl-prev swiper-button-prev">
                             <img src={arrowLeft} alt="arrowLeft"/>
                         </button>
