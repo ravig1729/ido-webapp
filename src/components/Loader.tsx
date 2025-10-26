@@ -1,4 +1,4 @@
-import preloaderImg from '@/assets/img/preloader/vl-preloader-1.1.png'
+import preloaderImg from '@/assets/img/logo/fav-logo1.png'
 
 const Loader = () => {
   return (

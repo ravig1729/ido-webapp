@@ -77,8 +77,7 @@ const AboutUs = () => {
                             <div className="vl-section-title-1 mb-50">
                                 <h5 className="subtitle">About Us</h5>
                                 <br></br>
-                                <p>I-DO is the Brainchild of Dr R Narendar who always had the passion to serve the needy &amp;
-                                    the neglected population.</p>
+                                <p>I-DO is the brainchild of Dr R Narendar who always had the passion to serve the needy & the neglected population.</p>
                                 <br></br>
                                 <p>I-DO has been actively working with tribal communities in the remote habitations and rural
                                     villages of Bhadradri, Kothagudem district, Telangana, since 2017, with the core motto of
@@ -169,46 +168,29 @@ const AboutUs = () => {
                     </Col>
                     <Col lg={6}>
                         <div className="vl-about-content2 ml-20">
-
-                            <div className="content mb-30" style={{marginTop: "30px"}}>
-                                <p>At I-DO, we work with an objective of providing universal, affordable &amp; comprehensive
-                                    Primary Health Care (PHC) to the most underserved and marginalized population in remote
-                                    tribal/ hilly and /or insurgency areas.</p>
+                            <div className="content mb-30">
+                                <p>At I-DO, we work with an objective of providing universal, affordable accessible Primary Health Care (PHC) and Education to the most underserved and marginalized population in remote tribal areas.</p>
                                 <div className="icon-list-box box2">
-                                    <ul>
-                                        <li>
+                                    <ul >
+                                        <li style={{fontWeight: "normal"}}>
                                             <span><FaCheck className="fa-solid fa-check" /></span>
-                                            <strong>Mobile Healthcare &amp; Outreach:</strong> Mobile Medical Units (MMUs) are set up to provide
-                                            essential services like immunizations, antenatal care, and family planning.
+                                            <strong>Mobile Healthcare & Outreach:</strong> Mobile Medical Units (MMUs) are set up to provide Primary Health Care services focusing on Mother and Child Health.
                                         </li>
-                                        <li>
+                                        <li style={{fontWeight: "normal"}}>
                                             <span><FaCheck className="fa-solid fa-check" /></span>
-                                            <strong>Community Health Workers:</strong> Trained local individuals as health workers to offer
-                                            primary care and maternal support, improving health education.
+                                            <strong>Community Health Workers:</strong> Identification, Training and Capacity Building of Community Health Workers (CHWs).
                                         </li>
-                                        <li>
+                                        <li style={{fontWeight: "normal"}}>
                                             <span><FaCheck className="fa-solid fa-check" /></span>
-                                            <strong>Education &amp; Early Childhood Programs:</strong> Established Make-shift Study Centers
-                                            called Bridge Schools. that enhance literacy and reduce dropout rates. They help
-                                            bridge the educational gap by offering basic education, enabling children to
-                                            eventually transition to mainstream schools.
+                                            <strong>Education & Early Childhood Programs:</strong> Establishing Bridge Schools in the areas that lack access to Formal Education like Anganwadis to provide Early Childhood Education 
                                         </li>
-                                        <li>
+                                        <li style={{fontWeight: "normal"}}>
                                             <span><FaCheck className="fa-solid fa-check" /></span>
-                                            <strong>Awareness Campaigns:</strong> Promoting health and cultural awareness to challenge
-                                            harmful practices and improve health-seeking behaviour with the help of Street Play
-                                            ‘Nukkad Natak’.
-                                        </li>
-                                        <li>
-                                            <span><FaCheck className="fa-solid fa-check" /></span>
-                                            <strong>Nutritional Support:</strong> Implement feeding programs to combat malnutrition and
-                                            educate on proper nutrition for children and pregnant women.
+                                            <strong>Health Education:</strong> Promoting health awareness and Behavioral Change Communication (BCC) through Street Plays (Nukkad Natak) and improving health-seeking behaviour.
                                         </li>
                                     </ul>
                                 </div>
-                                <p>We are glad to have been able to reach more than 20, 000 tribal population with the
-                                    unwavering support of 9 Doctors, 103 Community Health Workers, 4 Mobile Medical Units
-                                    (MMUs), 30 Staff who are always on the toes to help the mankind.</p>
+                                <p>We are glad to have been able to reach more than 40, 000 tribal population with the unwavering support of 9 Doctors, 103 Community Health Workers, 4 Mobile Medical Units (MMUs), 30 Staff who are always on the toes to help the mankind.</p>
                             </div>
                         </div>
                     </Col>

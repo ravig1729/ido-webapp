@@ -1,4 +1,4 @@
-import vision2 from '@/assets/img/about/vl-vission2.png'
+import aboutOverview from '@/assets/img/about/about-overview.svg'
 import { Col, Container, Nav, NavItem, NavLink, Row, TabContainer, TabContent, TabPane } from 'react-bootstrap'
 
 const Vision = () => {
@@ -7,8 +7,8 @@ const Vision = () => {
             <Container>
                 <Row>
                     <Col lg={6}>
-                        <div className="vission-thumb mb-30">
-                            <img className="w-100" src={vision2} alt='vision2' />
+                        <div>
+                            <img src={aboutOverview} alt='vision2' />
                         </div>
                     </Col>
                     <Col lg={6}>
@@ -16,9 +16,9 @@ const Vision = () => {
                             <div className="vl-section-title-1">
                                 <h5 className="subtitle">Our Mission &amp; Vision</h5>
                                 <h2 className="title">Our Purpose: Mission and Vision for a Better </h2>
-                                <p>Our mission to bring hope, resources, &amp; opportunitie communities <br /> in need,
-                                    empowering individuals to build brighter, sustainable <br /> futures we are committed
-                                    to tackling critical challenges.</p>
+                                {/* <div>
+                                    <img src={aboutOverview} alt='vision2' />
+                                </div> */}
                             </div>
                             <div className="vl-vission-tab2">
                                 <TabContainer defaultActiveKey={'pills-home'}>
@@ -39,14 +39,11 @@ const Vision = () => {
                                     <TabContent>
                                         <TabPane className="fade" eventKey="pills-home" role="tabpanel"
                                             aria-labelledby="pills-home-tab" tabIndex={0}>
-                                            <p className="para">Vision: To reach the hitherto unreached tribal population and provide them with essential
-                                                health and nutrition services to lead a healthy life</p>
+                                            <p className="para">Vision: To strengthen the primary health care services for the aspirational districts/ blocks of India.</p>
                                         </TabPane>
                                         <TabPane className="fade" eventKey="pills-profile" role="tabpanel"
                                             aria-labelledby="pills-profile-tab" tabIndex={0}>
-                                            <p className="para">Mission: Delivering Health Care and Nutritional Services among the Indigenous Communities with the
-                                                help of Trained Doctors and Community Health Workers (CHWs) while also Promoting
-                                                Sustainable Livelihoods and Early Education through Bridge Schools.</p>
+                                            <p className="para">Mission: To provide Primary Health Care services focusing on Mother and Child Health.</p>
                                         </TabPane>
                                     </TabContent>
                                 </TabContainer>

@@ -20,9 +20,9 @@ export const teamData: TeamMember[] = [
         image: team1,
     },
     {
-        name: "Mr K Mallikarjuna Rao",
+        name: "Dr Kapil Sharma",
         designation: "Joint Secretary",
-        image: team2,
+        image: team6,
     },
     {
         name: "Dr N Ravinder Rao",
@@ -40,9 +40,9 @@ export const teamData: TeamMember[] = [
         image: team5,
     },
     {
-        name: "Dr Kapil Sharma",
-        designation: "Doctor",
-        image: team6,
+        name: "Mr K Mallikarjuna Rao",
+        designation: "Executive Member",
+        image: team2,
     },
     {
         name: "Dr Swathi",

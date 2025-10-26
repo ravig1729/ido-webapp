@@ -1,21 +1,29 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from "react-bootstrap";
 
-type SectionContent = {
-    image: string;
-    title: string;
-    subtitle?: string;
-    section?: string[];
-    subtitle1?: string;
-    section1?: string[];
-    subtitle2?: string;
-    section2?: string[];
-    [key: string]: any; // to support dynamic section keys
+// --- Type Definitions ---
+type DynamicImages = {
+    [K in `image${number}`]?: string;
 };
 
-const renderSection = (subtitle: string, section: string[]) => (
-    <>
-        {subtitle && <h3 className="para pb-8">{subtitle}</h3>} {/* Reduced padding between subtitle and section */}
-        <ul className="icon-list-box pt-10 pb-16"> {/* Consistent padding around sections */}
+type DynamicSubsections = {
+    [K in `subtitle${number}`]?: string;
+} & {
+    [K in `section${number}`]?: string[];
+};
+
+export type SectionContent = {
+    title: string;
+    image?: string;
+    subtitle?: string;
+    section?: string[];
+} & DynamicSubsections &
+    DynamicImages;
+
+// --- Section Renderer ---
+const renderSectionList = (section?: string[]) => {
+    if (!section?.length) return null;
+    return (
+        <ul className="icon-list-box pt-2 pb-4">
             {section.map((point, idx) => (
                 <li key={idx} className="icon-list-item">
                     <span className="w-2 h-2 mt-2 bg-blue-600 rounded-full inline-block mr-2" />
@@ -23,43 +31,67 @@ const renderSection = (subtitle: string, section: string[]) => (
                 </li>
             ))}
         </ul>
-    </>
-);
+    );
+};
 
+// --- Main Component ---
 const WorkSection = ({ section }: { section: SectionContent }) => {
-    const dynamicBlocks = Object.keys(section)
-        .filter(key => key.startsWith('section') && Array.isArray(section[key]))
-        .map(key => {
-            const num = key.replace('section', '');
-            const subtitleKey = `subtitle${num}`;
+    // Build dynamic content blocks
+    const dynamicBlocks = Object.entries(section)
+        .filter(([key, value]) => key.startsWith("section") && Array.isArray(value))
+        .map(([key, value]) => {
+            const num = key.replace("section", "");
             return {
-                subtitle: section[subtitleKey] || '',
-                section: section[key],
+                subtitle: section[`subtitle${num}` as keyof SectionContent] as string,
+                section: value as string[],
+                image:
+                    (section[`image${num}` as keyof SectionContent] as string) ||
+                    section.image,
             };
         });
 
-    // If dynamic blocks exist (like section1, section2...), use them
-    // Otherwise, fall back to default section/subtitle
+    // Fallback block if no numbered sections
     const contentBlocks =
         dynamicBlocks.length > 0
             ? dynamicBlocks
-            : [{ subtitle: section.subtitle || '', section: section.section || [] }];
+            : [
+                {
+                    subtitle: section.subtitle || "",
+                    section: section.section || [],
+                    image: section.image,
+                },
+            ];
 
     return (
-        <Container>
+        <Container className="py-10">
             <Row>
                 <Col lg={10} className="mx-auto">
-                    <Row className="align-items-center">
-                        <Col lg={6}>
-                            <img className="w-80" src={section.image} alt={section.title} />
-                        </Col>
-                        <Col lg={6}>
-                            {section.title && <h1 className="title pb-20">{section.title}</h1>}
-                            {contentBlocks.map((block, idx) => (
-                                <div key={idx}>{renderSection(block.subtitle, block.section)}</div>
-                            ))}
-                        </Col>
-                    </Row>
+                    {section.title && <h1 className="title pb-20">{section.title}</h1>}
+
+                    {contentBlocks.map((block, idx) => (
+                        <Row
+                            key={idx}
+                            className={`align-items-center mb-10 ${idx % 2 !== 0 ? "flex-row-reverse" : ""
+                                }`}
+                        >
+                            {/* Image Column */}
+                            <Col lg={6} className="mb-4 mb-lg-0 text-center">
+                                {block.image && (
+                                    <img
+                                        src={block.image}
+                                        alt={block.subtitle || "Work section"}
+                                        className="img-fluid rounded shadow w-100"
+                                    />
+                                )}
+                            </Col>
+
+                            {/* Text Column */}
+                            <Col lg={6}>
+                                {block.subtitle && <h3 className="para pb-4">{block.subtitle}</h3>}
+                                {renderSectionList(block.section)}
+                            </Col>
+                        </Row>
+                    ))}
                 </Col>
             </Row>
         </Container>
