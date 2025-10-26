@@ -8,8 +8,8 @@ const Vision = () => {
             <Container>
                 <Row>
                     <Col lg={6}>
-                        <div className="vission-thumb mb-30">
-                            <img className="w-100" src={vision2} alt='vision2' />
+                        <div>
+                            <img src={aboutOverview} alt='vision2' />
                         </div>
                     </Col>
                     <Col lg={6}>
@@ -17,9 +17,9 @@ const Vision = () => {
                             <div className="vl-section-title-1">
                                 <h5 className="subtitle">Our Mission &amp; Vision</h5>
                                 <h2 className="title">Our Purpose: Mission and Vision for a Better </h2>
-                                <div>
+                                {/* <div>
                                     <img src={aboutOverview} alt='vision2' />
-                                </div>
+                                </div> */}
                             </div>
                             <div className="vl-vission-tab2">
                                 <TabContainer defaultActiveKey={'pills-home'}>
