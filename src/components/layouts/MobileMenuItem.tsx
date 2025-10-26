@@ -21,11 +21,14 @@ const menuItems = [
             { path: '/pages/health', label: 'Health' },
             { path: '/pages/nutrition', label: 'Nutrition' },
             { path: '/pages/education', label: 'Education' },
-            // { path: '/pages/sustainable-health', label: 'Sustainable Health' },
+            { path: '/pages/sustainable-health', label: 'Sustainable Health' },
         ]
     },
     {
         title: 'Reports', path: '/reports'
+    },
+    {
+        title: 'Updates', path: '/updates'
     },
     {
         title: 'Contact', path: '/contact'
