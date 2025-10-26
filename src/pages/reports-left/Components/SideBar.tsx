@@ -1,216 +1,186 @@
-import {useState} from 'react'
-import searchIcon from '@/assets/img/icons/vl-search-icon.svg'
-import arrowDown from '@/assets/img/icons/vl-arrow-down.svg'
-import phoneEvent from '@/assets/img/icons/vl-phone-event.svg'
-import thumbImg from '@/assets/img/event/vl-learg-thumb-enent.png'
-import eventDate1 from '@/assets/img/icons/vl-event-date1.1.svg'
-import eventLocal from '@/assets/img/icons/vl-event-loca1.1.svg'
-import dollarImg from '@/assets/img/icons/dollar.svg'
-import customImg from '@/assets/img/icons/custom-amou.svg'
-import {FaArrowRight, FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa6";
-import {Link} from "react-router";
-import {Col, Container, Row} from 'react-bootstrap'
+import { useState, useRef } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import arrowDown from '@/assets/img/icons/vl-arrow-down.svg';
+import { categories, categoryContent } from '../data';
 
 const SideBar = () => {
+    const [selectedCategory, setSelectedCategory] = useState('Case Studies');
+    const [isMuted, setIsMuted] = useState(true); // Video starts muted
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [selectedMedia, setSelectedMedia] = useState<string | null>(null);
 
-    const prices = [10, 20, 30, 40, 50]
+    const currentContent = categoryContent[selectedCategory];
 
-    const [value, setValue] = useState(10)
-
+    if (!currentContent) return null;
 
     return (
         <div className="vl-sidebar-area sp2">
             <Container>
                 <Row>
+                    {/* Category Sidebar */}
                     <Col lg={4}>
                         <div className="vl-widget-area">
                             <div className="vl-search-widget mb-30">
-                                <h3 className="title">Search</h3>
-                                <div className="search p-relative">
-                                    <input type="text" placeholder="Search..."/>
-                                    <span>
-                    <img src={searchIcon} alt='searchIcon'/>
-                  </span>
-                                </div>
-                            </div>
-                            <div className="vl-search-widget mb-30">
-                                <h3 className="title">Support Us</h3>
-                                <div className="vl-single-service">
-                                    <a href="#">Supply Chain Management</a>
-                                    <span><img src={arrowDown} alt='arrowDown'/></span>
-                                </div>
-                                <div className="vl-single-service">
-                                    <a href="#">Mergers And Acquisitions</a>
-                                    <span><img src={arrowDown} alt='arrowDown'/></span>
-                                </div>
-                                <div className="vl-single-service">
-                                    <a href="#">Investment Strategies</a>
-                                    <span><img src={arrowDown} alt='arrowDown'/></span>
-                                </div>
-                                <div className="vl-single-service">
-                                    <a href="#">Wealth Management</a>
-                                    <span><img src={arrowDown} alt='arrowDown'/></span>
-                                </div>
-                                <div className="vl-single-service">
-                                    <a href="#">Transformation in Finance</a>
-                                    <span><img src={arrowDown} alt='arrowDown'/></span>
-                                </div>
-                            </div>
-                            <div className="vl-phone-widget mb-30">
-                                <h3 className="title">If You Need Any Help <br/> Contact With Us</h3>
-                                <a href="#" className="phone"> <span><img src={phoneEvent} alt='phoneEvent'/></span>+123
-                                    456 7890</a>
-                            </div>
-                            <div className="vl-social-widget mb-30">
-                                <h3 className="title">Follow Us</h3>
-                                <div className="social-icon">
-                                    <ul>
-                                        <li><a href="#"><FaFacebookF className="fa-brands fa-facebook-f"/></a></li>
-                                        <li><a href="#"><FaInstagram className="fa-brands fa-instagram"/></a></li>
-                                        <li><a href="#"><FaTwitter className="fa-brands fa-twitter"/></a></li>
-                                        {/* <li><a href="#"><FaGithub className="fa-brands fa-github"/></a></li> */}
-                                    </ul>
-                                </div>
+                                <h3 className="title">Categories</h3>
+                                {categories.map((cat) => (
+                                    <div
+                                        className={`vl-single-service ${selectedCategory === cat ? 'active' : ''}`}
+                                        key={cat}
+                                        onClick={() => setSelectedCategory(cat)}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <a>{cat}</a>
+                                        <span><img src={arrowDown} alt='arrowDown' /></span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </Col>
+
+                    {/* Content Area */}
                     <Col lg={8}>
                         <div className="vl-event-content-area ml-50">
-                            <div className="vl-large-thumb">
-                                <img className="w-100" src={thumbImg} alt='thumbImg'/>
-                            </div>
-                            <div className="vl-event-content">
-                                <h2 className="title">Unity Giving Community Charity Event</h2>
-                                <p className="para pb-16">Our events bring people together to make a difference, uniting
-                                    communities in support of meaningful causes. Each event—whether a fundraiser,
-                                    awareness campaign, or volunteer day—serves as an opportunity to create real
-                                    impact. </p>
-                                <p className="para pb-32">Through activities, guest speakers, and interactive sessions,
-                                    we provide a platform for supporters to learn, connect, and contribute. Every event
-                                    is designed not only to raise.</p>
-                            </div>
-                            <div className="vl-event-box-bg">
-                                <Row className="">
-                                    <Col lg={6} md={6}>
-                                        <div className="icon-box mb-30">
-                                            <div className="icon">
-                                                <span><img src={eventDate1} alt='eventDate1'/></span>
-                                            </div>
-                                            <div className="content">
-                                                <h4 className="title">Events Date</h4>
-                                                <p className="para">January 1, 2025 <br/> 5:00 pm</p>
-                                            </div>
+
+                            {/* Title for single type */}
+                            {currentContent.type === 'single' && currentContent.title && (
+                                <h2 className="title mb-3">{currentContent.title}</h2>
+                            )}
+
+                            {/* Image for single type */}
+                            {currentContent.type === 'single' && currentContent.image && (
+                                <div className="vl-large-thumb mb-4">
+                                    <img className="w-100" src={currentContent.image} alt={selectedCategory} />
+                                </div>
+                            )}
+
+                            {/* Sections */}
+                            {selectedCategory !== 'Media' && currentContent.sections?.map((section, idx) => (
+                                <div key={idx} className="mb-5">
+                                    {currentContent.type === 'single' && section.subtitle && (
+                                        <h3 className="title">{section.subtitle}</h3>
+                                    )}
+
+                                    {currentContent.type === 'multi' && section.title && (
+                                        <h2 className="title">{section.title}</h2>
+                                    )}
+
+                                    {section.image && currentContent.type === 'multi' && (
+                                        <div className="vl-large-thumb mb-4">
+                                            <img className="w-100" src={section.image} alt={section.title} />
                                         </div>
-                                    </Col>
-                                    <Col lg={6} md={6}>
-                                        <div className="icon-box mb-30">
-                                            <div className="icon">
-                                                <span><img src={eventLocal} alt='eventLocal'/></span>
-                                            </div>
-                                            <div className="content">
-                                                <h4 className="title">Events Location</h4>
-                                                <p className="para">Vineyard Venues 5396 <br/> North Reese Avenue</p>
-                                            </div>
+                                    )}
+
+                                    {section.paragraphs?.map((p, pIdx) => (
+                                        <p className="para pb-3" key={pIdx}>{p}</p>
+                                    ))}
+                                </div>
+                            ))}
+
+                            {/* Video with title, controls, and summary */}
+                            {currentContent.type === 'single' && currentContent.video && (
+                                <div className="vl-large-thumb mb-4">
+                                    {currentContent.videoTitle && (
+                                        <h2 className="title mb-3">{currentContent.videoTitle}</h2>
+                                    )}
+                                    <video
+                                        ref={videoRef}
+                                        className="w-100 mb-3"
+                                        src={currentContent.video}
+                                        autoPlay
+                                        loop
+                                        muted={isMuted}
+                                        controls
+                                    />
+                                    {currentContent.videoSummary && currentContent.videoSummary.map((p, idx) => (
+                                        <p className="para pb-3" key={idx}>{p}</p>
+                                    ))}
+                                </div>
+                            )}
+
+                            {currentContent.video && currentContent.youtube && (
+                                <hr style={{ margin: '40px 0', border: '1px solid #ddd' }} />
+                            )}
+
+                            {/* YouTube Video Section */}
+                            {currentContent.youtube && (
+                                <div className="vl-large-thumb mb-4">
+                                    {currentContent.youtubeTitle && (
+                                        <h2 className="title mb-3">{currentContent.youtubeTitle}</h2>
+                                    )}
+                                    <div className="youtube-wrapper mb-3" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                                        <iframe
+                                            src={currentContent.youtube}
+                                            title={currentContent.youtubeTitle}
+                                            style={{
+                                                position: 'absolute',
+                                                top: 0,
+                                                left: 0,
+                                                width: '100%',
+                                                height: '100%'
+                                            }}
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                        />
+                                    </div>
+                                    {currentContent.youtubeSummary && (
+                                        <p className="para">{currentContent.youtubeSummary}</p>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Media Section */}
+                            {selectedCategory === 'Media' && currentContent.sections && currentContent.sections.length > 0 && (
+                                <div className="media-section">
+                                    {/* Large selected image */}
+                                    {selectedMedia && (
+                                        <div className="vl-large-thumb mb-4">
+                                            <img
+                                                src={selectedMedia}
+                                                alt="Selected Media"
+                                                className="w-100"
+                                                style={{ borderRadius: '8px', maxHeight: '500px', objectFit: 'contain', cursor: 'pointer' }}
+                                                onClick={() => setSelectedMedia(null)} // Click again to hide
+                                            />
                                         </div>
-                                    </Col>
-                                    <div className="btn-area pb-32">
-                                        <Link to="/pages/contact" className="header-btn1">Join This
-                                            Event <span><FaArrowRight/></span></Link>
+                                    )}
+
+                                    {/* Grid of thumbnails styled like sections */}
+                                    <div className="media-grid" style={{
+                                        display: 'grid',
+                                        gridTemplateColumns: 'repeat(3, 1fr)',
+                                        gap: '30px' // larger gap to match sidebar sections
+                                    }}>
+                                        {currentContent.sections
+                                            .filter(section => section.image !== selectedMedia)
+                                            .map((section, idx) => (
+                                                section.image && (
+                                                    <div key={idx} className="vl-large-thumb" style={{ cursor: 'pointer' }}>
+                                                        <img
+                                                            src={section.image}
+                                                            alt={`Media ${idx + 1}`}
+                                                            className="w-100"
+                                                            style={{ borderRadius: '8px', height: '150px', objectFit: 'cover' }}
+                                                            onClick={() => setSelectedMedia(section.image!)}
+                                                        />
+                                                    </div>
+                                                )
+                                            ))}
                                     </div>
-                                    <div className="amot">
-                                        <div className="display-amount" id="displayAmount">${value}</div>
-                                    </div>
-                                    <div className="amount-selector">
-                                        {
-                                            prices.map((num, idx) => (
-                                                <button className={`button ${num == value && 'selected'}  `}
-                                                        onClick={() => setValue(num)} key={idx}><span><img
-                                                    src={dollarImg} alt='dollarImg'/></span>{num}</button>
-                                            ))
-                                        }
-                                        <div className="custom-button">
-                                            Custom Amount <span><img src={customImg} alt='customImg'/></span>
-                                        </div>
-                                    </div>
-                                    <div className="space-div">
-                                        <div className="select-method">
-                                            <h4 className="title pb-32">Select Payment Method</h4>
-                                            <div className="select-meth">
-                                                <div className="online">
-                                                    <input type="radio" id="Online" name="fav_language"
-                                                           defaultValue="Online"/>
-                                                    <label htmlFor="Online">Online Donation</label><br/>
-                                                </div>
-                                                <div className="ofline">
-                                                    <input type="radio" id="Offline" name="fav_language"
-                                                           defaultValue="Offline"/>
-                                                    <label htmlFor="Offline">Offline Donation</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="donate-form">
-                                        <form action="#">
-                                            <Row>
-                                                <Col lg={4} md={6} className="mb-20">
-                                                    <input type="text" placeholder="First Name"/>
-                                                </Col>
-                                                <Col lg={4} md={6} className="mb-20">
-                                                    <input type="text" placeholder="Last Name"/>
-                                                </Col>
-                                                <Col lg={4} md={6} className="mb-20">
-                                                    <input type="email" placeholder="Email Address"/>
-                                                </Col>
-                                            </Row>
-                                        </form>
-                                        <div className="total-anoumt">
-                                            <div className="toal">
-                                                <div className="btn-area">
-                                                    <button className="header-btn1">Donate <span><FaArrowRight/></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <h2 className="title">Donation Total: $10</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </div>
-                            <div className="event-content-area">
-                                <h2 className="title">Join Us in Making a Difference</h2>
-                                <p className="para">We invite you to join us, meet like-minded individuals, and become
-                                    part of a movement that makes real, lasting change. Whether you attend, volunteer,
-                                    or help spread the word, your involvement is invaluable. Explore our upcoming
-                                    events.</p>
-                                <h2 className="title">Event Highlights &amp; Details</h2>
-                                <p className="para">Our events are designed to unite passionate individuals, raise
-                                    critical funds, &amp; increase awareness for the causes we serve. Each event offers
-                                    a unique opportunity to connect, contribute, and witness the power of community in
-                                    action.</p>
-                                <p className="para">Our events are opportunities to bring people together for meaningful
-                                    causes, creating moments of connection and impact that extend far beyond the day
-                                    itself.</p>
-                                <h2 className="title">Upcoming Fundraisers and Community Events</h2>
-                                <p className="para">From heartwarming charity dinners to hands-on volunteer days, these
-                                    gatherings allow us to celebrate milestones, share stories of impact, and inspire
-                                    further action. By joining us at our upcoming events, you’re not just attending
-                                    you’re becoming part movement.</p>
-                                <p className="para">Each event, whether a fundraiser, awareness campaign, volunteer
-                                    drive, or community gathering, plays a vital role in supporting our mission and
-                                    raising essential resources.</p>
-                                <h2 className="title">Event Details and How to Participate</h2>
-                                <p className="para">Whether you attend, volunteer, or help spread the word, your
-                                    involvement is invaluable. Explore our upcoming events, find ways to get involved,
-                                    and help us create brighter futures for those in need. Together, we can make an
-                                    extraordinary impact!</p>
-                            </div>
+                                </div>
+                            )}
+
+
+                            {/* Fallback for empty sections */}
+                            {!currentContent?.sections?.length && !currentContent.video && (
+                                <p className="para">Content will be added soon for this category.</p>
+                            )}
                         </div>
                     </Col>
                 </Row>
             </Container>
         </div>
-    )
-}
+    );
+};
 
-export default SideBar
+export default SideBar;

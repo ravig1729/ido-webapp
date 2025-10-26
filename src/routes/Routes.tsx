@@ -3,6 +3,7 @@ import { lazy } from "react";
 const Home = lazy(() => import('@/pages/home'))
 const About = lazy(() => import('@/pages/about'))
 const Reports = lazy(() => import('@/pages/reports'))
+const Updates = lazy(() => import('@/pages/reports-left'))
 const Partners = lazy(() => import('@/pages/partners'))
 const Contact = lazy(() => import('@/pages/contact'))
 const Donation = lazy(() => import('@/pages/donation'))
@@ -28,6 +29,11 @@ const otherRoutes = [
         path: '/about',
         name: 'about',
         element: <About/>,
+    },
+    {
+        path: '/updates',
+        name: 'updates',
+        element: <Updates/>,
     },
     {
         path: '/reports',

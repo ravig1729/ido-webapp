@@ -1,0 +1,23 @@
+.nav-tabs {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.nav-tabs .nav-link {
+  color: #555;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+  color: #1976d2;
+  border-bottom: 3px solid #1976d2;
+  background: none;
+}
+
+.pdf-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-color: #ccc;
+}
