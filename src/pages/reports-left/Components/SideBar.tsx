@@ -34,6 +34,12 @@ const SideBar = () => {
 
                     <Col lg={8}>
                         <div className="vl-event-content-area ml-50">
+                            {/* Display title above image for single type */}
+                            {currentContent.type === 'single' && currentContent.title && (
+                                <h2 className="title mb-3">{currentContent.title}</h2>
+                            )}
+
+                            {/* Display image */}
                             {currentContent.type === 'single' && currentContent.image && (
                                 <div className="vl-large-thumb mb-4">
                                     <img className="w-100" src={currentContent.image} alt={selectedCategory} />
@@ -56,7 +62,7 @@ const SideBar = () => {
                                         </div>
                                     )}
 
-                                    {section.paragraphs.map((p, pIdx) => (
+                                    {section.paragraphs?.map((p, pIdx) => (
                                         <p className="para pb-3" key={pIdx}>{p}</p>
                                     ))}
                                 </div>

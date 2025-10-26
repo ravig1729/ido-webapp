@@ -7,12 +7,15 @@ export const categories = ["Blog", "Case Studies", "Media", "Editorial", "Interv
 export const categoryContent: Record<
     string,
     {
-        type: 'single' | 'multi'; // 'single' = single image + subtitles, 'multi' = multiple images
-        image?: string;            // used for 'single'
-        sections?: {               // sections used for both types
-            image?: string;          // optional for 'single', required for 'multi'
-            subtitle?: string;       // subtitle for 'single' style
-            title?: string;          // title for 'multi' style
+        type: 'single' | 'multi';
+        title?: string;
+        image?: string;
+        video?: string;       // new field for mp4 video
+        youtube?: string;     // new field for YouTube link
+        sections?: {
+            image?: string;
+            subtitle?: string;
+            title?: string;
             paragraphs: string[];
         }[];
     }
@@ -46,6 +49,7 @@ export const categoryContent: Record<
     },
     "Case Studies": {
         type: 'single',
+        title: 'Effective Application of Maternal Health Training by AAMPodiyam Sirisha in a Critical Emergency Delivery',
         image: caseStudyImg,
         sections: [
             {

@@ -38,9 +38,6 @@ const Gallery = () => {
                         <h5 className="subtitle" data-aos="fade-right" data-aos-duration={800} data-aos-delay={300}>Our
                             Gallery</h5>
                         <h2 className="title text-anime-style-3">The Frontlines of Relief</h2>
-                        <p data-aos="fade-right" data-aos-duration={800} data-aos-delay={300}>These titles aim to convey
-                            emotion and meaning while showcasing <br /> the importance of your organization's work
-                            through visuals.</p>
                     </div>
                 </div>
                 <GlightBox>
