@@ -1,6 +1,18 @@
 import blogImg1 from '@/assets/img/updates/blog/Tubectomy surgery-4.jpeg';
 import blogImg2 from '@/assets/img/updates/blog/Adarsh.jpg';
 import caseStudyImg from '@/assets/img/updates/casestudies/Anitha Thati.jpg';
+import upstoppable from '@/assets/videos/unstoppable.mp4';
+
+import media1 from '@/assets/img/updates/media/1.1.jpeg';
+import media2 from '@/assets/img/updates/media/1.2.jpeg';
+import media3 from '@/assets/img/updates/media/1.3.jpeg';
+import media4 from '@/assets/img/updates/media/1.4.jpg';
+import media5 from '@/assets/img/updates/media/1.5.jpg';
+import media6 from '@/assets/img/updates/media/1.6.jpg';
+import media7 from '@/assets/img/updates/media/1.7.jpg';
+import media8 from '@/assets/img/updates/media/1.8.jpg';
+import media9 from '@/assets/img/updates/media/1.9.jpg';
+import media10 from '@/assets/img/updates/media/1.10.jpg';
 
 export const categories = ["Blog", "Case Studies", "Media", "Editorial", "Interview", "Opinion", "Events"];
 
@@ -11,8 +23,12 @@ export const categoryContent: Record<
         title?: string;
         image?: string;
         video?: string;       // new field for mp4 video
+        videoTitle?: string;
+        videoSummary?: string[];
         youtube?: string;     // new field for YouTube link
-        sections?: {
+        youtubeTitle?: string;
+        youtubeSummary?: string;
+        sections: {
             image?: string;
             subtitle?: string;
             title?: string;
@@ -89,9 +105,39 @@ export const categoryContent: Record<
             }
         ]
     },
-    Media: { type: 'single', sections: [] },
+    "Interview": {
+        type: 'single',
+        video: upstoppable,
+        videoTitle: 'IDO Receives Rs One Lakh Cash Prize on Unstoppable Show',
+        videoSummary: [
+            'The prize was presented by the esteemed host and actor, Nandamuri Balakrishna along with Ms Sreeleela and Polishetty Naveen',
+            'Dr Narender Ramavath and his wife, Dr Swathi received the cheque on behalf of the organization.',
+            'This recognition is a reflection of the impactful services we provide in the remotest tribal areas of Gattumalla village in Bhadradri Kothagudem.',
+            'We dedicate this award to the resilient communities in these tribal habitations for their unwavering trust in us.',
+            'Besides, My Dr Spray has also handed over a gift voucher worth Rs 50, 000 to IDO.',
+            'This achievement is also a tribute to the dedication of our community health workers, volunteer teachers, the medical fraternity, our staff, and everyone who has been a part of our journey from the very beginning.'
+        ],
+        youtube: 'https://www.youtube.com/embed/pjmMOG3SIw0',
+        youtubeTitle: 'Empowering Indigenous Communities in Telangana',
+        youtubeSummary: 'Save the Child Foundation in partnership with IDO extends funding and support for key initiatives that improve healthcare access, nutritional well-being, and educational opportunities for marginalized Indigenous populations in Bhadradri Kothagudem.',
+        sections: []
+    },
+    "Media": {
+        type: 'multi',
+        sections: [
+            { image: media1, paragraphs: [] },
+            { image: media2, paragraphs: [] },
+            { image: media3, paragraphs: [] },
+            { image: media4, paragraphs: [] },
+            { image: media5, paragraphs: [] },
+            { image: media6, paragraphs: [] },
+            { image: media7, paragraphs: [] },
+            { image: media8, paragraphs: [] },
+            { image: media9, paragraphs: [] },
+            { image: media10, paragraphs: [] }
+        ]
+    },
     Editorial: { type: 'single', sections: [] },
-    Interview: { type: 'single', sections: [] },
     Opinion: { type: 'single', sections: [] },
     Events: { type: 'single', sections: [] }
 };
