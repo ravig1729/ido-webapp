@@ -1,11 +1,39 @@
 import eventBg from '@/assets/img/banner/banner2.jpg';
-import missionThumbImg1 from '@/assets/img/work/health_1.jpg';
-import missionThumbImg2 from '@/assets/img/work/health_comm.jpg';
-import missionThumbImg3 from '@/assets/img/work/health_mmu.jpeg';
-import missionThumbImg4 from '@/assets/img/work/health_mc.jpeg';
-import missionThumbImg5 from '@/assets/img/work/health_sph.jpeg';
-import missionThumbImg6 from '@/assets/img/work/edu_1.jpg';
-import missionThumbImg7 from '@/assets/img/work/nutrition.jpg';
+
+import idoHealthCenter1 from '@/assets/img/Health/IDO Hospital/1.jpg';
+import idoHealthCenter2 from '@/assets/img/Health/IDO Hospital/2.jpg';
+import idoHealthCenter3 from '@/assets/img/Health/IDO Hospital/3.jpg';
+import idoHealthCenter4 from '@/assets/img/Health/IDO Hospital/4.jpg';
+import idoHealthCenter5 from '@/assets/img/Health/IDO Hospital/5.jpg';
+
+import chw1 from '@/assets/img/Health/CHW/1.jpg';
+import chw2 from '@/assets/img/Health/CHW/2.jpg';
+import chw3 from '@/assets/img/Health/CHW/3.jpg';
+import chw4 from '@/assets/img/work/health_comm.jpg';
+
+import mmu1 from '@/assets/img/Health/MMU/1.jpg';
+import mmu2 from '@/assets/img/Health/MMU/2.jpg';
+import mmu3 from '@/assets/img/Health/MMU/3.jpg';
+import mmu4 from '@/assets/img/Health/MMU/4.jpg';
+import mmu5 from '@/assets/img/Health/MMU/5.jpg';
+import mmu6 from '@/assets/img/work/health_mmu.jpeg';
+
+import mandchealth1 from '@/assets/img/Health/Maternal and Child Health Kit/2.jpg';
+import mandchealth2 from '@/assets/img/work/health_mc.jpeg';
+
+import sphpar from '@/assets/img/work/health_sph.jpeg';
+
+import edu1 from '@/assets/img/education/edu_1.jpg';
+import edu2 from '@/assets/img/education/edu_2.jpg';
+import edu3 from '@/assets/img/education/edu_3.jpg';
+import edu4 from '@/assets/img/education/edu_4.jpeg';
+
+import nutri1 from '@/assets/img/Nutrition/1.jpg';
+import nutri2 from '@/assets/img/Nutrition/2.jpg';
+import nutri3 from '@/assets/img/Nutrition/3.jpg';
+import nutri4 from '@/assets/img/Nutrition/4.jpg';
+import nutri5 from '@/assets/img/work/nutrition.jpg';
+
 import missionThumbImg8 from '@/assets/img/work/sus_heal.jpg';
 import WorkSection from './components/WorkSection'
 
@@ -80,8 +108,8 @@ export const heroContent = {
 export const workSection = {
     health: {
         'health_regalla': {
-            image: missionThumbImg1,
             title: '',
+            image1: idoHealthCenter1,
             subtitle1: 'IDO Health Centre – A Lifeline for Tribal Communities',
             section1: [
                 'In 2022, after five years of dedicated frontline health work, Indigenous Development Organisation (IDO) established the IDO Health Centre in Gattumalla, Bhadradri Kothagudem district, Telangana.',
@@ -90,12 +118,14 @@ export const workSection = {
                 'Spanning a one-acre campus, the centre is a charitable facility funded by generous donors, serving over 42,000 people across 133 tribal and rural villages. It stands as a trusted platform where healthcare providers and indigenous communities come together in an environment of mutual respect, acceptance, and trust to improve health outcomes and reduce healthcare dependency.'
             ],
             subtitle2: 'Who We Serve',
+            image2: idoHealthCenter2,
             section2: [
                 '•	People trust and visit IDO HC from Andhra, Telangana, Chhattisgarh and odisha',
                 '•	Serving more than 42,000 people across 133 villages',
                 '•	Tribal and rural communities who otherwise travel long distances for basic care',
             ],
             subtitle3: 'Our Facilities & Services (All Free of Cost)',
+            image3: idoHealthCenter3,
             section3: [
                 '•	Doctor consultations (OPD & IPD)',
                 '•	Specialized Gynaecology & Obstetrics care',
@@ -106,6 +136,7 @@ export const workSection = {
                 '•	Referral linkages to higher centres for advanced care'
             ],
             subtitle4: 'Why It Matters',
+            image4: idoHealthCenter4,
             section4: [
                 '•	First NGO-run specialty health centre in a tribal Agency area of Telangana',
                 '•	Trusted as a safe, respectful space where doctors and Adivasi communities work together',
@@ -113,6 +144,7 @@ export const workSection = {
                 '•	A sustainable model of community-driven rural healthcare'
             ],
             subtitle5: 'Our Impact',
+            image5: idoHealthCenter5,
             section5: [
                 '•	A health lifeline for remote, hard-to-reach villages',
                 '•	Built with community participation and donor support',
@@ -120,7 +152,7 @@ export const workSection = {
             ]
         },
         'health_community': {
-            image: missionThumbImg2,
+            image1: chw1,
             title: '',
             subtitle1: 'Community Health Workers: The Front Line Health Workers',
             section1: [
@@ -130,6 +162,7 @@ export const workSection = {
                 '•	Our solution: Training and mentoring local CHWs/ASHAs to provide community-based maternal, child, and primary health services.',
             ],
             subtitle2: 'Objectives',
+            image2: chw2,
             section2: [
                 '•	Strengthen CHW/ASHA skills in MCH, infectious & non-communicable diseases and health promotion.',
                 '•	Promote safe motherhood: ANC, PNC, HBNC, institutional deliveries.',
@@ -138,6 +171,7 @@ export const workSection = {
                 '•	Build community trust and strengthen referral linkages with health facilities.',
             ],
             subtitle3: 'Activities / Approach',
+            image3: chw3,
             section3: [
                 '•	Training Workshops: Induction (5 days) & refresher (every 6 months) on MCH, HBNC, nutrition, and disease management.',
                 '•	Hands- O n Practical Sessions: Home visits, monitoring, and care demonstrations.',
@@ -147,6 +181,7 @@ export const workSection = {
                 '•	Digital Data System: CHWs record data manually → verified digitally for reporting and planning.'
             ],
             subtitle4: 'Impact / Outcomes',
+            image4: chw4,
             section4: [
                 '•	CHWs Trained: 79',
                 '•	Households Covered:  2370',
@@ -157,7 +192,7 @@ export const workSection = {
             ],
         },
         'health_mmu': {
-            image: missionThumbImg3,
+            image1: mmu1,
             title: '',
             subtitle1: 'Mobile Medical Units (MMUs):',
             section1: [
@@ -168,11 +203,13 @@ export const workSection = {
                 'Why needed? → “In many villages there are no doctors, no transport, and health centres are 10–50 km away. Our MMUs bridge this gap.”',
             ],
             subtitle2: 'Where We Work?',
+            image2: mmu2,
             section2: [
                 'We operate in 19 mandals of Bhadradri Kothagudem District',
                 'We operate in 82 villages of Bhadradri kothagudem district , (Listing will be attached separately)',
             ],
             subtitle3: 'Services Provided',
+            image3: mmu3,
             section3: [
                 '•	General OPD care',
                 '•	Maternal & Child Health (ANC, PNC, immunization support, growth monitoring)',
@@ -183,6 +220,7 @@ export const workSection = {
                 '•	Health education & awareness (nutrition, hygiene, safe motherhood, immunization importance)',
             ],
             subtitle4: 'Innovations in MMUs',
+            image4: mmu4,
             section4: [
                 'Our Mobile Medical Units go beyond basic consultations. By equipping them with portable diagnostic devices, we ensure early detection and timely treatment right at the doorstep of remote tribal communities.',
                 '•	Digital stethoscopes for screening congenital heart disease in children',
@@ -192,6 +230,7 @@ export const workSection = {
                 'This innovative approach enables faster diagnosis, reduced referrals, and better outcomes, especially in areas where access to hospitals is limited.',
             ],
             subtitle5: 'Our Approach',
+            image5: mmu5,
             section5: [
                 '•	Fixed-day monthly visit schedule for each remote village.',
                 '•	Appointment system for pregnancy scans & elective procedures.',
@@ -199,6 +238,7 @@ export const workSection = {
                 '•	Community involvement: CHWs/ASHAs help mobilize patients.',
             ],
             subtitle6: 'Impact / Outcomes',
+            image6: mmu6,
             section6: [
                 '•	Villages covered : 79',
                 '•	Households reached : XXXX',
@@ -208,7 +248,7 @@ export const workSection = {
             ],
         },
         'health_mandchealth': {
-            image: missionThumbImg4,
+            image1: mandchealth1,
             title: '',
             subtitle1: 'Maternal and Child Health (MCH) Kit is a tool kit comprising of 27 items designed to:',
             section1: [
@@ -217,6 +257,7 @@ export const workSection = {
                 '3. Deliver emergency care if baby suffers from asphyxia, sepsis and hypothermia.',
             ],
             subtitle2: 'Parvathi helps deliver a baby amidst Forest with the help of MCH Kit',
+            image2: mandchealth2,
             section2: [
                 'Community Health Workers (CHWs) are crucial in promoting Institutional Deliveries to improve safe Maternal and Child Health Care. Especially, in remote tribal habitations where access to medical facilities can be limited.',
                 'One such interesting example is from Umeshchandra Nagar, a tribal habitation from Pinapaka Mandal, Bhadradri where a pregnant woman was experiencing labour pains.',
@@ -230,7 +271,7 @@ export const workSection = {
             ]
         },
         'health_sphpar': {
-            image: missionThumbImg5,
+            image: sphpar,
             title: '',
             subtitle: '',
             section: [
@@ -240,7 +281,7 @@ export const workSection = {
     },
     education: {
         'education_overview': {
-            image: missionThumbImg6,
+            image1: edu1,
             title: 'Education',
             subtitle1: 'Helping Tribal Children access Education through Bridge Schools',
             section1: [
@@ -249,6 +290,7 @@ export const workSection = {
                 'As a result, the literacy rate among tribal children is very low. Additionally, the lack of early childhood education hinders their development, especially since 85% of brain growth occurs in the first six years. Mainstream schools often face high dropout rates due to lack of initial support and engagement.'
             ],
             subtitle2: 'Why Bridge Schools for the Tribal Community?',
+            image2: edu2,
             section2: [
                 'Bridge schools in the remote tribal areas of Bhadradri and Kothagudem in Telangana serve as temporary, makeshift study centers for children. They help bridge the educational gap by offering basic education, enabling children to eventually transition to mainstream schools. Built with limited resources, they play a vital role in providing essential education to children.',
                 'Local community volunteers, often school dropouts, are recruited from within the habitations and trained to teach the children in their native languages. This approach minimizes language barriers, reduces the fear of schooling, and fosters a positive attitude toward education encouraging regular attendance.',
@@ -256,6 +298,7 @@ export const workSection = {
                 'In cases of irregular attendance or high child labor, team members from IDO visit the habitation, motivating parents to recognize the importance of education for their children’s future.'
             ],
             subtitle3: 'Activities of Bridge School',
+            image3: edu3,
             section3: [
                 '•	Daily Classes on literacy, numeracy, and life skills using interactive and culturally relevant materials, including solar TV in off-grid areas.',
                 '•	Vidhya Sabhas to engage parents, promote education, and reduce child labor.',
@@ -266,6 +309,7 @@ export const workSection = {
                 '•	School Integration by enrolling eligible children into formal schools annually.'
             ],
             subtitle4: 'Impact:',
+            image4: edu4,
             section4: [
                 '•	400+ children now have access to basic education & midday meals in 13 habitations.',
                 '•	600+ children joined mainstream school.',
@@ -275,13 +319,14 @@ export const workSection = {
     },
     nutrition: {
         'nutrition_overview': {
-            image: missionThumbImg7,
+            image1: nutri1,
             title: '',
             subtitle1: 'Nutrition Intervention for Tribal Women and Children',
             section1: [
                 'In Bhadradri Kothagudem, approximately 65% of tribal women aged 15-49 suffer from anemia due to inadequate nutrition, leading to complications such as low birth weight and pre-term deliveries as per a study. The lack of access to anganwadi centers exacerbates the situation, highlighting the urgent need for nutritional support for women and children.'
             ],
             subtitle2: 'Nutrition Powder Mix Initiative',
+            image2: nutri2,
             section2: [
                 'To address this, the IDO developed a Nutrition Powder Mix composed of:',
                 '•	Bengal gram',
@@ -292,12 +337,14 @@ export const workSection = {
                 'This mix is designed to provide essential proteins, fats, carbohydrates, and iron, targeting under-5 children, pregnant women, and lactating mothers in 31 habitations.'
             ],
             subtitle3: 'Implementation',
+            image3: nutri3,
             section3: [
                 '•	Daily Distribution: Each beneficiary receives 60 grams of the Nutrition Powder as Ready-to-Use Food (RTUF) daily.',
                 '•	Spot Feeding: Community Health Workers (CHWs) conduct daily spot feeding to encourage consistent consumption within the habitations.',
                 '•	Production Unit: A production unit has been established in Regalla village, where two local tribal community members have been trained to prepare the powder, providing them with sustainable livelihoods.'
             ],
             subtitle4: 'Impact',
+            image4: nutri4,
             section4: [
                 'The initiative aims to provide 70 grams of nutrition powder daily to over 1800 beneficiaries in 40+ interior habitations, resulting in significant health improvements:',
                 '•	Reduction of Anemia: 39.5%',
@@ -305,8 +352,9 @@ export const workSection = {
                 '•	Reduction of Underweight: 24%',
             ],
             subtitle5: 'Conclusion',
+            image5: nutri5,
             section5: [
-                'This program not only addresses the immediate nutritional needs of women and children but also empowers local community members by providing them with skills and livelihood opportunities. The sustainability of the nutrition unit ensures continued support for the community&#39;s health and well-being.'
+                'This program not only addresses the immediate nutritional needs of women and children but also empowers local community members by providing them with skills and livelihood opportunities. The sustainability of the nutrition unit ensures continued support for the community health and well-being.'
             ]
         }
     },

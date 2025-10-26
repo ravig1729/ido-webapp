@@ -1,4 +1,3 @@
-import vision2 from '@/assets/img/about/vl-vission2.png'
 import aboutOverview from '@/assets/img/about/about-overview.svg'
 import { Col, Container, Nav, NavItem, NavLink, Row, TabContainer, TabContent, TabPane } from 'react-bootstrap'
 
