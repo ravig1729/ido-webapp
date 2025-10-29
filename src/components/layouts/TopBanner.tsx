@@ -28,7 +28,7 @@ const TopBanner = () => {
           <div className="d-flex align-items-center">
             <div className="d-flex align-items-center me-4">
               <img src={topImg1} alt="topImg1" className="me-2" />
-              <a href="mailto:indigenousdevelopment20192gmail.com" className="text-dark">indigenousdevelopment20192gmail.com</a>
+              <a href="mailto:indigenousdevelopment2019@gmail.com" className="text-dark">indigenousdevelopment2019@gmail.com</a>
             </div>
             <div className="d-flex align-items-center">
               <img src={topImg2} alt="topImg2" className="me-2"/>

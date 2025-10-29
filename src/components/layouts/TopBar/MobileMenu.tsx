@@ -82,7 +82,7 @@ const MobileMenu = () => {
                                         <FaEnvelope size={16} className="fa-solid fa-envelope" />
                                     </div>
                                     <div className="contact-info-text">
-                                        <a href="mailto:info@example.com">indigenousdevelopment20192gmail.com</a>
+                                        <a href="mailto:info@example.com">indigenousdevelopment2019@gmail.com</a>
                                     </div>
                                 </div>
                                 <div className="contact-info-single">
