@@ -68,7 +68,7 @@ const Footer = () => {
                   <span><img src={footerIc1} alt='footerIc1' /></span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="mailto:indigenousdevelopment20192gmail.com">indigenousdevelopment20192gmail.com</a>
+                  <a href="mailto:indigenousdevelopment2019@gmail.com">indigenousdevelopment2019@gmail.com</a>
                 </div>
               </div>
               <div className="vl-footer-icon-list">
