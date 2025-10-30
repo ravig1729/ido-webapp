@@ -63,47 +63,63 @@ const IconArea = () => {
 
                     {/* UPI Info */}
                     <Col lg={6} md={6}>
-                        <div
-                            className="iconbox d-flex align-items-start p-4 rounded-3 shadow-sm h-100"
-                            style={{
-                                backgroundColor: "#fff",
-                                border: "1px solid #e5e5e5",
-                                minHeight: "100%",
-                            }}
+                        <a
+                            href="upi://pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR"
+                            style={{ textDecoration: "none", color: "inherit" }}
                         >
                             <div
-                                className="icon flex-shrink-0 d-flex align-items-center justify-content-center"
+                                className="iconbox d-flex align-items-start p-4 rounded-3 shadow-sm h-100"
                                 style={{
-                                    width: "60px",
-                                    height: "60px",
-                                    borderRadius: "50%",
-                                    backgroundColor: "#f2f4f7",
-                                    marginRight: "20px",
+                                    backgroundColor: "#fff",
+                                    border: "1px solid #e5e5e5",
+                                    minHeight: "100%",
+                                    cursor: "pointer",
                                 }}
                             >
-                                <img
-                                    src={upiIcon}
-                                    alt="UPI Icon"
-                                    style={{ width: "30px", height: "30px" }}
-                                />
-                            </div>
-                            <div className="icon-content" style={{ flex: 1 }}>
-                                <h3
-                                    className="title mb-3"
-                                    style={{ fontWeight: "600", fontSize: "20px" }}
+                                <div
+                                    className="icon flex-shrink-0 d-flex align-items-center justify-content-center"
+                                    style={{
+                                        width: "60px",
+                                        height: "60px",
+                                        borderRadius: "50%",
+                                        backgroundColor: "#f2f4f7",
+                                        marginRight: "20px",
+                                    }}
                                 >
-                                    UPI Information
-                                </h3>
-                                <div style={{ lineHeight: "1.7", fontSize: "15px" }}>
-                                    <p className="mb-1">
-                                        <strong>UPI ID:</strong> indigenousdevelopment2019-2@okicici
-                                    </p>
-                                    <p className="mb-0">
-                                        <strong>UPI Number:</strong> 80968 51841
-                                    </p>
+                                    <img
+                                        src={upiIcon}
+                                        alt="UPI Icon"
+                                        style={{ width: "30px", height: "30px" }}
+                                    />
+                                </div>
+                                <div className="icon-content" style={{ flex: 1 }}>
+                                    <h3
+                                        className="title mb-3"
+                                        style={{ fontWeight: "600", fontSize: "20px" }}
+                                    >
+                                        UPI Information
+                                    </h3>
+                                    <div style={{ lineHeight: "1.7", fontSize: "15px" }}>
+                                        <p className="mb-1">
+                                            <strong>UPI ID:</strong> indigenousdevelopment2019-2@okicici
+                                        </p>
+                                        <p className="mb-1">
+                                            <strong>UPI Number:</strong> 80968 51841
+                                        </p>
+                                        <p
+                                            className="mt-3 text-primary fw-semibold"
+                                            style={{
+                                                fontSize: "14px",
+                                                color: "#0d6efd",
+                                                textDecoration: "underline",
+                                            }}
+                                        >
+                                            👉 Click here to pay via UPI
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </Col>
                 </Row>
             </Container>
