@@ -103,8 +103,18 @@ const IconArea = () => {
                                         <p className="mb-1">
                                             <strong>UPI ID:</strong> indigenousdevelopment2019-2@okicici
                                         </p>
-                                        <p className="mb-0">
+                                        <p className="mb-1">
                                             <strong>UPI Number:</strong> 80968 51841
+                                        </p>
+                                        <p
+                                            className="mt-3 text-primary fw-semibold"
+                                            style={{
+                                                fontSize: "14px",
+                                                color: "#0d6efd",
+                                                textDecoration: "underline",
+                                            }}
+                                        >
+                                            👉 Click here to pay via UPI
                                         </p>
                                     </div>
                                 </div>
