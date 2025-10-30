@@ -1,8 +1,12 @@
 import bank from "@/assets/img/icons/bank.svg";
 import upiIcon from "@/assets/img/icons/upi-icon.svg";
 import { Col, Container, Row } from "react-bootstrap";
+import { QRCodeCanvas } from "qrcode.react"; // ✅ Correct import for React 18+
 
 const IconArea = () => {
+    const upiLink =
+        "upi://pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR";
+
     return (
         <section className="vl-icon-box-inner py-70 bg-light">
             <Container>
@@ -63,19 +67,15 @@ const IconArea = () => {
 
                     {/* UPI Info */}
                     <Col lg={6} md={6}>
-                        <a
-                            href="upi://pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR"
-                            style={{ textDecoration: "none", color: "inherit" }}
+                        <div
+                            className="iconbox d-flex flex-column align-items-start p-4 rounded-3 shadow-sm h-100"
+                            style={{
+                                backgroundColor: "#fff",
+                                border: "1px solid #e5e5e5",
+                                minHeight: "100%",
+                            }}
                         >
-                            <div
-                                className="iconbox d-flex align-items-start p-4 rounded-3 shadow-sm h-100"
-                                style={{
-                                    backgroundColor: "#fff",
-                                    border: "1px solid #e5e5e5",
-                                    minHeight: "100%",
-                                    cursor: "pointer",
-                                }}
-                            >
+                            <div className="d-flex align-items-start w-100 mb-3">
                                 <div
                                     className="icon flex-shrink-0 d-flex align-items-center justify-content-center"
                                     style={{
@@ -106,20 +106,54 @@ const IconArea = () => {
                                         <p className="mb-1">
                                             <strong>UPI Number:</strong> 80968 51841
                                         </p>
-                                        <p
-                                            className="mt-3 text-primary fw-semibold"
-                                            style={{
-                                                fontSize: "14px",
-                                                color: "#0d6efd",
-                                                textDecoration: "underline",
-                                            }}
-                                        >
-                                            👉 Click here to pay via UPI
-                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+
+                            {/* Clickable UPI Link */}
+                            {/* <a
+                                href={upiLink}
+                                className="mt-2"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#0d6efd",
+                                    fontWeight: 600,
+                                    fontSize: "15px",
+                                }}
+                            >
+                                👉 Click here to pay via UPI
+                            </a> */}
+
+                            {/* UPI App Buttons */}
+                            <div className="d-flex flex-wrap gap-2 mt-3">
+                                <a
+                                    href="tez://upi/pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR"
+                                    className="btn btn-sm btn-primary"
+                                >
+                                    Pay via GPay
+                                </a>
+                                <a
+                                    href="phonepe://pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR"
+                                    className="btn btn-sm btn-success"
+                                >
+                                    Pay via PhonePe
+                                </a>
+                                <a
+                                    href="paytmmp://pay?pa=indigenousdevelopment2019-2@okicici&pn=Indigenous%20Development%20Organization&cu=INR"
+                                    className="btn btn-sm btn-secondary"
+                                >
+                                    Pay via Paytm
+                                </a>
+                            </div>
+
+                            {/* QR Code */}
+                            <div className="mt-4 text-center w-100">
+                                <p style={{ fontSize: "14px", marginBottom: "10px" }}>
+                                    Scan this QR to pay from any UPI app:
+                                </p>
+                                <QRCodeCanvas value={upiLink} size={120} /> {/* ✅ Working QR */}
+                            </div>
+                        </div>
                     </Col>
                 </Row>
             </Container>
