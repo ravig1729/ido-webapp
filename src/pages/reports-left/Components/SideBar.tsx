@@ -65,14 +65,14 @@ const SideBar = () => {
                                         }}
                                         onMouseOver={(e) => {
                                             if (selectedCategory !== cat) {
-                                                e.target.style.backgroundColor = '#f8f9fa';
-                                                e.target.style.borderColor = '#007bff';
+                                                (e.target as HTMLElement).style.backgroundColor = '#f8f9fa';
+                                                (e.target as HTMLElement).style.borderColor = '#007bff';
                                             }
                                         }}
                                         onMouseOut={(e) => {
                                             if (selectedCategory !== cat) {
-                                                e.target.style.backgroundColor = 'white';
-                                                e.target.style.borderColor = '#e0e0e0';
+                                                (e.target as HTMLElement).style.backgroundColor = 'white';
+                                                (e.target as HTMLElement).style.borderColor = '#e0e0e0';
                                             }
                                         }}
                                     >
