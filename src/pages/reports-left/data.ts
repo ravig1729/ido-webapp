@@ -17,6 +17,8 @@ import media8 from '@/assets/img/updates/media/1.8.jpg';
 import media9 from '@/assets/img/updates/media/1.9.jpg';
 import media10 from '@/assets/img/updates/media/1.10.jpg';
 
+import media11 from '@/assets/img/updates/events/event1.jpeg';
+
 export const categories = ["Blog", "Case Studies", "Media", "Editorial", "Interview", "Opinion", "Events"];
 
 // Define the structure for individual content items
@@ -190,13 +192,13 @@ export const categoryContent: Record<string, CategoryData> = {
                 author: 'IDO Team',
                 summary: 'Recognition on the prestigious Unstoppable show hosted by Nandamuri Balakrishna for our impactful work in tribal communities.',
                 video: upstoppable,
-                videoTitle: 'IDO Receives Rs One Lakh Cash Prize on Unstoppable Show',
+                videoTitle: '',
                 videoSummary: [
                     'The prize was presented by the esteemed host and actor, Nandamuri Balakrishna along with Ms Sreeleela and Polishetty Naveen',
                     'Dr Narender Ramavath and his wife, Dr Swathi received the cheque on behalf of the organization.',
                     'This recognition is a reflection of the impactful services we provide in the remotest tribal areas of Gattumalla village in Bhadradri Kothagudem.',
                     'We dedicate this award to the resilient communities in these tribal habitations for their unwavering trust in us.',
-                    'Besides, My Dr Spray has also handed over a gift voucher worth Rs 50, 000 to IDO.',
+                    'Besides, My Dr Spray has also handed over a gift voucher worth Rs 50,000 to IDO.',
                     'This achievement is also a tribute to the dedication of our community health workers, volunteer teachers, the medical fraternity, our staff, and everyone who has been a part of our journey from the very beginning.'
                 ],
                 youtube: 'https://www.youtube.com/embed/pjmMOG3SIw0',
@@ -259,12 +261,19 @@ export const categoryContent: Record<string, CategoryData> = {
     Events: {
         items: [
             {
-                id: 'coming-soon-events',
-                title: 'Event Coverage Coming Soon',
-                summary: 'Coverage of IDO events and community gatherings will be featured here.',
+                id: 'honouring_health_champions',
+                title: 'Curtain Raiser | Honouring Grassroots Health Champions 🌿',
+                date: '23 December 2025',
+                author: 'IDO Team',
+                summary: '',
+                image: media11,
                 sections: [
                     {
-                        paragraphs: ['Event content will be added soon.']
+                        paragraphs: [
+                            'In the most remote tribal habitations of Bhadradri Kothagudem, access to healthcare is made possible by the steady commitment of our Adivasi Arogya Mitras (Community Health Workers). Working at the grassroots, they bridge gaps, build trust, and serve indigenous communities with compassion, resilience, and dedication.',
+                            'On December 23, 2025, we come together to recognize and honour these silent champions for their selfless service towards community well-being. This celebration is a tribute to their devotion and the vital role they play in strengthening healthcare where it matters most.',
+                            '✨ Stay tuned as we count down to a moment of gratitude, recognition, and pride.',
+                        ]
                     }
                 ]
             }
