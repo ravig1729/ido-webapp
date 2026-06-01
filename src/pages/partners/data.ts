@@ -17,6 +17,7 @@ import team17 from '@/assets/img/Partners/TechieRide.png'
 import team18 from '@/assets/img/Partners/TNR_Trust.png'
 import team19 from '@/assets/img/Partners/UnitedCareDevelopmentService.png'
 import team20 from '@/assets/img/Partners/VCF.png'
+import team21 from '@/assets/img/Partners/SSSDhruti_logo.png'
 
 type TeamMember = {
     name: string;
@@ -99,5 +100,9 @@ export const teamData: TeamMember[] = [
     {
         name: "Vijayavahini Charitable Trust",
         image: team20,
+    },
+    {
+        name: "Sri Sathya Sai Dhruti Trust",
+        image: team21,
     }
 ];
